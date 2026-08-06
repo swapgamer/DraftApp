@@ -28,3 +28,6 @@ appsettings.Production.json
 chemistry_preview/
 handoff_render/
 *.log
+
+# Superseded starter API; the active backend is API/DraftDatastore.
+API/DraftAOD/
