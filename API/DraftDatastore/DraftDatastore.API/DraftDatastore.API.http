@@ -1,0 +1,6 @@
+@DraftDatastore.API_HostAddress = http://localhost:5015
+
+GET {{DraftDatastore.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

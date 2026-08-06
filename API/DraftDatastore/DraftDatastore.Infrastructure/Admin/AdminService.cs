@@ -1,0 +1,11 @@
+﻿using DraftDatastore.Application.Admin;using DraftDatastore.Persistence;using Microsoft.EntityFrameworkCore;
+namespace DraftDatastore.Infrastructure.Admin;
+public sealed class AdminService(DraftDatastoreDbContext db):IAdminService {
+ public async Task<IReadOnlyCollection<AdminUserResponse>> GetUsersAsync(CancellationToken ct)=>await db.Users.Include(x=>x.UserRoles).ThenInclude(x=>x.Role).AsNoTracking().OrderBy(x=>x.Email).Select(x=>new AdminUserResponse(x.Id,x.Email,x.DisplayName,x.IsActive,x.UserRoles.Select(r=>r.Role.Name).ToArray(),x.CreatedAtUtc)).ToListAsync(ct);
+ public async Task<AdminUserResponse?> GetUserAsync(Guid id,CancellationToken ct)=>await db.Users.Include(x=>x.UserRoles).ThenInclude(x=>x.Role).AsNoTracking().Where(x=>x.Id==id).Select(x=>new AdminUserResponse(x.Id,x.Email,x.DisplayName,x.IsActive,x.UserRoles.Select(r=>r.Role.Name).ToArray(),x.CreatedAtUtc)).SingleOrDefaultAsync(ct);
+ public async Task<bool> SetUserStatusAsync(Guid id,bool active,CancellationToken ct){var user=await db.Users.SingleOrDefaultAsync(x=>x.Id==id,ct);if(user is null)return false;user.IsActive=active;await db.SaveChangesAsync(ct);return true;}
+ public async Task<bool> ChangeRoleAsync(Guid id,int roleId,CancellationToken ct){var user=await db.Users.Include(x=>x.UserRoles).SingleOrDefaultAsync(x=>x.Id==id,ct);if(user is null||!await db.Roles.AnyAsync(x=>x.Id==roleId,ct))return false;user.UserRoles.Clear();user.UserRoles.Add(new(){UserId=id,RoleId=roleId});await db.SaveChangesAsync(ct);return true;}
+ public async Task<DashboardResponse> GetDashboardAsync(CancellationToken ct)=>new(await db.Users.CountAsync(ct),await db.Users.CountAsync(x=>x.IsActive,ct),await db.Players.CountAsync(ct),await db.ChatHistories.CountAsync(ct));
+ public async Task<IReadOnlyCollection<LoginHistoryResponse>> GetLoginHistoryAsync(CancellationToken ct)=>await db.LoginHistories.Include(x=>x.User).AsNoTracking().OrderByDescending(x=>x.OccurredAtUtc).Take(200).Select(x=>new LoginHistoryResponse(x.Id,x.UserId,x.User.Email,x.Succeeded,x.IpAddress,x.OccurredAtUtc)).ToListAsync(ct);
+ public async Task<IReadOnlyCollection<AuditLogResponse>> GetAuditLogsAsync(CancellationToken ct)=>await db.AuditLogs.AsNoTracking().OrderByDescending(x=>x.OccurredAtUtc).Take(200).Select(x=>new AuditLogResponse(x.Id,x.UserId,x.Action,x.EntityName,x.EntityId,x.OccurredAtUtc)).ToListAsync(ct);
+}

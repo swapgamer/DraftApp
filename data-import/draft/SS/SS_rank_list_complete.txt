@@ -1,0 +1,332 @@
+SS / SECOND STRIKER RANK LIST
+
+Notes:
+- Overall ranks follow the SS section of the uploaded rank list.
+- Players listed beneath the numbered Top 10 are marked Unranked.
+- Goal, assist and defensive credit points are suggested ratings on a 0-10 scale.
+- Player image fields are left as None so images can be added separately.
+
+1. Johan Cruyff
+
+Full name- Hendrik Johannes Cruijff
+Overall rank- 1
+Nationality- Netherlands
+Playing era- 1964-1984
+Position(s), with one primary position- SS (primary); CF, AM, RW
+Short description- Revolutionary and supremely intelligent forward whose movement, dribbling, passing and tactical leadership defined Total Football.
+Goal, assist, and defensive credit points- Goal 9/10, assist 10/10, defensive 7/10 (suggested ratings)
+Optional aliases- Johan Cruyff; Jopie; El Salvador
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Johan_Cruyff
+Optional player image files- None
+
+2. Karl-Heinz Rummenigge
+
+Full name- Karl-Heinz Rummenigge
+Overall rank- 2
+Nationality- West Germany/Germany
+Playing era- 1974-1989
+Position(s), with one primary position- SS (primary); CF, RW
+Short description- Explosive and technically complete forward combining pace, powerful shooting, intelligent movement and consistent elite-level goalscoring.
+Goal, assist, and defensive credit points- Goal 9/10, assist 8/10, defensive 6/10 (suggested ratings)
+Optional aliases- Kalle
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Karl-Heinz_Rummenigge
+Optional player image files- None
+
+3. Roberto Baggio
+
+Full name- Roberto Baggio
+Overall rank- 3
+Nationality- Italy
+Playing era- 1982-2004
+Position(s), with one primary position- SS (primary); AM, CF
+Short description- Graceful and imaginative attacking genius renowned for close control, dribbling, vision, free kicks and decisive individual moments.
+Goal, assist, and defensive credit points- Goal 9/10, assist 10/10, defensive 4/10 (suggested ratings)
+Optional aliases- Il Divin Codino; The Divine Ponytail
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Roberto_Baggio
+Optional player image files- None
+
+4. Lionel Messi
+
+Full name- Lionel Andrés Messi Cuccittini
+Overall rank- 3
+Nationality- Argentina
+Playing era- 2004-2020s
+Position(s), with one primary position- RW (primary); SS, AM, CF
+Short description- Extraordinary scorer and playmaker combining historic dribbling, vision, passing, ball control and left-footed finishing.
+Goal, assist, and defensive credit points- Goal 10/10, assist 10/10, defensive 4/10 (suggested ratings)
+Optional aliases- Leo; La Pulga
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Lionel_Messi
+Optional player image files- None
+
+5. Giuseppe Meazza
+
+Full name- Giuseppe Meazza
+Overall rank- 4
+Nationality- Italy
+Playing era- 1927-1947
+Position(s), with one primary position- SS (primary); CF, AM
+Short description- Elegant and prolific inside forward celebrated for dribbling, creativity, composure and commanding influence in the final third.
+Goal, assist, and defensive credit points- Goal 10/10, assist 9/10, defensive 5/10 (suggested ratings)
+Optional aliases- Peppino; Balilla
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Giuseppe_Meazza
+Optional player image files- None
+
+6. Ruud Gullit
+
+Full name- Ruud Gullit; born Rudi Dil
+Overall rank- 4
+Nationality- Netherlands
+Playing era- 1979-1998
+Position(s), with one primary position- SS (primary); AM, CF, CM, CB
+Short description- Powerful and exceptionally versatile footballer combining athleticism, technique, aerial strength, creativity and tactical intelligence.
+Goal, assist, and defensive credit points- Goal 9/10, assist 8/10, defensive 8/10 (suggested ratings)
+Optional aliases- Ruud; The Black Tulip
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Ruud_Gullit
+Optional player image files- None
+
+7. Alessandro Del Piero
+
+Full name- Alessandro Del Piero
+Overall rank- 5
+Nationality- Italy
+Playing era- 1991-2014
+Position(s), with one primary position- SS (primary); AM, CF, LW
+Short description- Technically refined supporting forward renowned for curling finishes, free kicks, creativity and intelligent combination play.
+Goal, assist, and defensive credit points- Goal 9/10, assist 9/10, defensive 5/10 (suggested ratings)
+Optional aliases- ADP; Pinturicchio
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Alessandro_Del_Piero
+Optional player image files- None
+
+8. Kevin Keegan
+
+Full name- Joseph Kevin Keegan
+Overall rank- 5
+Nationality- England
+Playing era- 1968-1985
+Position(s), with one primary position- SS (primary); CF, RW
+Short description- Energetic, mobile and technically sharp forward known for relentless movement, creativity, aerial ability and competitive intensity.
+Goal, assist, and defensive credit points- Goal 8/10, assist 8/10, defensive 7/10 (suggested ratings)
+Optional aliases- King Kev; Mighty Mouse
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Kevin_Keegan
+Optional player image files- None
+
+9. Dennis Bergkamp
+
+Full name- Dennis Nicolaas Maria Bergkamp
+Overall rank- 5
+Nationality- Netherlands
+Playing era- 1986-2006
+Position(s), with one primary position- SS (primary); AM, CF
+Short description- Sophisticated and creative second striker with exceptional first touch, vision, passing and control in tight attacking spaces.
+Goal, assist, and defensive credit points- Goal 8/10, assist 10/10, defensive 5/10 (suggested ratings)
+Optional aliases- The Iceman; The Non-Flying Dutchman
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Dennis_Bergkamp
+Optional player image files- None
+
+10. Eric Cantona
+
+Full name- Eric Daniel Pierre Cantona
+Overall rank- 6
+Nationality- France
+Playing era- 1983-1997
+Position(s), with one primary position- SS (primary); CF, AM
+Short description- Charismatic and imaginative forward whose strength, technique, vision and leadership transformed attacking play around him.
+Goal, assist, and defensive credit points- Goal 8/10, assist 9/10, defensive 6/10 (suggested ratings)
+Optional aliases- King Eric
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Eric_Cantona
+Optional player image files- None
+
+11. Raúl
+
+Full name- Raúl González Blanco
+Overall rank- 6
+Nationality- Spain
+Playing era- 1994-2015
+Position(s), with one primary position- SS (primary); CF, LW
+Short description- Intelligent and composed forward celebrated for movement, anticipation, leadership and reliable finishing in decisive matches.
+Goal, assist, and defensive credit points- Goal 9/10, assist 8/10, defensive 7/10 (suggested ratings)
+Optional aliases- Raúl; El Capitán
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Ra%C3%BAl
+Optional player image files- None
+
+12. Wayne Rooney
+
+Full name- Wayne Mark Rooney
+Overall rank- 6
+Nationality- England
+Playing era- 2002-2021
+Position(s), with one primary position- SS (primary); CF, AM, CM, LW
+Short description- Complete and combative attacker offering powerful shooting, creativity, pressing, long passing and exceptional positional versatility.
+Goal, assist, and defensive credit points- Goal 9/10, assist 9/10, defensive 8/10 (suggested ratings)
+Optional aliases- Wazza
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Wayne_Rooney
+Optional player image files- None
+
+13. Omar Sívori
+
+Full name- Enrique Omar Sívori
+Overall rank- 7
+Nationality- Argentina/Italy
+Playing era- 1954-1969
+Position(s), with one primary position- SS (primary); CF, AM
+Short description- Brilliantly skilful left-footed attacker known for close control, dribbling, imagination, goalscoring and provocative competitive personality.
+Goal, assist, and defensive credit points- Goal 9/10, assist 9/10, defensive 4/10 (suggested ratings)
+Optional aliases- El Cabezón; El Gran Zurdo
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Omar_S%C3%ADvori
+Optional player image files- None
+
+14. Francesco Totti
+
+Full name- Francesco Totti
+Overall rank- 7
+Nationality- Italy
+Playing era- 1993-2017
+Position(s), with one primary position- SS (primary); AM, CF
+Short description- Elite creator and scorer with outstanding vision, technique, long passing, finishing and command of the central attacking zones.
+Goal, assist, and defensive credit points- Goal 8/10, assist 10/10, defensive 4/10 (suggested ratings)
+Optional aliases- Il Capitano; Er Pupone
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Francesco_Totti
+Optional player image files- None
+
+15. Kenny Dalglish
+
+Full name- Kenneth Mathieson Dalglish
+Overall rank- 7
+Nationality- Scotland
+Playing era- 1969-1990
+Position(s), with one primary position- SS (primary); CF
+Short description- Intelligent and technically gifted forward who combined goalscoring, hold-up play, creativity and excellent understanding with teammates.
+Goal, assist, and defensive credit points- Goal 9/10, assist 9/10, defensive 6/10 (suggested ratings)
+Optional aliases- King Kenny
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Kenny_Dalglish
+Optional player image files- None
+
+16. José Manuel Moreno
+
+Full name- José Manuel Moreno Fernández
+Overall rank- 8
+Nationality- Argentina
+Playing era- 1935-1961
+Position(s), with one primary position- SS (primary); inside forward, AM, RW
+Short description- Complete and influential inside forward admired for technique, strength, creativity, heading and control of attacking combinations.
+Goal, assist, and defensive credit points- Goal 9/10, assist 9/10, defensive 6/10 (suggested ratings)
+Optional aliases- JMM; El Charro
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Jos%C3%A9_Manuel_Moreno
+Optional player image files- None
+
+17. Igor Belanov
+
+Full name- Igor Ivanovich Belanov
+Overall rank- 8
+Nationality- Soviet Union/Ukraine
+Playing era- 1981-1997
+Position(s), with one primary position- SS (primary); CF, RW
+Short description- Rapid and direct attacker whose acceleration, pressing, movement and powerful shooting made him dangerous in transition.
+Goal, assist, and defensive credit points- Goal 8/10, assist 7/10, defensive 7/10 (suggested ratings)
+Optional aliases- None
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Igor_Belanov
+Optional player image files- None
+
+18. Mario Kempes
+
+Full name- Mario Alberto Kempes Chiodi
+Overall rank- 8
+Nationality- Argentina
+Playing era- 1970-1996
+Position(s), with one primary position- CF (primary); SS, AM, LW
+Short description- Powerful and dynamic goalscorer famous for surging runs, long-range shooting, physical work rate and decisive tournament performances.
+Goal, assist, and defensive credit points- Goal 10/10, assist 7/10, defensive 7/10 (suggested ratings)
+Optional aliases- El Matador
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Mario_Kempes
+Optional player image files- None
+
+19. Flórián Albert
+
+Full name- Flórián György Albert
+Overall rank- 9
+Nationality- Hungary
+Playing era- 1958-1974
+Position(s), with one primary position- SS (primary); CF, AM
+Short description- Elegant and intelligent forward celebrated for refined technique, dribbling, vision and smooth control of attacking play.
+Goal, assist, and defensive credit points- Goal 9/10, assist 9/10, defensive 5/10 (suggested ratings)
+Optional aliases- The Emperor; Császár
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Fl%C3%B3ri%C3%A1n_Albert
+Optional player image files- None
+
+20. Matthias Sindelar
+
+Full name- Matthias Sindelar; born Matěj Šindelář
+Overall rank- 9
+Nationality- Austria
+Playing era- 1924-1939
+Position(s), with one primary position- SS (primary); CF, AM
+Short description- Slender and highly elusive attacking mastermind renowned for dribbling, combination play, intelligence and creative finishing.
+Goal, assist, and defensive credit points- Goal 9/10, assist 10/10, defensive 4/10 (suggested ratings)
+Optional aliases- Der Papierene; The Paper Man
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Matthias_Sindelar
+Optional player image files- None
+
+21. László Kubala
+
+Full name- László Kubala Stecz
+Overall rank- 10
+Nationality- Hungary/Czechoslovakia/Spain
+Playing era- 1944-1967
+Position(s), with one primary position- SS (primary); CF, AM
+Short description- Powerful and technically brilliant forward with exceptional ball control, passing, free kicks and the ability to dominate attacking play.
+Goal, assist, and defensive credit points- Goal 9/10, assist 9/10, defensive 5/10 (suggested ratings)
+Optional aliases- Ladislao Kubala; Laszi
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/L%C3%A1szl%C3%B3_Kubala
+Optional player image files- None
+
+22. Juan Alberto Schiaffino
+
+Full name- Juan Alberto Schiaffino Villalba
+Overall rank- Unranked
+Nationality- Uruguay/Italy
+Playing era- 1943-1962
+Position(s), with one primary position- SS (primary); AM, CM, sweeper
+Short description- Highly intelligent and creative playmaker renowned for vision, passing, tactical awareness, leadership and meaningful defensive contribution.
+Goal, assist, and defensive credit points- Goal 8/10, assist 10/10, defensive 8/10 (suggested ratings)
+Optional aliases- Pepe Schiaffino
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Juan_Alberto_Schiaffino
+Optional player image files- None
+
+23. Adolfo Pedernera
+
+Full name- Adolfo Alfredo Pedernera
+Overall rank- Unranked
+Nationality- Argentina
+Playing era- 1935-1954
+Position(s), with one primary position- SS (primary); CF, AM, inside forward
+Short description- Cerebral and technically complete attacking leader whose movement, passing and positional intelligence drove the celebrated La Máquina attack.
+Goal, assist, and defensive credit points- Goal 9/10, assist 10/10, defensive 6/10 (suggested ratings)
+Optional aliases- El Maestro
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Adolfo_Pedernera
+Optional player image files- None
+
+24. Ángel Labruna
+
+Full name- Ángel Amadeo Labruna
+Overall rank- Unranked
+Nationality- Argentina
+Playing era- 1939-1961
+Position(s), with one primary position- SS (primary); CF, LW, inside forward
+Short description- Prolific and intelligent inside forward noted for sharp movement, finishing, combination play and extraordinary longevity at River Plate.
+Goal, assist, and defensive credit points- Goal 10/10, assist 7/10, defensive 5/10 (suggested ratings)
+Optional aliases- Angelito
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/%C3%81ngel_Labruna
+Optional player image files- None
+
+25. György Sárosi
+
+Full name- György Sárosi; born György Stefanicsics
+Overall rank- Unranked
+Nationality- Hungary
+Playing era- 1930-1948
+Position(s), with one primary position- SS (primary); CF, CM, CB
+Short description- Exceptionally complete pre-war footballer who combined prolific scoring, refined technique, leadership and genuine excellence in midfield and defence.
+Goal, assist, and defensive credit points- Goal 9/10, assist 8/10, defensive 9/10 (suggested ratings)
+Optional aliases- Gyurka
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Gy%C3%B6rgy_S%C3%A1rosi
+Optional player image files- None

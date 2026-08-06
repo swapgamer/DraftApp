@@ -1,0 +1,244 @@
+RB / RIGHT-BACK RANK LIST
+
+Notes:
+- Overall ranks follow the RB section of the uploaded rank list.
+- “CAT” is identified as Carlos Alberto Torres.
+- “Alves” is identified as Dani Alves.
+- “Tasotti” is corrected to Mauro Tassotti.
+- Players listed beneath the numbered Top 10 are marked Unranked.
+- Goal, assist and defensive credit points are suggested ratings on a 0-10 scale.
+- Player image fields contain filenames from the supplied RB image archive.
+
+1. Cafu
+
+Full name- Marcos Evangelista de Morais
+Overall rank- 1
+Nationality- Brazil
+Playing era- 1989-2008
+Position(s), with one primary position- RB (primary); RWB, RM
+Short description- Relentless and athletic right-back renowned for overlapping runs, stamina, crossing, leadership and dependable defensive recovery.
+Goal, assist, and defensive credit points- Goal 6/10, assist 9/10, defensive 9/10 (suggested ratings)
+Optional aliases- Cafu; Pendolino
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Cafu
+Optional player image files- 1_Cafu.jpg
+
+2. Carlos Alberto Torres
+
+Full name- Carlos Alberto Torres
+Overall rank- 2
+Nationality- Brazil
+Playing era- 1963-1982
+Position(s), with one primary position- RB (primary); CB, RWB
+Short description- Elegant and authoritative attacking full-back combining technical quality, passing, leadership, powerful shooting and intelligent defending.
+Goal, assist, and defensive credit points- Goal 8/10, assist 9/10, defensive 9/10 (suggested ratings)
+Optional aliases- CAT; O Capitão
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Carlos_Alberto_Torres
+Optional player image files- 2a_Carlos_Alberto_Torres.jpg
+
+3. Djalma Santos
+
+Full name- Djalma Pereira Dias dos Santos
+Overall rank- 2
+Nationality- Brazil
+Playing era- 1948-1970
+Position(s), with one primary position- RB (primary); CB
+Short description- Complete and highly reliable right-back admired for strength, positioning, tackling, composure, technique and remarkable longevity.
+Goal, assist, and defensive credit points- Goal 5/10, assist 8/10, defensive 10/10 (suggested ratings)
+Optional aliases- Djalma Santos
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Djalma_Santos
+Optional player image files- 2b_Djalma_Santos.jpg
+
+4. Lilian Thuram
+
+Full name- Ruddy Lilian Thuram-Ulien
+Overall rank- 3
+Nationality- France
+Playing era- 1991-2008
+Position(s), with one primary position- RB (primary); CB
+Short description- Powerful and intelligent defender renowned for recovery speed, one-on-one defending, positioning, athleticism and versatility across the back line.
+Goal, assist, and defensive credit points- Goal 5/10, assist 7/10, defensive 10/10 (suggested ratings)
+Optional aliases- Lilian Thuram
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Lilian_Thuram
+Optional player image files- 3_Lilian_Thuram.jpg
+
+5. Giuseppe Bergomi
+
+Full name- Giuseppe Bergomi
+Overall rank- 4
+Nationality- Italy
+Playing era- 1979-1999
+Position(s), with one primary position- RB (primary); CB, sweeper
+Short description- Tactically disciplined and physically strong defender valued for marking, anticipation, leadership, versatility and consistency over two decades.
+Goal, assist, and defensive credit points- Goal 5/10, assist 6/10, defensive 10/10 (suggested ratings)
+Optional aliases- Lo Zio
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Giuseppe_Bergomi
+Optional player image files- 4a_Giuseppe_Bergomi.jpg
+
+6. Javier Zanetti
+
+Full name- Javier Adelmar Zanetti
+Overall rank- 4
+Nationality- Argentina
+Playing era- 1992-2014
+Position(s), with one primary position- RB (primary); RWB, LB, CM, RM
+Short description- Exceptionally durable and versatile captain combining stamina, ball carrying, positional discipline, clean tackling and intelligent support play.
+Goal, assist, and defensive credit points- Goal 6/10, assist 8/10, defensive 9/10 (suggested ratings)
+Optional aliases- Pupi; El Tractor; Il Capitano
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Javier_Zanetti
+Optional player image files- 4b_Javier_Zanetti.jpg
+
+7. Philipp Lahm
+
+Full name- Philipp Lahm
+Overall rank- 5
+Nationality- Germany
+Playing era- 2002-2017
+Position(s), with one primary position- RB (primary); LB, DM
+Short description- Exceptionally intelligent and precise full-back renowned for positioning, anticipation, clean tackling, passing and tactical versatility.
+Goal, assist, and defensive credit points- Goal 6/10, assist 9/10, defensive 10/10 (suggested ratings)
+Optional aliases- Magic Dwarf
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Philipp_Lahm
+Optional player image files- 5a_Philipp_Lahm.jpg
+
+8. Dani Alves
+
+Full name- Daniel Alves da Silva
+Overall rank- 5
+Nationality- Brazil
+Playing era- 2001-2023
+Position(s), with one primary position- RB (primary); RWB, RM, CM
+Short description- Highly creative attacking full-back celebrated for crossing, combination play, technical quality, pressing and relentless involvement in possession.
+Goal, assist, and defensive credit points- Goal 7/10, assist 10/10, defensive 8/10 (suggested ratings)
+Optional aliases- Dani Alves
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Dani_Alves
+Optional player image files- 5b_Dani_Alves.jpg
+
+9. Berti Vogts
+
+Full name- Hans-Hubert Vogts
+Overall rank- 6
+Nationality- West Germany/Germany
+Playing era- 1965-1979
+Position(s), with one primary position- RB (primary); CB
+Short description- Tenacious and disciplined man-marker renowned for concentration, tackling, stamina and the ability to neutralise elite wide attackers.
+Goal, assist, and defensive credit points- Goal 5/10, assist 6/10, defensive 10/10 (suggested ratings)
+Optional aliases- Berti; Der Terrier
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Berti_Vogts
+Optional player image files- 6_Berti_Vogts.jpg
+
+10. Tarcisio Burgnich
+
+Full name- Tarcisio Burgnich
+Overall rank- 7
+Nationality- Italy
+Playing era- 1958-1977
+Position(s), with one primary position- RB (primary); CB, sweeper
+Short description- Powerful and tactically disciplined defender admired for man-marking, strength, aerial ability, concentration and versatility.
+Goal, assist, and defensive credit points- Goal 5/10, assist 5/10, defensive 10/10 (suggested ratings)
+Optional aliases- La Roccia
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Tarcisio_Burgnich
+Optional player image files- 7a_Tarcisio_Burgnich.jpg
+
+11. Mauro Tassotti
+
+Full name- Mauro Tassotti
+Overall rank- 7
+Nationality- Italy
+Playing era- 1978-1997
+Position(s), with one primary position- RB (primary); CB
+Short description- Intelligent and uncompromising right-back known for positioning, aggressive defending, tactical discipline and reliable support in possession.
+Goal, assist, and defensive credit points- Goal 5/10, assist 7/10, defensive 9/10 (suggested ratings)
+Optional aliases- None
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Mauro_Tassotti
+Optional player image files- 7b_Mauro_Tassotti.jpg
+
+12. Gianluca Zambrotta
+
+Full name- Gianluca Zambrotta
+Overall rank- 8
+Nationality- Italy
+Playing era- 1994-2014
+Position(s), with one primary position- RB (primary); LB, RWB, LWB, RM
+Short description- Athletic and two-footed full-back valued for versatility, stamina, ball carrying, crossing and dependable one-on-one defending.
+Goal, assist, and defensive credit points- Goal 7/10, assist 8/10, defensive 9/10 (suggested ratings)
+Optional aliases- Zambro
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Gianluca_Zambrotta
+Optional player image files- 8_Gianluca_Zambrotta.jpg
+
+13. Wim Suurbier
+
+Full name- Wilhelmus Lourens Johannes Suurbier
+Overall rank- 9
+Nationality- Netherlands
+Playing era- 1964-1987
+Position(s), with one primary position- RB (primary); RWB
+Short description- Energetic Total Football full-back known for overlapping runs, pace, passing, crossing and constant support in possession.
+Goal, assist, and defensive credit points- Goal 6/10, assist 8/10, defensive 8/10 (suggested ratings)
+Optional aliases- Wim Suurbier
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Wim_Suurbier
+Optional player image files- 9_Wim_Suurbier.jpg
+
+14. Manuel Amoros
+
+Full name- Manuel Amoros
+Overall rank- 10
+Nationality- France
+Playing era- 1980-1996
+Position(s), with one primary position- RB (primary); LB, RWB
+Short description- Dynamic and technically gifted full-back admired for acceleration, attacking support, crossing, composure and defensive versatility.
+Goal, assist, and defensive credit points- Goal 7/10, assist 8/10, defensive 9/10 (suggested ratings)
+Optional aliases- Manu
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Manuel_Amoros
+Optional player image files- 10_Manuel_Amoros.jpg
+
+15. Jimmy Armfield
+
+Full name- James Christopher Armfield
+Overall rank- Unranked
+Nationality- England
+Playing era- 1954-1971
+Position(s), with one primary position- RB (primary); right full-back
+Short description- Elegant and dependable right-back respected for positioning, pace, tackling, leadership and calm distribution from defence.
+Goal, assist, and defensive credit points- Goal 5/10, assist 7/10, defensive 9/10 (suggested ratings)
+Optional aliases- Jimmy Armfield
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Jimmy_Armfield
+Optional player image files- UNRANKED_01_Jimmy_Armfield.jpg
+
+16. Orvar Bergmark
+
+Full name- Erik Orvar Bergmark
+Overall rank- Unranked
+Nationality- Sweden
+Playing era- 1948-1965
+Position(s), with one primary position- RB (primary); right full-back
+Short description- Disciplined and accomplished defender known for positioning, strength, consistency and reliable performances at international level.
+Goal, assist, and defensive credit points- Goal 5/10, assist 6/10, defensive 9/10 (suggested ratings)
+Optional aliases- Orvar Bergmark
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Orvar_Bergmark
+Optional player image files- UNRANKED_02_Orvar_Bergmark.jpg
+
+17. Manfred Kaltz
+
+Full name- Manfred Kaltz
+Overall rank- Unranked
+Nationality- West Germany/Germany
+Playing era- 1971-1991
+Position(s), with one primary position- RB (primary); RWB, RM
+Short description- Attack-minded right-back famous for stamina, overlapping runs, set pieces and exceptionally dangerous curled crosses.
+Goal, assist, and defensive credit points- Goal 7/10, assist 10/10, defensive 8/10 (suggested ratings)
+Optional aliases- Manni; Banana-Cross Specialist
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Manfred_Kaltz
+Optional player image files- UNRANKED_03_Manfred_Kaltz.jpg
+
+18. Phil Neal
+
+Full name- Philip George Neal
+Overall rank- Unranked
+Nationality- England
+Playing era- 1968-1989
+Position(s), with one primary position- RB (primary); LB
+Short description- Reliable and durable full-back renowned for positional discipline, penalty taking, consistency and important goals in major matches.
+Goal, assist, and defensive credit points- Goal 8/10, assist 7/10, defensive 9/10 (suggested ratings)
+Optional aliases- Zico
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Phil_Neal
+Optional player image files- UNRANKED_04_Phil_Neal.jpg

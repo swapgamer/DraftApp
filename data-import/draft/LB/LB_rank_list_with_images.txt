@@ -1,0 +1,205 @@
+LB / LEFT-BACK RANK LIST
+
+Notes:
+- Overall ranks follow the LB section of the uploaded rank list.
+- “Carlos” is identified as Roberto Carlos.
+- “KHS” is identified as Karl-Heinz Schnellinger.
+- “Edie Hapgood” is corrected to Eddie Hapgood.
+- Players listed beneath the numbered Top 10 are marked Unranked.
+- Goal, assist and defensive credit points are suggested ratings on a 0-10 scale.
+- Player image fields contain filenames from the supplied LB image archive.
+
+1. Paolo Maldini
+
+Full name- Paolo Cesare Maldini
+Overall rank- 1
+Nationality- Italy
+Playing era- 1984-2009
+Position(s), with one primary position- LB (primary); CB
+Short description- Elegant and exceptionally complete defender renowned for positioning, anticipation, composure, tackling, leadership and elite longevity.
+Goal, assist, and defensive credit points- Goal 6/10, assist 7/10, defensive 10/10 (suggested ratings)
+Optional aliases- Il Capitano; Paolo
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Paolo_Maldini
+Optional player image files- 1_Paolo_Maldini.jpg
+
+2. Giacinto Facchetti
+
+Full name- Giacinto Facchetti
+Overall rank- 2
+Nationality- Italy
+Playing era- 1960-1978
+Position(s), with one primary position- LB (primary); LWB, CB
+Short description- Pioneering attacking full-back who combined pace, powerful forward runs, goalscoring, tactical intelligence and strong defensive reliability.
+Goal, assist, and defensive credit points- Goal 8/10, assist 8/10, defensive 9/10 (suggested ratings)
+Optional aliases- Cipe
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Giacinto_Facchetti
+Optional player image files- 2_Giacinto_Facchetti.jpg
+
+3. Roberto Carlos
+
+Full name- Roberto Carlos da Silva Rocha
+Overall rank- 3
+Nationality- Brazil
+Playing era- 1991-2015
+Position(s), with one primary position- LB (primary); LWB, LM
+Short description- Explosive attacking left-back famous for exceptional speed, stamina, powerful shooting, overlapping runs and dangerous set pieces.
+Goal, assist, and defensive credit points- Goal 8/10, assist 9/10, defensive 8/10 (suggested ratings)
+Optional aliases- Roberto Carlos; RC3; El Hombre Bala
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Roberto_Carlos
+Optional player image files- 3_Roberto_Carlos.jpg
+
+4. Ruud Krol
+
+Full name- Rudolf Jozef Krol
+Overall rank- 4
+Nationality- Netherlands
+Playing era- 1968-1986
+Position(s), with one primary position- LB (primary); CB, sweeper, DM
+Short description- Highly intelligent and versatile defender who combined positional excellence, distribution, ball carrying and calm leadership within Total Football.
+Goal, assist, and defensive credit points- Goal 7/10, assist 9/10, defensive 10/10 (suggested ratings)
+Optional aliases- Ruud Krol
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Ruud_Krol
+Optional player image files- 4_Ruud_Krol.jpg
+
+5. Nílton Santos
+
+Full name- Nílton Reis dos Santos
+Overall rank- 5
+Nationality- Brazil
+Playing era- 1948-1964
+Position(s), with one primary position- LB (primary); LWB
+Short description- Technically gifted and tactically advanced left-back whose composure, passing, intelligence and attacking support helped redefine the position.
+Goal, assist, and defensive credit points- Goal 7/10, assist 9/10, defensive 10/10 (suggested ratings)
+Optional aliases- A Enciclopédia; The Encyclopedia
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/N%C3%ADlton_Santos
+Optional player image files- 5a_Nilton_Santos.jpg
+
+6. Ashley Cole
+
+Full name- Ashley Cole
+Overall rank- 5
+Nationality- England
+Playing era- 1999-2019
+Position(s), with one primary position- LB (primary); LWB
+Short description- Elite one-on-one defender combining recovery speed, positioning, stamina, overlapping support and consistency against world-class wingers.
+Goal, assist, and defensive credit points- Goal 6/10, assist 8/10, defensive 10/10 (suggested ratings)
+Optional aliases- Ash
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Ashley_Cole
+Optional player image files- 5b_Ashley_Cole.jpg
+
+7. Paul Breitner
+
+Full name- Paul Breitner
+Overall rank- 6
+Nationality- West Germany/Germany
+Playing era- 1970-1983
+Position(s), with one primary position- LB (primary); CM, DM
+Short description- Powerful and intelligent all-rounder who combined aggressive defending, passing, shooting, leadership and the ability to control midfield.
+Goal, assist, and defensive credit points- Goal 8/10, assist 9/10, defensive 9/10 (suggested ratings)
+Optional aliases- Der Afro
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Paul_Breitner
+Optional player image files- 6a_Paul_Breitner.jpg
+
+8. Marcelo
+
+Full name- Marcelo Vieira da Silva Júnior
+Overall rank- 6
+Nationality- Brazil
+Playing era- 2005-2024
+Position(s), with one primary position- LB (primary); LWB, LM
+Short description- Exceptionally creative attacking full-back renowned for close control, dribbling, combination play, crossing and technical quality in advanced areas.
+Goal, assist, and defensive credit points- Goal 8/10, assist 10/10, defensive 8/10 (suggested ratings)
+Optional aliases- Marcelo; Marcelito
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Marcelo_(footballer,_born_1988)
+Optional player image files- 6b_Marcelo.jpg
+
+9. Karl-Heinz Schnellinger
+
+Full name- Karl-Heinz Schnellinger
+Overall rank- 7
+Nationality- West Germany/Germany
+Playing era- 1958-1975
+Position(s), with one primary position- LB (primary); CB, sweeper
+Short description- Fast, disciplined and exceptionally reliable defender valued for man-marking, positioning, versatility and consistency at the highest level.
+Goal, assist, and defensive credit points- Goal 5/10, assist 7/10, defensive 10/10 (suggested ratings)
+Optional aliases- KHS; Volkswagen
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Karl-Heinz_Schnellinger
+Optional player image files- 7_Karl-Heinz_Schnellinger.jpg
+
+10. Antonio Cabrini
+
+Full name- Antonio Cabrini
+Overall rank- 8
+Nationality- Italy
+Playing era- 1973-1991
+Position(s), with one primary position- LB (primary); LWB, LM
+Short description- Athletic and technically accomplished left-back noted for overlapping runs, crossing, composure, tactical awareness and dependable defending.
+Goal, assist, and defensive credit points- Goal 7/10, assist 8/10, defensive 9/10 (suggested ratings)
+Optional aliases- Bell'Antonio
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Antonio_Cabrini
+Optional player image files- 8_Antonio_Cabrini.jpg
+
+11. Silvio Marzolini
+
+Full name- Silvio Marzolini
+Overall rank- 9
+Nationality- Argentina
+Playing era- 1959-1972
+Position(s), with one primary position- LB (primary); LWB
+Short description- Elegant and technically refined left-back admired for timing, positioning, clean tackling, composure and intelligent support in possession.
+Goal, assist, and defensive credit points- Goal 6/10, assist 8/10, defensive 9/10 (suggested ratings)
+Optional aliases- None
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Silvio_Marzolini
+Optional player image files- 9_Silvio_Marzolini.jpg
+
+12. Andreas Brehme
+
+Full name- Andreas Brehme
+Overall rank- 10
+Nationality- West Germany/Germany
+Playing era- 1978-1998
+Position(s), with one primary position- LB (primary); LWB, LM, RB
+Short description- Two-footed and tactically versatile full-back renowned for crossing, set pieces, long-range shooting and decisive performances in major matches.
+Goal, assist, and defensive credit points- Goal 8/10, assist 10/10, defensive 9/10 (suggested ratings)
+Optional aliases- Andi
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Andreas_Brehme
+Optional player image files- 10_Andreas_Brehme.jpg
+
+13. Bixente Lizarazu
+
+Full name- Bixente Jean-Michel Lizarazu
+Overall rank- Unranked
+Nationality- France
+Playing era- 1988-2006
+Position(s), with one primary position- LB (primary); LWB
+Short description- Quick and tenacious left-back who combined aggressive defending, stamina, intelligent overlapping and reliable delivery from wide areas.
+Goal, assist, and defensive credit points- Goal 6/10, assist 8/10, defensive 9/10 (suggested ratings)
+Optional aliases- Liza
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Bixente_Lizarazu
+Optional player image files- UNRANKED_01_Bixente_Lizarazu.jpg
+
+14. Emlyn Hughes
+
+Full name- Emlyn Walter Hughes
+Overall rank- Unranked
+Nationality- England
+Playing era- 1964-1984
+Position(s), with one primary position- CB (primary); LB, DM
+Short description- Energetic and fearless defensive leader known for tackling, versatility, ball carrying, competitive intensity and inspirational captaincy.
+Goal, assist, and defensive credit points- Goal 7/10, assist 7/10, defensive 9/10 (suggested ratings)
+Optional aliases- Crazy Horse
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Emlyn_Hughes
+Optional player image files- UNRANKED_02_Emlyn_Hughes.jpg
+
+15. Eddie Hapgood
+
+Full name- Edris Albert Hapgood
+Overall rank- Unranked
+Nationality- England
+Playing era- 1927-1944
+Position(s), with one primary position- LB (primary); left full-back
+Short description- Composed and authoritative pre-war left-back respected for positioning, clean tackling, distribution, leadership and consistent defensive excellence.
+Goal, assist, and defensive credit points- Goal 5/10, assist 7/10, defensive 10/10 (suggested ratings)
+Optional aliases- Eddie Hapgood
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Eddie_Hapgood
+Optional player image files- UNRANKED_03_Eddie_Hapgood.jpg

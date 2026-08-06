@@ -1,0 +1,26 @@
+﻿<section class="auth-page">
+  <form class="auth-card" [formGroup]="form" (ngSubmit)="submit()" novalidate>
+    <p class="eyebrow">Draft Datastore</p>
+    <h1>Welcome back</h1>
+    <p class="subtitle">Sign in to explore the complete player database.</p>
+
+    @if (error()) { <p class="form-error" role="alert">{{ error() }}</p> }
+
+    <mat-form-field appearance="outline">
+      <mat-label>Email address</mat-label>
+      <input matInput type="email" autocomplete="email" formControlName="email" />
+      @if (form.controls.email.touched && form.controls.email.hasError('required')) { <mat-error>Email is required.</mat-error> }
+      @if (form.controls.email.touched && form.controls.email.hasError('email')) { <mat-error>Enter a valid email address.</mat-error> }
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Password</mat-label>
+      <input matInput [type]="hidePassword() ? 'password' : 'text'" autocomplete="current-password" formControlName="password" />
+      <button mat-icon-button matSuffix type="button" [attr.aria-label]="hidePassword() ? 'Show password' : 'Hide password'" (click)="hidePassword.set(!hidePassword())"><mat-icon>{{ hidePassword() ? 'visibility' : 'visibility_off' }}</mat-icon></button>
+      @if (form.controls.password.touched && form.controls.password.hasError('required')) { <mat-error>Password is required.</mat-error> }
+    </mat-form-field>
+
+    <button mat-flat-button color="primary" type="submit" [disabled]="submitting()">{{ submitting() ? 'Signing in...' : 'Sign in' }}</button>
+    <p class="switch-copy">New to Draft Datastore? <a routerLink="/register">Create an account</a></p>
+  </form>
+</section>

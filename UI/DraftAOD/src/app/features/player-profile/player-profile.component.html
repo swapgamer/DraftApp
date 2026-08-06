@@ -1,0 +1,36 @@
+﻿<section class="profile-page">
+  <a mat-button class="back-link" routerLink="/hall-of-fame"><mat-icon>arrow_back</mat-icon>Back to Hall of Fame</a>
+
+  @if (loading()) {
+    <div class="status">Loading player profile…</div>
+  } @else if (missing() || !player()) {
+    <div class="status missing"><mat-icon>person_off</mat-icon><h1>Player not found</h1><p>This player may no longer be available in the datastore.</p><a mat-stroked-button routerLink="/hall-of-fame">Return to the Hall of Fame</a></div>
+  } @else {
+    <article class="profile">
+      <header class="profile-hero"><div class="profile-image">@if (player()!.primaryImageUrl) { <img [src]="player()!.primaryImageUrl" [alt]="player()!.fullName" /> } @else { <mat-icon>person</mat-icon> }</div>
+        <p class="rank">Overall rank · #{{ player()!.overallRank }}</p>
+        <div class="title-row"><h1>{{ player()!.fullName }}</h1><button mat-icon-button (click)="favorites.toggle(player()!.id)" [attr.aria-label]="favorites.has(player()!.id) ? 'Remove from favorites' : 'Add to favorites'"><mat-icon>{{ favorites.has(player()!.id) ? 'favorite' : 'favorite_border' }}</mat-icon></button></div>
+        <p class="identity">{{ player()!.positions.join(' · ') }} · {{ player()!.nationality }} · {{ player()!.playingEra }}</p>
+        @if (auth.isAdmin()) {
+          <div class="admin-actions">
+            <a mat-stroked-button [routerLink]="['/admin/players']" [queryParams]="{ edit: player()!.id }"><mat-icon>edit</mat-icon>Edit player details</a>
+            <label mat-stroked-button><mat-icon>image</mat-icon>{{ imageSaving() ? 'Uploading...' : 'Change image only' }}<input type="file" accept="image/jpeg,image/png,image/webp" [disabled]="imageSaving()" (change)="uploadImage($event)"></label>
+          </div>
+          @if (imageMessage()) { <p class="image-message">{{ imageMessage() }}</p> }
+        }
+        @if (player()!.aliases.length) { <p class="aliases">Also known as {{ player()!.aliases.join(', ') }}</p> }
+      </header>
+
+      <div class="profile-grid">
+        <mat-card class="biography"><mat-card-content><h2>Career overview</h2><p>{{ player()!.shortDescription }}</p></mat-card-content></mat-card>
+        <mat-card class="impact"><mat-card-content><h2>Impact credits</h2><dl><div><dt>Goal credit</dt><dd>{{ player()!.goalCreditPoints }}</dd></div><div><dt>Assist credit</dt><dd>{{ player()!.assistCreditPoints }}</dd></div><div><dt>Defensive credit</dt><dd>{{ player()!.defensiveCreditPoints }}</dd></div></dl></mat-card-content></mat-card>
+      </div>
+
+      @if (player()!.wikipediaUrl || player()!.transfermarktUrl) {
+        <section class="sources"><h2>Further reading</h2>@if (player()!.wikipediaUrl) { <a mat-stroked-button [href]="player()!.wikipediaUrl" target="_blank" rel="noopener">Wikipedia <mat-icon>open_in_new</mat-icon></a> } @if (player()!.transfermarktUrl) { <a mat-stroked-button [href]="player()!.transfermarktUrl" target="_blank" rel="noopener">Transfermarkt <mat-icon>open_in_new</mat-icon></a> }</section>
+      }
+    </article>
+  }
+</section>
+
+

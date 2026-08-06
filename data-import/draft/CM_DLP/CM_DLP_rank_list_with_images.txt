@@ -1,0 +1,258 @@
+CM / DEEP-LYING PLAYMAKER RANK LIST
+
+Notes:
+- Overall ranks follow the CM (DLP) section of the uploaded rank list.
+- “LSM” is interpreted as Luis Suárez Miramontes.
+- “Falcao” is interpreted as Paulo Roberto Falcão.
+- “Ivan Savisevich” is interpreted as Dejan Savićević, matching the supplied image file.
+- Mário Coluna is included once as a rank-10 player. Although his name is repeated beneath the ranked list in the source, he is not marked Unranked.
+- Wolfgang Overath, Danny Blanchflower and Antonio Sastre are marked Unranked.
+- Goal, assist and defensive credit points are suggested ratings on a 0-10 scale.
+- Player image fields contain filenames from the supplied CM_DLP image archive.
+
+1. Xavi
+
+Full name- Xavier Hernández Creus
+Overall rank- 1
+Nationality- Spain
+Playing era- 1998-2019
+Position(s), with one primary position- CM (primary); DM, AM
+Short description- Elite tempo controller whose scanning, positioning, press resistance and precise short passing made him the central organiser of possession-based football.
+Goal, assist, and defensive credit points- Goal 7/10, assist 10/10, defensive 7/10 (suggested ratings)
+Optional aliases- Xavi; Xavi Hernández
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Xavi
+Optional player image files- 1_Xavi.jpg
+
+2. Didi
+
+Full name- Valdir Pereira
+Overall rank- 2
+Nationality- Brazil
+Playing era- 1946-1966
+Position(s), with one primary position- CM (primary); AM, DM
+Short description- Elegant deep-lying playmaker celebrated for vision, composure, long passing, tactical intelligence and the dipping folha seca free kick.
+Goal, assist, and defensive credit points- Goal 8/10, assist 10/10, defensive 6/10 (suggested ratings)
+Optional aliases- Didi; The Ethiopian Prince
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Didi_(footballer,_born_1928)
+Optional player image files- 2_Didi.jpg
+
+3. Andrés Iniesta
+
+Full name- Andrés Iniesta Luján
+Overall rank- 3
+Nationality- Spain
+Playing era- 2002-2024
+Position(s), with one primary position- CM (primary); AM, LW
+Short description- Graceful and press-resistant midfielder renowned for close control, spatial awareness, dribbling, combination play and decisive contributions in major matches.
+Goal, assist, and defensive credit points- Goal 7/10, assist 10/10, defensive 7/10 (suggested ratings)
+Optional aliases- Don Andrés; El Ilusionista
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Andr%C3%A9s_Iniesta
+Optional player image files- 3a_Andrés_Iniesta.jpg
+
+4. Andrea Pirlo
+
+Full name- Andrea Pirlo
+Overall rank- 3
+Nationality- Italy
+Playing era- 1995-2017
+Position(s), with one primary position- DM (primary); CM, AM
+Short description- Master deep-lying playmaker whose vision, passing range, composure and set-piece technique controlled matches from the base of midfield.
+Goal, assist, and defensive credit points- Goal 7/10, assist 10/10, defensive 6/10 (suggested ratings)
+Optional aliases- Il Maestro; The Architect
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Andrea_Pirlo
+Optional player image files- 3b_Andrea_Pirlo.jpg
+
+5. Luis Suárez Miramontes
+
+Full name- Luis Suárez Miramontes
+Overall rank- 4
+Nationality- Spain
+Playing era- 1953-1973
+Position(s), with one primary position- CM (primary); AM, DM
+Short description- Refined and tactically versatile playmaker who evolved from an attacking creator into a commanding deep midfielder with exceptional passing and intelligence.
+Goal, assist, and defensive credit points- Goal 8/10, assist 10/10, defensive 7/10 (suggested ratings)
+Optional aliases- LSM; Luisito; El Arquitecto
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Luis_Su%C3%A1rez_(footballer,_born_1935)
+Optional player image files- 4a_Luis_Suárez_Miramontes.jpg
+
+6. Luka Modrić
+
+Full name- Luka Modrić
+Overall rank- 4
+Nationality- Croatia
+Playing era- 2003-2020s
+Position(s), with one primary position- CM (primary); AM, DM
+Short description- Complete and press-resistant midfielder combining exceptional vision, passing, ball carrying, work rate and control of match tempo.
+Goal, assist, and defensive credit points- Goal 7/10, assist 10/10, defensive 8/10 (suggested ratings)
+Optional aliases- The Magician; Cruyff of the Balkans
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Luka_Modri%C4%87
+Optional player image files- 4b_Luka_Modrić.jpg
+
+7. Toni Kroos
+
+Full name- Toni Kroos
+Overall rank- 5
+Nationality- Germany
+Playing era- 2007-2024
+Position(s), with one primary position- CM (primary); DM, AM
+Short description- Exceptionally precise controller known for passing range, calmness under pressure, positional discipline and consistent command of possession.
+Goal, assist, and defensive credit points- Goal 7/10, assist 10/10, defensive 7/10 (suggested ratings)
+Optional aliases- The Sniper; Iceman
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Toni_Kroos
+Optional player image files- 5a_Toni_Kroos.jpg
+
+8. Ruud Gullit
+
+Full name- Ruud Gullit; born Rudi Dil
+Overall rank- 5
+Nationality- Netherlands
+Playing era- 1979-1998
+Position(s), with one primary position- SS (primary); AM, CM, CF, CB
+Short description- Powerful and exceptionally versatile footballer combining athleticism, technique, aerial strength, creativity and tactical intelligence.
+Goal, assist, and defensive credit points- Goal 9/10, assist 8/10, defensive 9/10 (suggested ratings)
+Optional aliases- The Black Tulip
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Ruud_Gullit
+Optional player image files- 5b_Ruud_Gullit.jpg
+
+9. Paulo Roberto Falcão
+
+Full name- Paulo Roberto Falcão
+Overall rank- 6
+Nationality- Brazil
+Playing era- 1973-1993
+Position(s), with one primary position- CM (primary); DM, AM
+Short description- Elegant and complete midfield organiser admired for tactical awareness, passing, ball carrying, leadership and well-timed attacking runs.
+Goal, assist, and defensive credit points- Goal 8/10, assist 9/10, defensive 8/10 (suggested ratings)
+Optional aliases- Falcão; The Eighth King of Rome
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Falc%C3%A3o
+Optional player image files- 6a_Paulo_Roberto_Falcão.jpg
+
+10. Gérson
+
+Full name- Gérson de Oliveira Nunes
+Overall rank- 6
+Nationality- Brazil
+Playing era- 1959-1974
+Position(s), with one primary position- CM (primary); DM, AM
+Short description- Left-footed midfield conductor renowned for long passing, vision, tactical intelligence and control of Brazil's attacking rhythm.
+Goal, assist, and defensive credit points- Goal 7/10, assist 10/10, defensive 7/10 (suggested ratings)
+Optional aliases- Canhotinha de Ouro; Golden Left Foot
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/G%C3%A9rson
+Optional player image files- 6b_Gerson.jpg
+
+11. Günter Netzer
+
+Full name- Günter Theo Netzer
+Overall rank- 7
+Nationality- West Germany/Germany
+Playing era- 1963-1977
+Position(s), with one primary position- CM (primary); AM, DM
+Short description- Charismatic and highly imaginative playmaker famous for expansive passing, ball carrying, long-range shooting and command of midfield.
+Goal, assist, and defensive credit points- Goal 8/10, assist 10/10, defensive 6/10 (suggested ratings)
+Optional aliases- None
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/G%C3%BCnter_Netzer
+Optional player image files- 7_Günter_Netzer.jpg
+
+12. Willem van Hanegem
+
+Full name- Willem van Hanegem
+Overall rank- 8
+Nationality- Netherlands
+Playing era- 1962-1983
+Position(s), with one primary position- CM (primary); DM, AM
+Short description- Tough and technically gifted midfield controller known for disguised passing, tactical awareness, set pieces and competitive intensity.
+Goal, assist, and defensive credit points- Goal 8/10, assist 9/10, defensive 8/10 (suggested ratings)
+Optional aliases- De Kromme; The Crooked
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Willem_van_Hanegem
+Optional player image files- 8a_Willem_van_Hanegem.jpg
+
+13. David Silva
+
+Full name- David Josué Jiménez Silva
+Overall rank- 8
+Nationality- Spain
+Playing era- 2003-2023
+Position(s), with one primary position- AM (primary); CM, LW, RW
+Short description- Subtle and highly intelligent creator celebrated for close control, spatial awareness, combination play and precise final-third passing.
+Goal, assist, and defensive credit points- Goal 8/10, assist 10/10, defensive 6/10 (suggested ratings)
+Optional aliases- El Mago; Merlin
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/David_Silva
+Optional player image files- 8b_David_Silva.jpg
+
+14. Nils Liedholm
+
+Full name- Nils Erik Liedholm
+Overall rank- 9
+Nationality- Sweden
+Playing era- 1938-1961
+Position(s), with one primary position- CM (primary); AM, inside forward
+Short description- Elegant and intelligent midfielder renowned for passing accuracy, vision, leadership, technical quality and remarkable longevity.
+Goal, assist, and defensive credit points- Goal 8/10, assist 9/10, defensive 7/10 (suggested ratings)
+Optional aliases- Il Barone; The Baron
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Nils_Liedholm
+Optional player image files- 9_Nils_Liedholm.jpg
+
+15. Dejan Savićević
+
+Full name- Dejan Savićević
+Overall rank- 10
+Nationality- Yugoslavia/Montenegro
+Playing era- 1982-2001
+Position(s), with one primary position- AM (primary); SS, RW
+Short description- Mercurial and technically gifted attacking playmaker admired for dribbling, vision, creativity and decisive moments against elite opposition.
+Goal, assist, and defensive credit points- Goal 8/10, assist 9/10, defensive 4/10 (suggested ratings)
+Optional aliases- Dejo; Il Genio
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Dejan_Savi%C4%87evi%C4%87
+Optional player image files- 10a_Dejan_Savićević.jpg
+
+16. Mário Coluna
+
+Full name- Mário Esteves Coluna
+Overall rank- 10
+Nationality- Portugal
+Playing era- 1954-1970
+Position(s), with one primary position- CM (primary); AM, DM
+Short description- Powerful and authoritative midfield leader who combined athleticism, shooting, passing, tactical discipline and exceptional competitive presence.
+Goal, assist, and defensive credit points- Goal 8/10, assist 8/10, defensive 9/10 (suggested ratings)
+Optional aliases- O Monstro Sagrado; The Sacred Monster
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/M%C3%A1rio_Coluna
+Optional player image files- 10b_Mário_Coluna.jpg
+
+17. Wolfgang Overath
+
+Full name- Wolfgang Overath
+Overall rank- Unranked
+Nationality- West Germany/Germany
+Playing era- 1962-1977
+Position(s), with one primary position- CM (primary); AM, DM
+Short description- Cultured left-footed playmaker valued for vision, passing, work rate, tactical intelligence and consistent influence in major tournaments.
+Goal, assist, and defensive credit points- Goal 8/10, assist 9/10, defensive 7/10 (suggested ratings)
+Optional aliases- None
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Wolfgang_Overath
+Optional player image files- UNRANKED_01_Wolfgang_Overath.jpg
+
+18. Danny Blanchflower
+
+Full name- Robert Dennis Blanchflower
+Overall rank- Unranked
+Nationality- Northern Ireland
+Playing era- 1946-1964
+Position(s), with one primary position- CM (primary); DM
+Short description- Inspirational and cerebral captain who dictated tempo through intelligent positioning, passing, leadership and tactical organisation.
+Goal, assist, and defensive credit points- Goal 6/10, assist 9/10, defensive 9/10 (suggested ratings)
+Optional aliases- Danny Blanchflower
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Danny_Blanchflower
+Optional player image files- UNRANKED_02_Danny_Blanchflower.jpg
+
+19. Antonio Sastre
+
+Full name- Antonio Sastre
+Overall rank- Unranked
+Nationality- Argentina
+Playing era- 1931-1947
+Position(s), with one primary position- CM (primary); AM, DM, RW
+Short description- Exceptionally versatile pre-war playmaker renowned for intelligence, passing, technique and the ability to perform across midfield and attack.
+Goal, assist, and defensive credit points- Goal 8/10, assist 9/10, defensive 8/10 (suggested ratings)
+Optional aliases- El Cuila
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Antonio_Sastre
+Optional player image files- UNRANKED_03_Antonio_Sastre.jpg

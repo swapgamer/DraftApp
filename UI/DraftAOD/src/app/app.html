@@ -1,0 +1,41 @@
+﻿<mat-sidenav-container class="app-shell">
+  @if (loading.isLoading()) { <div class="global-loader" role="status" aria-label="Loading"><mat-spinner diameter="42" /><span>Loading…</span></div> }
+  <mat-sidenav #drawer class="mobile-navigation" mode="over">
+    <div class="drawer-brand">Draft Datastore</div>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/" (click)="drawer.close()"><mat-icon>home</mat-icon><span>Home</span></a>
+      <a mat-list-item routerLink="/about" (click)="drawer.close()"><mat-icon>info</mat-icon><span>About</span></a><a mat-list-item routerLink="/chemistry" (click)="drawer.close()"><mat-icon>hub</mat-icon><span>Chemistry</span></a><a mat-list-item routerLink="/hall-of-fame" (click)="drawer.close()"><mat-icon>emoji_events</mat-icon><span>Hall of Fame</span></a><a mat-list-item routerLink="/search" (click)="drawer.close()"><mat-icon>search</mat-icon><span>Search</span></a>
+      @if (auth.isAuthenticated()) { <a mat-list-item routerLink="/assistant" (click)="drawer.close()"><mat-icon>forum</mat-icon><span>Assistant</span></a><a mat-list-item routerLink="/profile" (click)="drawer.close()"><mat-icon>person</mat-icon><span>Profile</span></a> }
+      @if (auth.isAdmin()) { <a mat-list-item routerLink="/admin" (click)="drawer.close()"><mat-icon>admin_panel_settings</mat-icon><span>Administration</span></a> }
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar class="top-bar">
+      <button mat-icon-button class="mobile-menu" aria-label="Open navigation" (click)="drawer.toggle()"><mat-icon>menu</mat-icon></button>
+      <a class="brand" routerLink="/">Draft Datastore</a><span class="toolbar-spacer"></span><button mat-icon-button [attr.aria-label]="theme.isLight() ? 'Switch to dark theme' : 'Switch to light theme'" (click)="theme.toggle()"><mat-icon>{{ theme.isLight() ? 'dark_mode' : 'light_mode' }}</mat-icon></button>
+      <nav class="desktop-navigation" aria-label="Main navigation">
+        <a mat-button routerLink="/about" routerLinkActive="active-link">About</a><a mat-button routerLink="/chemistry" routerLinkActive="active-link">Chemistry</a><a mat-button routerLink="/hall-of-fame" routerLinkActive="active-link">Hall of Fame</a><a mat-button routerLink="/search" routerLinkActive="active-link">Search</a>
+        @if (auth.isAuthenticated()) { <a mat-button routerLink="/assistant" routerLinkActive="active-link">Assistant</a><a mat-button routerLink="/profile" routerLinkActive="active-link">Profile</a> }
+        @if (auth.isAdmin()) { <a mat-button routerLink="/admin" routerLinkActive="active-link">Admin</a> }
+      </nav>
+      @if (auth.isAuthenticated()) { <span class="welcome">{{ auth.user()?.displayName }}</span><button mat-button (click)="logout()">Sign out</button> } @else { <a mat-raised-button color="primary" routerLink="/login">Sign in</a> }
+    </mat-toolbar>
+    <app-breadcrumbs />
+    <main class="page-content"><router-outlet /></main>
+    <a class="assistant-fab" mat-fab color="primary" routerLink="/assistant" aria-label="Open football assistant"><mat-icon>forum</mat-icon></a>
+    <footer class="app-footer"><span>Draft Datastore</span><span>Football intelligence, made searchable.</span></footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+
+
+
+
+
+
+
+
+
+
+

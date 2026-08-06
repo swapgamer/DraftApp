@@ -1,0 +1,308 @@
+CAM / ATTACKING MIDFIELDER RANK LIST
+
+Notes:
+- Overall ranks follow the CAM section of the uploaded rank list.
+- “ADS” is interpreted as Alfredo Di Stéfano.
+- “SBC” is interpreted as Sir Bobby Charlton.
+- Players listed beneath the numbered Top 10 are marked Unranked.
+- Goal, assist and defensive credit points are suggested ratings on a 0-10 scale.
+- Player image fields contain filenames from the supplied CAM image archive.
+
+1. Diego Maradona
+
+Full name- Diego Armando Maradona
+Overall rank- 1
+Nationality- Argentina
+Playing era- 1976-1997
+Position(s), with one primary position- AM (primary); SS, CF
+Short description- Transformative attacking genius combining extraordinary dribbling, vision, passing, balance, creativity and the ability to decide matches almost single-handedly.
+Goal, assist, and defensive credit points- Goal 10/10, assist 10/10, defensive 5/10 (suggested ratings)
+Optional aliases- Diego; El Pibe de Oro; D10S
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Diego_Maradona
+Optional player image files- 1_Diego_Maradona.jpg
+
+2. Michel Platini
+
+Full name- Michel François Platini
+Overall rank- 2
+Nationality- France
+Playing era- 1972-1987
+Position(s), with one primary position- AM (primary); CM, SS
+Short description- Elegant and prolific playmaker renowned for vision, passing, intelligent movement, free kicks and an exceptional ability to score from midfield.
+Goal, assist, and defensive credit points- Goal 9/10, assist 10/10, defensive 6/10 (suggested ratings)
+Optional aliases- Le Roi; Platoche
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Michel_Platini
+Optional player image files- 2a_Michel_Platini.jpg
+
+3. Zinedine Zidane
+
+Full name- Zinedine Yazid Zidane
+Overall rank- 2
+Nationality- France
+Playing era- 1989-2006
+Position(s), with one primary position- AM (primary); CM, LM
+Short description- Supremely graceful playmaker with exceptional first touch, close control, vision, passing and composure in the biggest matches.
+Goal, assist, and defensive credit points- Goal 8/10, assist 10/10, defensive 6/10 (suggested ratings)
+Optional aliases- Zizou; Zizou la Légende
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Zinedine_Zidane
+Optional player image files- 2b_Zinedine_Zidane.jpg
+
+4. Alfredo Di Stéfano
+
+Full name- Alfredo Stéfano Di Stéfano Laulhé
+Overall rank- 3
+Nationality- Argentina/Spain
+Playing era- 1945-1966
+Position(s), with one primary position- SS (primary); CF, AM, CM
+Short description- Complete and tireless attacking leader who scored, created, pressed, defended and controlled matches across almost every central zone.
+Goal, assist, and defensive credit points- Goal 10/10, assist 9/10, defensive 9/10 (suggested ratings)
+Optional aliases- ADS; La Saeta Rubia; The Blond Arrow
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Alfredo_Di_St%C3%A9fano
+Optional player image files- 3_Alfredo_Di_Stéfano.jpg
+
+5. Zico
+
+Full name- Arthur Antunes Coimbra
+Overall rank- 4
+Nationality- Brazil
+Playing era- 1971-1994
+Position(s), with one primary position- AM (primary); SS, CM
+Short description- Brilliant attacking midfielder combining elite vision, combination play, close control, finishing and exceptional free-kick technique.
+Goal, assist, and defensive credit points- Goal 10/10, assist 10/10, defensive 5/10 (suggested ratings)
+Optional aliases- Zico; The White Pelé; Galinho de Quintino
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Zico_(footballer)
+Optional player image files- 4a_Zico.jpg
+
+6. Sir Bobby Charlton
+
+Full name- Robert Charlton
+Overall rank- 4
+Nationality- England
+Playing era- 1956-1976
+Position(s), with one primary position- AM (primary); CM, SS, LW
+Short description- Powerful and complete attacking midfielder famous for long-range shooting, driving runs, stamina, passing and leadership.
+Goal, assist, and defensive credit points- Goal 9/10, assist 9/10, defensive 8/10 (suggested ratings)
+Optional aliases- SBC; Bobby Charlton; Sir Bobby
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Bobby_Charlton
+Optional player image files- 4b_Bobby_Charlton.jpg
+
+7. Rivaldo
+
+Full name- Rivaldo Vítor Borba Ferreira
+Overall rank- 5
+Nationality- Brazil
+Playing era- 1989-2015
+Position(s), with one primary position- AM (primary); LW, SS, CF
+Short description- Elegant and unpredictable left-footed attacker renowned for dribbling, powerful shooting, creativity and spectacular finishing.
+Goal, assist, and defensive credit points- Goal 9/10, assist 8/10, defensive 5/10 (suggested ratings)
+Optional aliases- Rivaldo; Vítor Borba
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Rivaldo
+Optional player image files- 5a_Rivaldo.jpg
+
+8. Sócrates
+
+Full name- Sócrates Brasileiro Sampaio de Souza Vieira de Oliveira
+Overall rank- 5
+Nationality- Brazil
+Playing era- 1973-1989
+Position(s), with one primary position- AM (primary); CM, SS
+Short description- Elegant and cerebral playmaker celebrated for vision, back-heels, combination play, long-range shooting and commanding leadership.
+Goal, assist, and defensive credit points- Goal 8/10, assist 10/10, defensive 6/10 (suggested ratings)
+Optional aliases- Doctor Sócrates; Doutor; Magrão
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/S%C3%B3crates
+Optional player image files- 5b_Socrates.jpg
+
+9. Kaká
+
+Full name- Ricardo Izecson dos Santos Leite
+Overall rank- 5
+Nationality- Brazil
+Playing era- 2001-2017
+Position(s), with one primary position- AM (primary); SS, CM
+Short description- Explosive and elegant attacking midfielder known for powerful ball-carrying, intelligent movement, passing and composed finishing.
+Goal, assist, and defensive credit points- Goal 9/10, assist 9/10, defensive 6/10 (suggested ratings)
+Optional aliases- Kaká; Ricky Kaká
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Kak%C3%A1
+Optional player image files- 5c_Kaká.jpg
+
+10. Ruud Gullit
+
+Full name- Ruud Gullit; born Rudi Dil
+Overall rank- 6
+Nationality- Netherlands
+Playing era- 1979-1998
+Position(s), with one primary position- SS (primary); AM, CF, CM, CB
+Short description- Powerful and exceptionally versatile footballer combining athleticism, technique, aerial strength, creativity and tactical intelligence.
+Goal, assist, and defensive credit points- Goal 9/10, assist 8/10, defensive 9/10 (suggested ratings)
+Optional aliases- Ruud; The Black Tulip
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Ruud_Gullit
+Optional player image files- 6a_Ruud_Gullit.jpg
+
+11. Michael Laudrup
+
+Full name- Michael Laudrup
+Overall rank- 6
+Nationality- Denmark
+Playing era- 1981-1998
+Position(s), with one primary position- AM (primary); SS, CM, LW
+Short description- Effortless and imaginative playmaker renowned for disguised passing, dribbling, spatial awareness and exceptional chance creation.
+Goal, assist, and defensive credit points- Goal 8/10, assist 10/10, defensive 5/10 (suggested ratings)
+Optional aliases- The Prince of Denmark
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Michael_Laudrup
+Optional player image files- 6b_Michael_Laudrup.jpg
+
+12. Rivellino
+
+Full name- Roberto Rivellino
+Overall rank- 7
+Nationality- Brazil
+Playing era- 1965-1981
+Position(s), with one primary position- AM (primary); LW, CM, SS
+Short description- Powerful left-footed creator celebrated for dribbling, long-range shooting, free kicks, passing and the famous elastico skill.
+Goal, assist, and defensive credit points- Goal 9/10, assist 10/10, defensive 6/10 (suggested ratings)
+Optional aliases- Rivelino; Reizinho do Parque
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Rivellino
+Optional player image files- 7a_Rivelino.jpg
+
+13. Gianni Rivera
+
+Full name- Giovanni Rivera
+Overall rank- 7
+Nationality- Italy
+Playing era- 1959-1979
+Position(s), with one primary position- AM (primary); CM, SS
+Short description- Refined and highly intelligent playmaker whose vision, passing, technique and timing made him the creative centre of his teams.
+Goal, assist, and defensive credit points- Goal 8/10, assist 10/10, defensive 4/10 (suggested ratings)
+Optional aliases- Gianni Rivera; Golden Boy; l'Abatino
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Gianni_Rivera
+Optional player image files- 7b_Gianni_Rivera.jpg
+
+14. Frank Lampard
+
+Full name- Frank James Lampard
+Overall rank- 7
+Nationality- England
+Playing era- 1995-2016
+Position(s), with one primary position- CM (primary); AM, DM
+Short description- Exceptionally productive midfielder renowned for late box runs, long-range shooting, passing, stamina and consistent goalscoring.
+Goal, assist, and defensive credit points- Goal 9/10, assist 8/10, defensive 8/10 (suggested ratings)
+Optional aliases- Super Frank; Lamps
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Frank_Lampard
+Optional player image files- 7c_Frank_Lampard.jpg
+
+15. Youri Djorkaeff
+
+Full name- Youri Raffi Djorkaeff
+Overall rank- 8
+Nationality- France
+Playing era- 1984-2006
+Position(s), with one primary position- AM (primary); SS, CF, RW
+Short description- Technically elegant and versatile attacker known for intelligent movement, creativity, powerful shooting and spectacular goals.
+Goal, assist, and defensive credit points- Goal 8/10, assist 8/10, defensive 6/10 (suggested ratings)
+Optional aliases- The Snake
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Youri_Djorkaeff
+Optional player image files- 8_Youri_Djorkaeff.jpg
+
+16. Sandro Mazzola
+
+Full name- Alessandro Mazzola
+Overall rank- 9
+Nationality- Italy
+Playing era- 1960-1977
+Position(s), with one primary position- SS (primary); AM, RW, CF
+Short description- Quick and intelligent attacker combining dribbling, creativity, goalscoring and tactical discipline in both central and wide roles.
+Goal, assist, and defensive credit points- Goal 9/10, assist 8/10, defensive 7/10 (suggested ratings)
+Optional aliases- Sandro Mazzola
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Sandro_Mazzola
+Optional player image files- 9_Sandro_Mazzola.jpg
+
+17. Carlos Valderrama
+
+Full name- Carlos Alberto Valderrama Palacio
+Overall rank- 10
+Nationality- Colombia
+Playing era- 1981-2004
+Position(s), with one primary position- AM (primary); CM
+Short description- Masterful tempo-setting playmaker renowned for vision, precise short passing, ball retention and control of attacking rhythm.
+Goal, assist, and defensive credit points- Goal 6/10, assist 10/10, defensive 4/10 (suggested ratings)
+Optional aliases- El Pibe
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Carlos_Valderrama
+Optional player image files- 10a_Carlos_Valderrama.jpg
+
+18. Juan Román Riquelme
+
+Full name- Juan Román Riquelme
+Overall rank- 10
+Nationality- Argentina
+Playing era- 1996-2015
+Position(s), with one primary position- AM (primary); CM, SS
+Short description- Classic number ten celebrated for exceptional vision, ball control, passing, set pieces and command of a match's tempo.
+Goal, assist, and defensive credit points- Goal 8/10, assist 10/10, defensive 3/10 (suggested ratings)
+Optional aliases- Román; El Torero; El Último Diez
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Juan_Rom%C3%A1n_Riquelme
+Optional player image files- 10b_Juan_Román_Riquelme.jpg
+
+19. Fritz Walter
+
+Full name- Friedrich Walter
+Overall rank- Unranked
+Nationality- Germany/West Germany
+Playing era- 1937-1959
+Position(s), with one primary position- SS (primary); AM, CF, CM
+Short description- Inspirational and tactically intelligent attacking leader admired for technique, passing, composure, work rate and decisive influence.
+Goal, assist, and defensive credit points- Goal 9/10, assist 9/10, defensive 7/10 (suggested ratings)
+Optional aliases- Fritz Walter
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Fritz_Walter
+Optional player image files- UNRANKED_01_Fritz_Walter.jpg
+
+20. Enzo Francescoli
+
+Full name- Enzo Francescoli Uriarte
+Overall rank- Unranked
+Nationality- Uruguay
+Playing era- 1980-1997
+Position(s), with one primary position- SS (primary); AM, CF
+Short description- Graceful and creative attacking leader known for technique, vision, dribbling, aerial skill and elegant finishing.
+Goal, assist, and defensive credit points- Goal 9/10, assist 9/10, defensive 5/10 (suggested ratings)
+Optional aliases- El Príncipe
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Enzo_Francescoli
+Optional player image files- UNRANKED_02_Enzo_Francescoli.jpg
+
+21. Pierre Littbarski
+
+Full name- Pierre Michael Littbarski
+Overall rank- Unranked
+Nationality- West Germany/Germany
+Playing era- 1978-1997
+Position(s), with one primary position- RW (primary); AM, CM
+Short description- Agile and technically gifted winger-playmaker celebrated for dribbling, creativity, passing and persistent attacking movement.
+Goal, assist, and defensive credit points- Goal 8/10, assist 9/10, defensive 6/10 (suggested ratings)
+Optional aliases- Litti
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Pierre_Littbarski
+Optional player image files- UNRANKED_03_Pierre_Littbarski.jpg
+
+22. Gheorghe Hagi
+
+Full name- Gheorghe Hagi
+Overall rank- Unranked
+Nationality- Romania
+Playing era- 1982-2001
+Position(s), with one primary position- AM (primary); CM, SS, LW
+Short description- Brilliant left-footed playmaker renowned for vision, long-range shooting, dribbling, passing and command of attacking play.
+Goal, assist, and defensive credit points- Goal 9/10, assist 10/10, defensive 5/10 (suggested ratings)
+Optional aliases- The Maradona of the Carpathians; Regele
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Gheorghe_Hagi
+Optional player image files- UNRANKED_04_Gheorghe_Hagi.jpg
+
+23. Teófilo Cubillas
+
+Full name- Teófilo Juan Cubillas Arizaga
+Overall rank- Unranked
+Nationality- Peru
+Playing era- 1966-1989
+Position(s), with one primary position- AM (primary); SS, CF
+Short description- Prolific and technically gifted attacking midfielder famous for long-range shooting, free kicks, intelligent movement and tournament goals.
+Goal, assist, and defensive credit points- Goal 9/10, assist 8/10, defensive 5/10 (suggested ratings)
+Optional aliases- El Nene
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Te%C3%B3filo_Cubillas
+Optional player image files- UNRANKED_05_Teófilo_Cubillas.jpg

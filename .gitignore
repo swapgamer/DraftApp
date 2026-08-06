@@ -1,0 +1,30 @@
+# Build and package output
+**/bin/
+**/obj/
+**/node_modules/
+**/dist/
+**/.angular/
+**/.build-verify/
+
+# Local tooling and editor state
+.vs/
+.vscode/
+*.user
+*.suo
+*.db
+*.db-shm
+*.db-wal
+
+# Secrets and machine-specific configuration
+.env
+.env.*
+!*.example
+appsettings.Development.local.json
+appsettings.Production.json
+**/appsettings.json
+**/appsettings.Development.json
+
+# Temporary/generated working files
+chemistry_preview/
+handoff_render/
+*.log

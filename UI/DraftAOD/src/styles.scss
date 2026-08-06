@@ -1,0 +1,27 @@
+@use '@angular/material' as mat;
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@include mat.core();
+
+:root {
+  --page:#07111f; --surface:#0e1d30; --surface-alt:#10233a; --surface-deep:#0d1a2b; --shell:#07111f; --footer:#050c16;
+  --text:#e7edf4; --text-strong:#f8fafc; --text-soft:#dbeafe; --muted:#aab9cc; --accent:#82e9c0; --border:rgba(148,163,184,.16); color-scheme:dark;
+}
+:root.light-theme {
+  --page:#edf3f8; --surface:#ffffff; --surface-alt:#f8fafc; --surface-deep:#e6edf5; --shell:#f7fafc; --footer:#e2e8f0;
+  --text:#10233a; --text-strong:#10233a; --text-soft:#1e3a5f; --muted:#475569; --accent:#087a56; --border:rgba(51,65,85,.18); color-scheme:light;
+}
+html,body { min-width:320px; min-height:100dvh; margin:0; font-family:Inter,Roboto,'Helvetica Neue',Arial,sans-serif; background:var(--page); }* { box-sizing:border-box; }button,a,input { font:inherit; }
+
+/* Keep Material form controls and their overlay panels readable in the dark theme. */
+.mat-mdc-form-field .mat-mdc-text-field-wrapper { background-color: var(--surface-deep); }
+.mat-mdc-select-panel {
+  --mat-select-panel-background-color: var(--surface-deep);
+  background-color: var(--surface-deep) !important;
+  border: 1px solid var(--border);
+  border-radius: .5rem !important;
+  box-shadow: 0 .75rem 1.75rem rgba(0,0,0,.38);
+}
+.mat-mdc-option { color: var(--text) !important; }
+.mat-mdc-option:hover:not(.mdc-list-item--disabled),
+.mat-mdc-option.mdc-list-item--selected { background-color: rgba(130,233,192,.13) !important; }
+.mat-mdc-option .mdc-list-item__primary-text { color: inherit !important; }

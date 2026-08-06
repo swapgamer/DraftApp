@@ -1,0 +1,230 @@
+RW / RIGHT WINGER RANK LIST
+
+Notes:
+- Overall ranks follow the RW section of the uploaded rank list.
+- “SSM” is interpreted as Sir Stanley Matthews.
+- “Johnstone” is interpreted as Jimmy Johnstone.
+- Players listed beneath the numbered Top 10 are marked Unranked.
+- Goal, assist and defensive credit points are suggested ratings on a 0-10 scale.
+- Player image fields contain filenames from the supplied RW image archive.
+
+1. Lionel Messi
+
+Full name- Lionel Andrés Messi Cuccittini
+Overall rank- 1
+Nationality- Argentina
+Playing era- 2004-2020s
+Position(s), with one primary position- RW (primary); SS, AM, CF
+Short description- Extraordinary scorer and playmaker combining historic dribbling, vision, close control, passing and left-footed finishing.
+Goal, assist, and defensive credit points- Goal 10/10, assist 10/10, defensive 4/10 (suggested ratings)
+Optional aliases- Leo; La Pulga
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Lionel_Messi
+Optional player image files- 1_Lionel_Messi.jpg
+
+2. Garrincha
+
+Full name- Manuel Francisco dos Santos
+Overall rank- 2
+Nationality- Brazil
+Playing era- 1953-1972
+Position(s), with one primary position- RW (primary); outside right
+Short description- Unpredictable and joyful dribbler whose acceleration, balance and one-on-one ability made him one of football’s greatest natural wingers.
+Goal, assist, and defensive credit points- Goal 8/10, assist 10/10, defensive 4/10 (suggested ratings)
+Optional aliases- Garrincha; Mané Garrincha; The Little Bird
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Garrincha
+Optional player image files- 2_Garrincha.jpg
+
+3. Jairzinho
+
+Full name- Jair Ventura Filho
+Overall rank- 3
+Nationality- Brazil
+Playing era- 1959-1982
+Position(s), with one primary position- RW (primary); CF, SS
+Short description- Powerful and direct winger-forward who combined speed, strength, dribbling and decisive goalscoring in major tournaments.
+Goal, assist, and defensive credit points- Goal 9/10, assist 8/10, defensive 7/10 (suggested ratings)
+Optional aliases- Jairzinho; The Hurricane
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Jairzinho
+Optional player image files- 3a_Jairzinho.jpg
+
+4. George Best
+
+Full name- George Best
+Overall rank- 3
+Nationality- Northern Ireland
+Playing era- 1963-1984
+Position(s), with one primary position- RW (primary); LW, AM, SS
+Short description- Electrifying and technically brilliant winger renowned for dribbling, balance, creativity, flair and outstanding goalscoring ability.
+Goal, assist, and defensive credit points- Goal 9/10, assist 9/10, defensive 5/10 (suggested ratings)
+Optional aliases- El Beatle; Belfast Boy
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/George_Best
+Optional player image files- 3b_George_Best.jpg
+
+5. Luís Figo
+
+Full name- Luís Filipe Madeira Caeiro Figo
+Overall rank- 4
+Nationality- Portugal
+Playing era- 1989-2009
+Position(s), with one primary position- RW (primary); LW, AM
+Short description- Elegant and highly creative winger with exceptional close control, crossing, passing, tactical intelligence and consistency.
+Goal, assist, and defensive credit points- Goal 8/10, assist 10/10, defensive 5/10 (suggested ratings)
+Optional aliases- Figo
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Lu%C3%ADs_Figo
+Optional player image files- 4_Luís_Figo.jpg
+
+6. Arjen Robben
+
+Full name- Arjen Robben
+Overall rank- 5
+Nationality- Netherlands
+Playing era- 2000-2021
+Position(s), with one primary position- RW (primary); LW, SS
+Short description- Explosive inverted winger famous for acceleration, close control, diagonal dribbling and precise left-footed finishing.
+Goal, assist, and defensive credit points- Goal 9/10, assist 8/10, defensive 4/10 (suggested ratings)
+Optional aliases- The Flying Dutchman
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Arjen_Robben
+Optional player image files- 5a_Arjen_Robben.jpg
+
+7. David Beckham
+
+Full name- David Robert Joseph Beckham
+Overall rank- 5
+Nationality- England
+Playing era- 1992-2013
+Position(s), with one primary position- RM (primary); RW, CM
+Short description- Elite crosser and long passer renowned for set pieces, delivery, work rate, tactical discipline and technical precision.
+Goal, assist, and defensive credit points- Goal 7/10, assist 10/10, defensive 8/10 (suggested ratings)
+Optional aliases- Becks
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/David_Beckham
+Optional player image files- 5b_David_Beckham.jpg
+
+8. Raymond Kopa
+
+Full name- Raymond Kopa; born Raymond Kopaszewski
+Overall rank- 6
+Nationality- France
+Playing era- 1949-1967
+Position(s), with one primary position- AM (primary); SS, RW
+Short description- Small, agile and highly imaginative attacker celebrated for dribbling, vision, combination play and control between midfield and attack.
+Goal, assist, and defensive credit points- Goal 8/10, assist 10/10, defensive 6/10 (suggested ratings)
+Optional aliases- Little Napoleon
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Raymond_Kopa
+Optional player image files- 6a_Raymond_Kopa.jpg
+
+9. Sir Stanley Matthews
+
+Full name- Stanley Matthews
+Overall rank- 6
+Nationality- England
+Playing era- 1932-1965
+Position(s), with one primary position- RW (primary); outside right
+Short description- Legendary touchline winger whose longevity, close control, acceleration and dribbling repeatedly defeated defenders in one-on-one situations.
+Goal, assist, and defensive credit points- Goal 7/10, assist 10/10, defensive 4/10 (suggested ratings)
+Optional aliases- SSM; The Wizard of the Dribble; The Magician
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Stanley_Matthews
+Optional player image files- 6b_Stanley_Matthews.jpg
+
+10. Helmut Rahn
+
+Full name- Helmut Rahn
+Overall rank- 7
+Nationality- West Germany/Germany
+Playing era- 1950-1965
+Position(s), with one primary position- RW (primary); SS, CF
+Short description- Powerful and direct attacking winger remembered for strong shooting, physical determination and decisive goals on the biggest stage.
+Goal, assist, and defensive credit points- Goal 9/10, assist 7/10, defensive 7/10 (suggested ratings)
+Optional aliases- Der Boss
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Helmut_Rahn
+Optional player image files- 7a_Helmut_Rahn.jpg
+
+11. Allan Simonsen
+
+Full name- Allan Rodenkam Simonsen
+Overall rank- 7
+Nationality- Denmark
+Playing era- 1971-1989
+Position(s), with one primary position- RW (primary); SS, CF
+Short description- Quick and technically gifted attacker whose movement, dribbling and finishing made him dangerous from wide and central areas.
+Goal, assist, and defensive credit points- Goal 9/10, assist 8/10, defensive 6/10 (suggested ratings)
+Optional aliases- None
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Allan_Simonsen
+Optional player image files- 7b_Allan_Simonsen.jpg
+
+12. Grzegorz Lato
+
+Full name- Grzegorz Bolesław Lato
+Overall rank- 8
+Nationality- Poland
+Playing era- 1966-1984
+Position(s), with one primary position- RW (primary); CF
+Short description- Rapid, intelligent and hard-working winger-forward known for direct running, efficient finishing and excellent tournament performances.
+Goal, assist, and defensive credit points- Goal 9/10, assist 7/10, defensive 8/10 (suggested ratings)
+Optional aliases- None
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Grzegorz_Lato
+Optional player image files- 8_Grzegorz_Lato.jpg
+
+13. Amancio Amaro
+
+Full name- Amancio Amaro Varela
+Overall rank- 9
+Nationality- Spain
+Playing era- 1958-1976
+Position(s), with one primary position- RW (primary); SS, CF
+Short description- Skilful and prolific right winger noted for close control, acceleration, creativity and confident finishing in attacking areas.
+Goal, assist, and defensive credit points- Goal 9/10, assist 8/10, defensive 6/10 (suggested ratings)
+Optional aliases- El Brujo
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Amancio_Amaro
+Optional player image files- 9_Amancio_Amaro.jpg
+
+14. Jimmy Johnstone
+
+Full name- James Connolly Johnstone
+Overall rank- 10
+Nationality- Scotland
+Playing era- 1961-1979
+Position(s), with one primary position- RW (primary); outside right
+Short description- Tiny and fearless winger whose exceptional balance, acceleration and close dribbling made him a constant threat on the right flank.
+Goal, assist, and defensive credit points- Goal 8/10, assist 9/10, defensive 5/10 (suggested ratings)
+Optional aliases- Jimmy Johnstone; Jinky
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Jimmy_Johnstone
+Optional player image files- 10_Jimmy_Johnstone.jpg
+
+15. Zbigniew Boniek
+
+Full name- Zbigniew Kazimierz Boniek
+Overall rank- Unranked
+Nationality- Poland
+Playing era- 1973-1988
+Position(s), with one primary position- SS (primary); RW, AM, CM
+Short description- Dynamic and tactically versatile attacker known for speed, intelligent movement, powerful running and decisive performances in major matches.
+Goal, assist, and defensive credit points- Goal 8/10, assist 8/10, defensive 8/10 (suggested ratings)
+Optional aliases- Zibi; Bello di Notte
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Zbigniew_Boniek
+Optional player image files- UNRANKED_01_Zbigniew_Boniek.jpg
+
+16. Billy Liddell
+
+Full name- William Beveridge Liddell
+Overall rank- Unranked
+Nationality- Scotland
+Playing era- 1938-1961
+Position(s), with one primary position- LW (primary); CF, RW
+Short description- Powerful, two-footed and versatile winger-forward renowned for speed, shooting, physical strength, loyalty and consistent goalscoring.
+Goal, assist, and defensive credit points- Goal 9/10, assist 7/10, defensive 7/10 (suggested ratings)
+Optional aliases- Billy Liddell; Liddellpool
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Billy_Liddell
+Optional player image files- UNRANKED_02_Billy_Liddell.jpg
+
+17. Freddie Ljungberg
+
+Full name- Karl Fredrik Ljungberg
+Overall rank- Unranked
+Nationality- Sweden
+Playing era- 1994-2014
+Position(s), with one primary position- RM (primary); RW, AM, SS
+Short description- Intelligent and energetic wide midfielder famous for late runs into the box, pressing, off-ball movement and important goals.
+Goal, assist, and defensive credit points- Goal 8/10, assist 7/10, defensive 8/10 (suggested ratings)
+Optional aliases- Freddie; Ljungan
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Freddie_Ljungberg
+Optional player image files- UNRANKED_03_Freddie_Ljungberg.jpg

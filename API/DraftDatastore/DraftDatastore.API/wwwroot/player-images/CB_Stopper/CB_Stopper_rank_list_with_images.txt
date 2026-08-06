@@ -1,0 +1,282 @@
+CB (STOPPER) RANK LIST
+
+Notes:
+- Overall ranks follow the CB (Stopper) section of the uploaded rank list.
+- “HGS” is identified as Hans-Georg Schwarzenbeck.
+- “KHF” is identified as Karl-Heinz Förster.
+- Players listed beneath the numbered Top 10 are marked Unranked.
+- Goal, assist and defensive credit points are suggested ratings on a 0-10 scale.
+- Player image fields contain filenames from the supplied CB_Stopper image archive.
+
+1. Fabio Cannavaro
+
+Full name- Fabio Cannavaro
+Overall rank- 1
+Nationality- Italy
+Playing era- 1992-2011
+Position(s), with one primary position- CB (primary); sweeper
+Short description- Elite stopper renowned for anticipation, timing, aggressive front-foot defending, recovery speed, aerial ability and leadership despite his modest height.
+Goal, assist, and defensive credit points- Goal 5/10, assist 5/10, defensive 10/10 (suggested ratings)
+Optional aliases- Canna; The Berlin Wall
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Fabio_Cannavaro
+Optional player image files- 1_Fabio_Cannavaro.jpg
+
+2. Bobby Moore
+
+Full name- Robert Frederick Chelsea Moore
+Overall rank- 2
+Nationality- England
+Playing era- 1958-1978
+Position(s), with one primary position- CB (primary); sweeper
+Short description- Composed and intelligent defender celebrated for immaculate positioning, anticipation, clean tackling, passing and calm leadership under pressure.
+Goal, assist, and defensive credit points- Goal 5/10, assist 8/10, defensive 10/10 (suggested ratings)
+Optional aliases- Bobby Moore; Mooro
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Bobby_Moore
+Optional player image files- 2a_Bobby_Moore.jpg
+
+3. Alessandro Nesta
+
+Full name- Alessandro Nesta
+Overall rank- 2
+Nationality- Italy
+Playing era- 1993-2014
+Position(s), with one primary position- CB (primary); sweeper
+Short description- Elegant and technically refined centre-back known for superb timing, recovery speed, reading of play and exceptionally clean one-on-one defending.
+Goal, assist, and defensive credit points- Goal 5/10, assist 6/10, defensive 10/10 (suggested ratings)
+Optional aliases- Sandro
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Alessandro_Nesta
+Optional player image files- 2b_Alessandro_Nesta.jpg
+
+4. Jürgen Kohler
+
+Full name- Jürgen Kohler
+Overall rank- 3
+Nationality- West Germany/Germany
+Playing era- 1983-2002
+Position(s), with one primary position- CB (primary); stopper
+Short description- Dominant man-marker and stopper renowned for physical strength, concentration, aerial power, tackling and reliability against elite forwards.
+Goal, assist, and defensive credit points- Goal 5/10, assist 4/10, defensive 10/10 (suggested ratings)
+Optional aliases- Kokser; The Football God
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/J%C3%BCrgen_Kohler
+Optional player image files- 3a_Jürgen_Kohler.jpg
+
+5. Hans-Georg Schwarzenbeck
+
+Full name- Hans-Georg Schwarzenbeck
+Overall rank- 3
+Nationality- West Germany/Germany
+Playing era- 1966-1981
+Position(s), with one primary position- CB (primary); stopper
+Short description- Disciplined and dependable stopper valued for man-marking, physical strength, positional discipline and selfless defensive support.
+Goal, assist, and defensive credit points- Goal 5/10, assist 4/10, defensive 10/10 (suggested ratings)
+Optional aliases- HGS; Katsche
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Hans-Georg_Schwarzenbeck
+Optional player image files- 3b_Hans-Georg_Schwarzenbeck.jpg
+
+6. Claudio Gentile
+
+Full name- Claudio Gentile
+Overall rank- 4
+Nationality- Italy
+Playing era- 1971-1988
+Position(s), with one primary position- CB (primary); RB, stopper
+Short description- Fierce and tactically disciplined marker famous for physical duels, concentration, versatility and neutralising dangerous attackers.
+Goal, assist, and defensive credit points- Goal 4/10, assist 5/10, defensive 10/10 (suggested ratings)
+Optional aliases- Gheddafi
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Claudio_Gentile
+Optional player image files- 4_Claudio_Gentile.jpg
+
+7. Marcel Desailly
+
+Full name- Marcel Desailly; born Odenke Abbey
+Overall rank- 5
+Nationality- France
+Playing era- 1986-2006
+Position(s), with one primary position- CB (primary); DM
+Short description- Powerful and athletic defender combining strength, pace, aerial dominance, ball-winning and the versatility to excel in defensive midfield.
+Goal, assist, and defensive credit points- Goal 6/10, assist 6/10, defensive 10/10 (suggested ratings)
+Optional aliases- The Rock
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Marcel_Desailly
+Optional player image files- 5_Marcel_Desailly.jpg
+
+8. Alessandro Costacurta
+
+Full name- Alessandro Costacurta
+Overall rank- 6
+Nationality- Italy
+Playing era- 1986-2007
+Position(s), with one primary position- CB (primary); RB, LB
+Short description- Highly intelligent and versatile defender admired for positioning, anticipation, concentration, tactical discipline and remarkable longevity.
+Goal, assist, and defensive credit points- Goal 4/10, assist 5/10, defensive 10/10 (suggested ratings)
+Optional aliases- Billy
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Alessandro_Costacurta
+Optional player image files- 6a_Alessandro_Costacurta.jpg
+
+9. Carles Puyol
+
+Full name- Carles Puyol i Saforcada
+Overall rank- 6
+Nationality- Spain
+Playing era- 1996-2014
+Position(s), with one primary position- CB (primary); RB, LB
+Short description- Fearless and inspirational defender celebrated for anticipation, recovery tackles, aerial courage, versatility and exceptional commitment.
+Goal, assist, and defensive credit points- Goal 6/10, assist 5/10, defensive 10/10 (suggested ratings)
+Optional aliases- Puyi; El Tiburón; Tarzan
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Carles_Puyol
+Optional player image files- 6b_Carles_Puyol.jpg
+
+10. Jaap Stam
+
+Full name- Jakob Stam
+Overall rank- 7
+Nationality- Netherlands
+Playing era- 1992-2007
+Position(s), with one primary position- CB (primary); RB
+Short description- Imposing and rapid centre-back known for physical power, recovery speed, aggressive tackling, aerial dominance and composure in possession.
+Goal, assist, and defensive credit points- Goal 5/10, assist 5/10, defensive 10/10 (suggested ratings)
+Optional aliases- Jaap Stam; The Rock of Kampen
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Jaap_Stam
+Optional player image files- 7a_Jaap_Stam.jpg
+
+11. John Terry
+
+Full name- John George Terry
+Overall rank- 7
+Nationality- England
+Playing era- 1998-2018
+Position(s), with one primary position- CB (primary)
+Short description- Commanding defensive leader renowned for positioning, blocking, aerial strength, bravery, organisation and an important goalscoring threat at set pieces.
+Goal, assist, and defensive credit points- Goal 7/10, assist 5/10, defensive 10/10 (suggested ratings)
+Optional aliases- JT; Captain, Leader, Legend
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/John_Terry
+Optional player image files- 7b_John_Terry.jpg
+
+12. Nemanja Vidić
+
+Full name- Nemanja Vidić
+Overall rank- 7
+Nationality- Serbia
+Playing era- 2000-2016
+Position(s), with one primary position- CB (primary); stopper
+Short description- Fearless and physically dominant defender famous for aerial power, aggressive tackling, concentration, bravery and uncompromising penalty-box defending.
+Goal, assist, and defensive credit points- Goal 6/10, assist 4/10, defensive 10/10 (suggested ratings)
+Optional aliases- Vida
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Nemanja_Vidi%C4%87
+Optional player image files- 7c_Nemanja_Vidić.jpg
+
+13. Sol Campbell
+
+Full name- Sulzeer Jeremiah Campbell
+Overall rank- 8
+Nationality- England
+Playing era- 1992-2011
+Position(s), with one primary position- CB (primary); RB
+Short description- Powerful and quick centre-back valued for recovery speed, strength, aerial defending, one-on-one ability and calmness in major matches.
+Goal, assist, and defensive credit points- Goal 6/10, assist 4/10, defensive 9/10 (suggested ratings)
+Optional aliases- Sol
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Sol_Campbell
+Optional player image files- 8a_Sol_Campbell.jpg
+
+14. Giorgio Chiellini
+
+Full name- Giorgio Chiellini
+Overall rank- 8
+Nationality- Italy
+Playing era- 2004-2023
+Position(s), with one primary position- CB (primary); LB
+Short description- Aggressive and intelligent defender known for man-marking, anticipation, physical duels, aerial strength, leadership and tactical adaptability.
+Goal, assist, and defensive credit points- Goal 6/10, assist 5/10, defensive 10/10 (suggested ratings)
+Optional aliases- Chiello; King Kong
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Giorgio_Chiellini
+Optional player image files- 8b_Giorgio_Chiellini.jpg
+
+15. José Nasazzi
+
+Full name- José Nasazzi Yarza
+Overall rank- 9
+Nationality- Uruguay
+Playing era- 1918-1938
+Position(s), with one primary position- CB (primary); right full-back
+Short description- Commanding pre-war defensive captain celebrated for strength, anticipation, leadership, aerial authority and control of the defensive line.
+Goal, assist, and defensive credit points- Goal 5/10, assist 5/10, defensive 10/10 (suggested ratings)
+Optional aliases- El Gran Mariscal; The Great Marshal
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Jos%C3%A9_Nasazzi
+Optional player image files- 9a_José_Nasazzi.jpg
+
+16. Karl-Heinz Förster
+
+Full name- Karl-Heinz Förster
+Overall rank- 9
+Nationality- West Germany/Germany
+Playing era- 1975-1990
+Position(s), with one primary position- CB (primary); stopper
+Short description- Elite man-marker renowned for pace, concentration, anticipation, clean tackling and consistency against top-class centre-forwards.
+Goal, assist, and defensive credit points- Goal 5/10, assist 4/10, defensive 10/10 (suggested ratings)
+Optional aliases- KHF
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Karl-Heinz_F%C3%B6rster
+Optional player image files- 9b_Karl_Heinz_Förster.jpg
+
+17. Oscar Ruggeri
+
+Full name- Oscar Alfredo Ruggeri
+Overall rank- 10
+Nationality- Argentina
+Playing era- 1980-1997
+Position(s), with one primary position- CB (primary); stopper
+Short description- Combative and authoritative centre-back known for aerial strength, aggressive marking, leadership, toughness and timely goals from set pieces.
+Goal, assist, and defensive credit points- Goal 7/10, assist 5/10, defensive 9/10 (suggested ratings)
+Optional aliases- El Cabezón
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Oscar_Ruggeri
+Optional player image files- 10_Oscar_Ruggeri.jpg
+
+18. Ciro Ferrara
+
+Full name- Ciro Ferrara
+Overall rank- Unranked
+Nationality- Italy
+Playing era- 1984-2005
+Position(s), with one primary position- CB (primary); RB
+Short description- Reliable and tactically refined defender admired for anticipation, man-marking, positional discipline, versatility and consistency.
+Goal, assist, and defensive credit points- Goal 5/10, assist 5/10, defensive 9/10 (suggested ratings)
+Optional aliases- None
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Ciro_Ferrara
+Optional player image files- UNRANKED_01_Ciro_Ferrara.jpg
+
+19. Billy Wright
+
+Full name- William Ambrose Wright
+Overall rank- Unranked
+Nationality- England
+Playing era- 1939-1959
+Position(s), with one primary position- CB (primary); right-half, full-back
+Short description- Composed and durable defensive captain renowned for leadership, positional awareness, clean tackling and remarkable consistency.
+Goal, assist, and defensive credit points- Goal 5/10, assist 6/10, defensive 10/10 (suggested ratings)
+Optional aliases- Billy Wright
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Billy_Wright_(footballer,_born_1924)
+Optional player image files- UNRANKED_02_Billy_Wright.jpg
+
+20. Neil Franklin
+
+Full name- Cornelius Neil Franklin
+Overall rank- Unranked
+Nationality- England
+Playing era- 1939-1958
+Position(s), with one primary position- CB (primary); centre-half
+Short description- Cultured and elegant centre-half praised for anticipation, distribution, composure and technically advanced defending for his era.
+Goal, assist, and defensive credit points- Goal 5/10, assist 8/10, defensive 9/10 (suggested ratings)
+Optional aliases- Neil Franklin
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Neil_Franklin
+Optional player image files- UNRANKED_03_Neil_Franklin.jpg
+
+21. Héctor Chumpitaz
+
+Full name- Héctor Eduardo Chumpitaz Gonzáles
+Overall rank- Unranked
+Nationality- Peru
+Playing era- 1964-1984
+Position(s), with one primary position- CB (primary); sweeper
+Short description- Authoritative and technically skilled defender known for leadership, anticipation, distribution, aerial ability and controlled aggression.
+Goal, assist, and defensive credit points- Goal 6/10, assist 7/10, defensive 9/10 (suggested ratings)
+Optional aliases- El Capitán de América; Chumpi
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/H%C3%A9ctor_Chumpitaz
+Optional player image files- UNRANKED_04_Héctor_Chumpitaz.jpg

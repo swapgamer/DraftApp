@@ -1,0 +1,10 @@
+﻿{
+  "info": { "name": "Draft Datastore API", "description": "Phase 2 backend collection" },
+  "variable": [{ "key": "baseUrl", "value": "https://localhost:5001" }, { "key": "accessToken", "value": "" }, { "key": "refreshToken", "value": "" }],
+  "item": [
+    { "name": "Register", "request": { "method": "POST", "header": [{"key":"Content-Type","value":"application/json"}], "url": "{{baseUrl}}/api/v1/auth/register", "body": {"mode":"raw","raw":"{\n  \"email\": \"user@example.com\",\n  \"displayName\": \"Draft User\",\n  \"password\": \"SecurePassword123\"\n}"} } },
+    { "name": "Login", "request": { "method": "POST", "header": [{"key":"Content-Type","value":"application/json"}], "url": "{{baseUrl}}/api/v1/auth/login", "body": {"mode":"raw","raw":"{\n  \"email\": \"user@example.com\",\n  \"password\": \"SecurePassword123\"\n}"} } },
+    { "name": "Players", "request": { "method": "GET", "header": [{"key":"Authorization","value":"Bearer {{accessToken}}"}], "url": "{{baseUrl}}/api/v1/players?pageNumber=1&pageSize=25" } },
+    { "name": "Chatbot", "request": { "method": "POST", "header": [{"key":"Authorization","value":"Bearer {{accessToken}}"},{"key":"Content-Type","value":"application/json"}], "url": "{{baseUrl}}/api/v1/chatbot/query", "body": {"mode":"raw","raw":"{\n  \"message\": \"Top 5 Goalkeepers\"\n}"} } }
+  ]
+}

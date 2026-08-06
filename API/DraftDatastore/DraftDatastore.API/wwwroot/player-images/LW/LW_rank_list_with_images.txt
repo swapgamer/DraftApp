@@ -1,0 +1,268 @@
+LW / LEFT WINGER RANK LIST
+
+Notes:
+- Overall ranks follow the LW section of the uploaded rank list.
+- “Hans Schaffer” in the source is interpreted as Hans Schäfer.
+- Players listed beneath the numbered Top 10 are marked Unranked.
+- Goal, assist and defensive credit points are suggested ratings on a 0-10 scale.
+- Player image fields contain filenames from the supplied LW image archive.
+
+1. Cristiano Ronaldo
+
+Full name- Cristiano Ronaldo dos Santos Aveiro
+Overall rank- 1
+Nationality- Portugal
+Playing era- 2002-2020s
+Position(s), with one primary position- LW (primary); CF, RW
+Short description- Explosive winger turned elite goalscorer, renowned for athleticism, aerial dominance, movement, powerful shooting and extraordinary scoring consistency.
+Goal, assist, and defensive credit points- Goal 10/10, assist 8/10, defensive 5/10 (suggested ratings)
+Optional aliases- CR7; Cristiano
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Cristiano_Ronaldo
+Optional player image files- 1_Cristiano_Ronaldo.jpg
+
+2. George Best
+
+Full name- George Best
+Overall rank- 2
+Nationality- Northern Ireland
+Playing era- 1963-1984
+Position(s), with one primary position- LW (primary); RW, AM, SS
+Short description- Electrifying and technically brilliant winger celebrated for dribbling, balance, creativity, flair and outstanding goalscoring from wide positions.
+Goal, assist, and defensive credit points- Goal 9/10, assist 9/10, defensive 5/10 (suggested ratings)
+Optional aliases- El Beatle; Belfast Boy
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/George_Best
+Optional player image files- 2_George_Best.jpg
+
+3. Thierry Henry
+
+Full name- Thierry Daniel Henry
+Overall rank- 3
+Nationality- France
+Playing era- 1994-2014
+Position(s), with one primary position- LW (primary); CF, SS
+Short description- Elegant and devastating attacker combining pace, close control, intelligent movement, creative passing and trademark placed finishing.
+Goal, assist, and defensive credit points- Goal 10/10, assist 9/10, defensive 5/10 (suggested ratings)
+Optional aliases- Titi; The King
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Thierry_Henry
+Optional player image files- 3_Thierry_Henry.jpg
+
+4. Dragan Džajić
+
+Full name- Dragan Džajić
+Overall rank- 4
+Nationality- Yugoslavia/Serbia
+Playing era- 1961-1978
+Position(s), with one primary position- LW (primary); outside left
+Short description- Graceful and creative left winger renowned for close control, acceleration, crossing, free kicks and exceptional one-on-one ability.
+Goal, assist, and defensive credit points- Goal 8/10, assist 10/10, defensive 5/10 (suggested ratings)
+Optional aliases- Džaja; The Magic Dragan
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Dragan_D%C5%BEaji%C4%87
+Optional player image files- 4a_Dragan_Džajić.jpg
+
+5. Ronaldinho
+
+Full name- Ronaldo de Assis Moreira
+Overall rank- 4
+Nationality- Brazil
+Playing era- 1998-2015
+Position(s), with one primary position- LW (primary); AM, SS, RW
+Short description- Imaginative attacking artist famous for spectacular dribbling, flair, passing, free kicks and the ability to create decisive moments from nothing.
+Goal, assist, and defensive credit points- Goal 8/10, assist 10/10, defensive 4/10 (suggested ratings)
+Optional aliases- Ronaldinho Gaúcho; R10; O Bruxo
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Ronaldinho
+Optional player image files- 4b_Ronaldinho.jpg
+
+6. Hristo Stoichkov
+
+Full name- Hristo Stoichkov Stoichkov
+Overall rank- 5
+Nationality- Bulgaria
+Playing era- 1982-2003
+Position(s), with one primary position- LW (primary); CF, SS, RW
+Short description- Explosive and combative left-footed forward known for powerful shooting, acceleration, dribbling, creativity and a relentless winning mentality.
+Goal, assist, and defensive credit points- Goal 9/10, assist 8/10, defensive 6/10 (suggested ratings)
+Optional aliases- The Dagger; Kamata; El Pistolero
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Hristo_Stoichkov
+Optional player image files- 5a_Hristo_Stoichkov.jpg
+
+7. Rivellino
+
+Full name- Roberto Rivellino
+Overall rank- 5
+Nationality- Brazil
+Playing era- 1965-1981
+Position(s), with one primary position- LW (primary); AM, CM, SS
+Short description- Powerful left-footed creator celebrated for dribbling, long-range shooting, free kicks, passing and the famous elastico skill.
+Goal, assist, and defensive credit points- Goal 8/10, assist 10/10, defensive 6/10 (suggested ratings)
+Optional aliases- Rivelino; Reizinho do Parque
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Rivellino
+Optional player image files- 5b_Rivelino.jpg
+
+8. Pavel Nedvěd
+
+Full name- Pavel Nedvěd
+Overall rank- 5
+Nationality- Czech Republic
+Playing era- 1991-2009
+Position(s), with one primary position- LW (primary); LM, AM, CM
+Short description- Dynamic and two-footed midfielder-winger admired for stamina, powerful shooting, technique, leadership and relentless box-to-box effort.
+Goal, assist, and defensive credit points- Goal 8/10, assist 9/10, defensive 8/10 (suggested ratings)
+Optional aliases- Czech Fury; Grande Paolo
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Pavel_Nedv%C4%9Bd
+Optional player image files- 5c_Pavel_Nedvěd.jpg
+
+9. Paco Gento
+
+Full name- Francisco Gento López
+Overall rank- 6
+Nationality- Spain
+Playing era- 1949-1971
+Position(s), with one primary position- LW (primary); outside left
+Short description- Exceptionally fast and direct left winger known for explosive acceleration, crossing, stamina and sustained success at the highest level.
+Goal, assist, and defensive credit points- Goal 8/10, assist 9/10, defensive 7/10 (suggested ratings)
+Optional aliases- Paco Gento; La Galerna del Cantábrico
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Francisco_Gento
+Optional player image files- 6a_Paco_Gento.jpg
+
+10. Ryan Giggs
+
+Full name- Ryan Joseph Giggs
+Overall rank- 6
+Nationality- Wales
+Playing era- 1990-2014
+Position(s), with one primary position- LW (primary); LM, CM, AM
+Short description- Long-serving and intelligent winger combining pace, balance, dribbling, crossing, creativity and remarkable adaptability across different eras.
+Goal, assist, and defensive credit points- Goal 8/10, assist 10/10, defensive 7/10 (suggested ratings)
+Optional aliases- Giggsy; The Welsh Wizard
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Ryan_Giggs
+Optional player image files- 6b_Ryan_Giggs.jpg
+
+11. Robert Pirès
+
+Full name- Robert Emmanuel Pirès
+Overall rank- 7
+Nationality- France
+Playing era- 1993-2015
+Position(s), with one primary position- LW (primary); LM, AM, RW
+Short description- Elegant and intelligent wide midfielder noted for close control, combination play, chance creation and well-timed goalscoring runs.
+Goal, assist, and defensive credit points- Goal 8/10, assist 9/10, defensive 6/10 (suggested ratings)
+Optional aliases- Bobby
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Robert_Pir%C3%A8s
+Optional player image files- 7a_Robert_Pirès.jpg
+
+12. Franck Ribéry
+
+Full name- Franck Henry Pierre Ribéry
+Overall rank- 7
+Nationality- France
+Playing era- 2000-2022
+Position(s), with one primary position- LW (primary); RW, AM
+Short description- Fearless and energetic winger renowned for acceleration, close dribbling, combination play, pressing and precise creative passing.
+Goal, assist, and defensive credit points- Goal 8/10, assist 10/10, defensive 7/10 (suggested ratings)
+Optional aliases- Francky; Kaiser Franck
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Franck_Rib%C3%A9ry
+Optional player image files- 7b_Franck_Ribéry.jpg
+
+13. Valentino Mazzola
+
+Full name- Valentino Mazzola
+Overall rank- 8
+Nationality- Italy
+Playing era- 1939-1949
+Position(s), with one primary position- SS (primary); LW, AM, CM
+Short description- Complete and inspirational attacking leader who combined goalscoring, creativity, athleticism, pressing and the versatility to influence every phase.
+Goal, assist, and defensive credit points- Goal 9/10, assist 9/10, defensive 8/10 (suggested ratings)
+Optional aliases- Il Capitano
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Valentino_Mazzola
+Optional player image files- 8a_Valentino_Mazzola.jpg
+
+14. Zoltán Czibor
+
+Full name- Zoltán Czibor
+Overall rank- 8
+Nationality- Hungary
+Playing era- 1942-1962
+Position(s), with one primary position- LW (primary); outside left, CF
+Short description- Unpredictable and dynamic left winger celebrated for speed, dribbling, powerful shooting and decisive contributions for the Mighty Magyars.
+Goal, assist, and defensive credit points- Goal 9/10, assist 8/10, defensive 6/10 (suggested ratings)
+Optional aliases- The Ragged One; Bolond
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Zolt%C3%A1n_Czibor
+Optional player image files- 8b_Zoltán_Czibor.jpg
+
+15. Rob Rensenbrink
+
+Full name- Pieter Robert Rensenbrink
+Overall rank- 9
+Nationality- Netherlands
+Playing era- 1965-1982
+Position(s), with one primary position- LW (primary); SS, CF
+Short description- Elegant and elusive attacker known for smooth dribbling, intelligent movement, creativity and calm left-footed finishing.
+Goal, assist, and defensive credit points- Goal 9/10, assist 9/10, defensive 5/10 (suggested ratings)
+Optional aliases- Robbie; The Snake Man
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Rob_Rensenbrink
+Optional player image files- 9a_Rob_Rensenbrink.jpg
+
+16. Oleg Blokhin
+
+Full name- Oleg Volodymyrovych Blokhin
+Overall rank- 9
+Nationality- Soviet Union/Ukraine
+Playing era- 1969-1990
+Position(s), with one primary position- LW (primary); CF, SS
+Short description- Explosive and prolific forward whose pace, direct running, athleticism and finishing made him devastating in open space.
+Goal, assist, and defensive credit points- Goal 9/10, assist 8/10, defensive 7/10 (suggested ratings)
+Optional aliases- None
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Oleg_Blokhin
+Optional player image files- 9b_Oleg_Blokhin.jpg
+
+17. Tom Finney
+
+Full name- Thomas Finney
+Overall rank- 10
+Nationality- England
+Playing era- 1946-1960
+Position(s), with one primary position- LW (primary); RW, CF, inside forward
+Short description- Supremely versatile and balanced attacker admired for dribbling, passing, crossing, two-footed technique and consistent goalscoring.
+Goal, assist, and defensive credit points- Goal 9/10, assist 9/10, defensive 7/10 (suggested ratings)
+Optional aliases- Sir Tom Finney; The Preston Plumber
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Tom_Finney
+Optional player image files- 10a_Tom_Finney.jpg
+
+18. Raimundo Orsi
+
+Full name- Raimundo Bibiani Orsi
+Overall rank- 10
+Nationality- Argentina/Italy
+Playing era- 1920-1939
+Position(s), with one primary position- LW (primary); forward
+Short description- Fast and skilful left winger known for close control, dribbling, creativity and important goals for both Argentina and Italy.
+Goal, assist, and defensive credit points- Goal 9/10, assist 8/10, defensive 4/10 (suggested ratings)
+Optional aliases- Mumo Orsi
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Raimundo_Orsi
+Optional player image files- 10b_Raimundo_Orsi.jpg
+
+19. Hans Schäfer
+
+Full name- Hans Schäfer
+Overall rank- Unranked
+Nationality- West Germany/Germany
+Playing era- 1948-1965
+Position(s), with one primary position- LW (primary); inside forward
+Short description- Direct and dependable left winger-forward valued for intelligent movement, work rate, crossing and consistent goalscoring.
+Goal, assist, and defensive credit points- Goal 8/10, assist 8/10, defensive 7/10 (suggested ratings)
+Optional aliases- De Knoll
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Hans_Sch%C3%A4fer
+Optional player image files- UNRANKED_01_Hans_Schäfer.jpg
+
+20. Mário Zagallo
+
+Full name- Mário Jorge Lobo Zagallo
+Overall rank- Unranked
+Nationality- Brazil
+Playing era- 1948-1965
+Position(s), with one primary position- LW (primary); LM, SS
+Short description- Tactically disciplined and intelligent left winger whose movement, passing, defensive work and team play balanced Brazil’s attack.
+Goal, assist, and defensive credit points- Goal 7/10, assist 8/10, defensive 9/10 (suggested ratings)
+Optional aliases- Zagallo; Velho Lobo; The Professor
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/M%C3%A1rio_Zagallo
+Optional player image files- UNRANKED_02_Zagallo.jpg

@@ -1,0 +1,275 @@
+CB (SWEEPER) RANK LIST
+
+Notes:
+- Overall ranks follow the CB (Sweeper) section of the uploaded rank list.
+- “Kaiser” is identified as Franz Beckenbauer.
+- “Ferdinand” is identified as Rio Ferdinand.
+- “Trésor” is identified as Marius Trésor.
+- “Hansen” is identified as Alan Hansen.
+- “Ayala” is identified as Roberto Ayala.
+- “Vasovic” is identified as Velibor Vasović.
+- “Da Guia” is identified as Domingos da Guia.
+- “Schulz” is identified as Willi Schulz.
+- Players listed beneath the numbered Top 10 are marked Unranked.
+- Goal, assist and defensive credit points are suggested ratings on a 0-10 scale.
+- Player image fields contain filenames from the supplied CB_Sweeper image archive.
+
+1. Franz Beckenbauer
+
+Full name- Franz Anton Beckenbauer
+Overall rank- 1
+Nationality- West Germany/Germany
+Playing era- 1964-1983
+Position(s), with one primary position- Sweeper (primary); CB, DM, CM
+Short description- Transformative libero who combined elite reading of play, elegant ball carrying, passing, leadership and complete command of the defensive line.
+Goal, assist, and defensive credit points- Goal 8/10, assist 10/10, defensive 10/10 (suggested ratings)
+Optional aliases- Der Kaiser; Kaiser
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Franz_Beckenbauer
+Optional player image files- 1_Franz_Beckenbauer.jpg
+
+2. Franco Baresi
+
+Full name- Franchino Baresi
+Overall rank- 2
+Nationality- Italy
+Playing era- 1977-1997
+Position(s), with one primary position- Sweeper (primary); CB
+Short description- Masterful defensive organiser renowned for anticipation, positioning, tackling, distribution, leadership and control of the offside line.
+Goal, assist, and defensive credit points- Goal 6/10, assist 8/10, defensive 10/10 (suggested ratings)
+Optional aliases- Piscinin; Il Capitano
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Franco_Baresi
+Optional player image files- 2_Franco_Baresi.jpg
+
+3. Gaetano Scirea
+
+Full name- Gaetano Scirea
+Overall rank- 3
+Nationality- Italy
+Playing era- 1972-1988
+Position(s), with one primary position- Sweeper (primary); CB, DM
+Short description- Graceful and exceptionally composed libero admired for anticipation, clean defending, ball progression, passing and sporting intelligence.
+Goal, assist, and defensive credit points- Goal 6/10, assist 9/10, defensive 10/10 (suggested ratings)
+Optional aliases- Gai
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Gaetano_Scirea
+Optional player image files- 3_Gaetano_Scirea.jpg
+
+4. Daniel Passarella
+
+Full name- Daniel Alberto Passarella
+Overall rank- 4
+Nationality- Argentina
+Playing era- 1971-1989
+Position(s), with one primary position- CB (primary); sweeper
+Short description- Aggressive and authoritative defender combining anticipation, aerial excellence, leadership, long passing and remarkable goalscoring output.
+Goal, assist, and defensive credit points- Goal 9/10, assist 7/10, defensive 10/10 (suggested ratings)
+Optional aliases- El Gran Capitán; El Kaiser
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Daniel_Passarella
+Optional player image files- 4_Daniel_Passarella.jpg
+
+5. Matthias Sammer
+
+Full name- Matthias Sammer
+Overall rank- 5
+Nationality- East Germany/Germany
+Playing era- 1985-1998
+Position(s), with one primary position- Sweeper (primary); DM, CM, CB
+Short description- Dynamic libero and midfielder who combined aggressive ball winning, tactical intelligence, forward surges, passing and decisive goals.
+Goal, assist, and defensive credit points- Goal 8/10, assist 8/10, defensive 9/10 (suggested ratings)
+Optional aliases- None
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Matthias_Sammer
+Optional player image files- 5a_Matthias_Sammer.jpg
+
+6. Sergio Ramos
+
+Full name- Sergio Ramos García
+Overall rank- 5
+Nationality- Spain
+Playing era- 2004-2020s
+Position(s), with one primary position- CB (primary); RB, sweeper
+Short description- Combative and technically accomplished defender known for leadership, anticipation, aerial dominance, recovery pace and decisive goals.
+Goal, assist, and defensive credit points- Goal 9/10, assist 7/10, defensive 9/10 (suggested ratings)
+Optional aliases- El Capitán; Capi
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Sergio_Ramos
+Optional player image files- 5b_Sergio_Ramos.jpg
+
+7. Armando Picchi
+
+Full name- Armando Picchi
+Overall rank- 6
+Nationality- Italy
+Playing era- 1954-1969
+Position(s), with one primary position- Sweeper (primary); CB, RB
+Short description- Disciplined and intelligent libero who organised the defence through positioning, anticipation, calm distribution and authoritative leadership.
+Goal, assist, and defensive credit points- Goal 5/10, assist 7/10, defensive 10/10 (suggested ratings)
+Optional aliases- None
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Armando_Picchi
+Optional player image files- 6a_Armando_Picchi.jpg
+
+8. Ronald Koeman
+
+Full name- Ronald Koeman
+Overall rank- 6
+Nationality- Netherlands
+Playing era- 1980-1997
+Position(s), with one primary position- Sweeper (primary); CB, DM
+Short description- Exceptional ball-playing defender renowned for long passing, powerful shooting, set pieces, composure and attacking contribution from deep.
+Goal, assist, and defensive credit points- Goal 10/10, assist 9/10, defensive 8/10 (suggested ratings)
+Optional aliases- Tintin
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Ronald_Koeman
+Optional player image files- 6b_Ronald_Koeman.jpg
+
+9. José Santamaría
+
+Full name- José Emilio Santamaría Iglesias
+Overall rank- 7
+Nationality- Uruguay/Spain
+Playing era- 1948-1966
+Position(s), with one primary position- CB (primary); sweeper
+Short description- Powerful and commanding defender celebrated for positioning, strength, aerial authority, concentration and consistent leadership.
+Goal, assist, and defensive credit points- Goal 5/10, assist 6/10, defensive 10/10 (suggested ratings)
+Optional aliases- La Muralla
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Jos%C3%A9_Santamar%C3%ADa
+Optional player image files- 7a_Jose_Santamaria.jpg
+
+10. Laurent Blanc
+
+Full name- Laurent Robert Blanc
+Overall rank- 7
+Nationality- France
+Playing era- 1983-2003
+Position(s), with one primary position- CB (primary); sweeper, AM
+Short description- Elegant ball-playing centre-back known for anticipation, composure, passing, aerial ability and controlled progression from defence.
+Goal, assist, and defensive credit points- Goal 8/10, assist 8/10, defensive 9/10 (suggested ratings)
+Optional aliases- Le Président
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Laurent_Blanc
+Optional player image files- 7b_Laurent_Blanc.jpg
+
+11. Fernando Hierro
+
+Full name- Fernando Ruiz Hierro
+Overall rank- 7
+Nationality- Spain
+Playing era- 1987-2005
+Position(s), with one primary position- CB (primary); sweeper, DM
+Short description- Authoritative defender and midfielder combining long passing, aerial power, leadership, set pieces and exceptional goalscoring for a centre-back.
+Goal, assist, and defensive credit points- Goal 9/10, assist 8/10, defensive 9/10 (suggested ratings)
+Optional aliases- Hierro
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Fernando_Hierro
+Optional player image files- 7c_Fernando_Hierro.jpg
+
+12. Rio Ferdinand
+
+Full name- Rio Gavin Ferdinand
+Overall rank- 8
+Nationality- England
+Playing era- 1996-2015
+Position(s), with one primary position- CB (primary); sweeper
+Short description- Athletic and composed ball-playing defender renowned for recovery speed, anticipation, distribution and calm one-on-one defending.
+Goal, assist, and defensive credit points- Goal 5/10, assist 7/10, defensive 9/10 (suggested ratings)
+Optional aliases- Rio
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Rio_Ferdinand
+Optional player image files- 8a_Rio_Ferdinand.jpg
+
+13. Klaus Augenthaler
+
+Full name- Klaus Augenthaler
+Overall rank- 8
+Nationality- West Germany/Germany
+Playing era- 1976-1991
+Position(s), with one primary position- Sweeper (primary); CB
+Short description- Commanding libero known for defensive organisation, anticipation, physical strength, long-range shooting and assured distribution.
+Goal, assist, and defensive credit points- Goal 7/10, assist 7/10, defensive 9/10 (suggested ratings)
+Optional aliases- Auge
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Klaus_Augenthaler
+Optional player image files- 8b_Klaus_Augenthaler.jpg
+
+14. Elías Figueroa
+
+Full name- Elías Ricardo Figueroa Brander
+Overall rank- 9
+Nationality- Chile
+Playing era- 1964-1982
+Position(s), with one primary position- CB (primary); sweeper
+Short description- Elegant and dominant defender admired for anticipation, aerial strength, composure, distribution and commanding leadership.
+Goal, assist, and defensive credit points- Goal 7/10, assist 7/10, defensive 10/10 (suggested ratings)
+Optional aliases- Don Elías
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/El%C3%ADas_Figueroa
+Optional player image files- 9_Elías_Figueroa.jpg
+
+15. Marius Trésor
+
+Full name- Marius Paul Trésor
+Overall rank- 10
+Nationality- France
+Playing era- 1969-1984
+Position(s), with one primary position- CB (primary); sweeper
+Short description- Powerful and elegant defender who combined pace, anticipation, aerial strength, ball carrying and composure under pressure.
+Goal, assist, and defensive credit points- Goal 6/10, assist 6/10, defensive 9/10 (suggested ratings)
+Optional aliases- None
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Marius_Tr%C3%A9sor
+Optional player image files- 10a_Marius_Trésor.jpg
+
+16. Alan Hansen
+
+Full name- Alan David Hansen
+Overall rank- 10
+Nationality- Scotland
+Playing era- 1973-1991
+Position(s), with one primary position- CB (primary); sweeper
+Short description- Cultured and composed centre-back renowned for reading the game, carrying the ball, distribution and calm defensive organisation.
+Goal, assist, and defensive credit points- Goal 5/10, assist 8/10, defensive 9/10 (suggested ratings)
+Optional aliases- Jockey
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Alan_Hansen
+Optional player image files- 10b_Alan_Hansen.jpg
+
+17. Roberto Ayala
+
+Full name- Roberto Fabián Ayala
+Overall rank- Unranked
+Nationality- Argentina
+Playing era- 1991-2011
+Position(s), with one primary position- CB (primary); sweeper
+Short description- Aggressive and intelligent defender recognised for anticipation, timing, aerial courage, leadership and excellence in one-on-one situations.
+Goal, assist, and defensive credit points- Goal 5/10, assist 5/10, defensive 9/10 (suggested ratings)
+Optional aliases- El Ratón
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Roberto_Ayala
+Optional player image files- UNRANKED_01_Roberto_Ayala.jpg
+
+18. Velibor Vasović
+
+Full name- Velibor Vasović
+Overall rank- Unranked
+Nationality- Yugoslavia/Serbia
+Playing era- 1958-1971
+Position(s), with one primary position- Sweeper (primary); CB, DM
+Short description- Intelligent and forceful libero valued for leadership, tactical awareness, passing and the ability to initiate play from defence.
+Goal, assist, and defensive credit points- Goal 6/10, assist 8/10, defensive 9/10 (suggested ratings)
+Optional aliases- Vasko
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Velibor_Vasovi%C4%87
+Optional player image files- UNRANKED_02_Velibor_Vasović.jpg
+
+19. Domingos da Guia
+
+Full name- Domingos Antônio da Guia
+Overall rank- Unranked
+Nationality- Brazil
+Playing era- 1929-1950
+Position(s), with one primary position- CB (primary); full-back, sweeper
+Short description- Elegant pre-war defender famed for composure, dribbling out of pressure, anticipation and technically sophisticated defending.
+Goal, assist, and defensive credit points- Goal 5/10, assist 7/10, defensive 10/10 (suggested ratings)
+Optional aliases- The Divine Master
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Domingos_da_Guia
+Optional player image files- UNRANKED_03_Domingos_da_Guia.jpg
+
+20. Willi Schulz
+
+Full name- Willi Schulz
+Overall rank- Unranked
+Nationality- West Germany/Germany
+Playing era- 1960-1973
+Position(s), with one primary position- Sweeper (primary); CB, DM
+Short description- Dependable and tactically disciplined defender known for man-marking, positioning, leadership and calm organisation from the back.
+Goal, assist, and defensive credit points- Goal 5/10, assist 6/10, defensive 9/10 (suggested ratings)
+Optional aliases- World Cup Willi
+Optional Wikipedia/Transfermarkt URLs- https://en.wikipedia.org/wiki/Willi_Schulz
+Optional player image files- UNRANKED_04_Willi_Schulz.jpg

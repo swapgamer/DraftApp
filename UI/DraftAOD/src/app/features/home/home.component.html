@@ -1,0 +1,15 @@
+<section class="home-page">
+  <div class="hero">
+    <p class="eyebrow">Draft Datastore</p>
+    <h1>Football history,<br /><span>ready for the draft.</span></h1>
+    <p class="intro">A curated football intelligence platform for discovering elite players, comparing career impact, and exploring the numbers behind the game.</p>
+    <div class="hero-actions">
+      @if (auth.isAuthenticated()) { <a mat-flat-button color="primary" routerLink="/hall-of-fame">Explore Hall of Fame <mat-icon>arrow_forward</mat-icon></a> <a mat-button routerLink="/assistant">Ask the assistant</a> } @else { <a mat-flat-button color="primary" routerLink="/register">Create account <mat-icon>arrow_forward</mat-icon></a> <a mat-button routerLink="/login">Sign in</a> }
+    </div>
+  </div>
+  <section class="value-grid" aria-label="Platform features">
+    <article><mat-icon>emoji_events</mat-icon><h2>Ranked legacy</h2><p>Explore a structured Hall of Fame with career rankings and position context.</p></article>
+    <article><mat-icon>query_stats</mat-icon><h2>Impact credits</h2><p>Compare goal, assist, and defensive credit points in a consistent view.</p></article>
+    <article><mat-icon>forum</mat-icon><h2>Ask naturally</h2><p>Use the football assistant to find answers without learning database filters.</p></article>
+  </section>
+</section>

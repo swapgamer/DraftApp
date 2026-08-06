@@ -1,0 +1,36 @@
+<section class="dashboard-page">
+  <header class="dashboard-header">
+    <div>
+      <p class="eyebrow">Administration</p>
+      <h1>System overview</h1>
+      <p>Monitor adoption and the current size of the Draft Datastore.</p>
+    </div>
+    <button mat-stroked-button (click)="load()" [disabled]="loading()"><mat-icon>refresh</mat-icon>Refresh</button>
+  </header>
+
+  @if (loading() && !metrics()) {
+    <div class="status">Loading dashboard...</div>
+  } @else if (error()) {
+    <div class="status"><mat-icon>error_outline</mat-icon><h2>Dashboard data is unavailable</h2><p>Check that the API is running and that your account has the Admin role.</p><button mat-flat-button color="primary" (click)="load()">Try again</button></div>
+  } @else if (metrics(); as data) {
+    <div class="metric-grid">
+      <mat-card><mat-card-content><mat-icon>group</mat-icon><p>Total users</p><strong>{{ data.totalUsers }}</strong></mat-card-content></mat-card>
+      <mat-card><mat-card-content><mat-icon>verified_user</mat-icon><p>Active users</p><strong>{{ data.activeUsers }}</strong></mat-card-content></mat-card>
+      <mat-card><mat-card-content><mat-icon>emoji_events</mat-icon><p>Players indexed</p><strong>{{ data.totalPlayers }}</strong></mat-card-content></mat-card>
+      <mat-card><mat-card-content><mat-icon>forum</mat-icon><p>Chat queries</p><strong>{{ data.totalChatQueries }}</strong></mat-card-content></mat-card>
+    </div>
+
+    <section class="next-actions">
+      <div class="management-heading">
+        <h2>Management</h2>
+        <p>Manage the people, player catalogue, chemistry combinations, and recorded activity from one admin workspace.</p>
+      </div>
+      <div class="management-grid">
+        <a class="management-card" routerLink="/admin/players"><mat-icon>manage_accounts</mat-icon><span><strong>Player management</strong><small>Add, update, delete, and maintain player cards.</small></span><mat-icon class="arrow">arrow_forward</mat-icon></a>
+        <a class="management-card" routerLink="/admin/chemistry"><mat-icon>hub</mat-icon><span><strong>Chemistry management</strong><small>Create, update, or remove duo and trio combinations.</small></span><mat-icon class="arrow">arrow_forward</mat-icon></a>
+        <a class="management-card" routerLink="/admin/users"><mat-icon>group</mat-icon><span><strong>User list</strong><small>Review registered users and their access.</small></span><mat-icon class="arrow">arrow_forward</mat-icon></a>
+        <a class="management-card" routerLink="/admin/activity"><mat-icon>history</mat-icon><span><strong>Activity history</strong><small>Review user activity across the datastore.</small></span><mat-icon class="arrow">arrow_forward</mat-icon></a>
+      </div>
+    </section>
+  }
+</section>
