@@ -5,4 +5,5 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 export class NotificationService {
   private readonly snackBar = inject(MatSnackBar);
   showError(message: string): void { this.snackBar.open(message, 'Dismiss', { duration: 5000, panelClass: 'error-snackbar' }); }
+  showSuccess(message: string): void { this.snackBar.open(message, 'Dismiss', { duration: 5000, panelClass: 'success-snackbar' }); }
 }

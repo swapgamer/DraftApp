@@ -5,7 +5,7 @@ namespace DraftDatastore.Application.Authentication;
 public sealed record RegisterRequest(string Email, string DisplayName, string Password);
 public sealed record LoginRequest(string Email, string Password);
 public sealed record RefreshRequest(string RefreshToken);
-public sealed record AuthenticatedUserResponse(Guid UserId, string Email, string DisplayName, IReadOnlyCollection<string> Roles);
+public sealed record AuthenticatedUserResponse(Guid UserId, string Email, string DisplayName, IReadOnlyCollection<string> Roles, bool IsSystemAdmin);
 public sealed record AuthResponse(string AccessToken, DateTimeOffset AccessTokenExpiresAtUtc, string RefreshToken, AuthenticatedUserResponse User);
 
 public interface IAuthService

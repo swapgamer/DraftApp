@@ -22,6 +22,159 @@ namespace DraftDatastore.Persistence.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("DraftDatastore.Domain.Entities.Auction", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTimeOffset>("CreatedAtUtc")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<Guid?>("CreatedByUserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(120)
+                        .HasColumnType("nvarchar(120)");
+
+                    b.Property<DateTimeOffset?>("UpdatedAtUtc")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<Guid?>("UpdatedByUserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IsActive")
+                        .IsUnique()
+                        .HasFilter("[IsActive] = 1");
+
+                    b.ToTable("Auctions", (string)null);
+                });
+
+            modelBuilder.Entity("DraftDatastore.Domain.Entities.AuctionAssignment", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("AuctionId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("AuctionTeamId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTimeOffset>("CreatedAtUtc")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<Guid?>("CreatedByUserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("PlayerId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<decimal>("SoldPrice")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTimeOffset?>("UpdatedAtUtc")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<Guid?>("UpdatedByUserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PlayerId");
+
+                    b.HasIndex("AuctionId", "PlayerId")
+                        .IsUnique();
+
+                    b.HasIndex("AuctionTeamId", "CreatedAtUtc");
+
+                    b.ToTable("AuctionAssignments", null, t =>
+                        {
+                            t.HasCheckConstraint("CK_AuctionAssignments_SoldPrice", "[SoldPrice] > 0");
+                        });
+                });
+
+            modelBuilder.Entity("DraftDatastore.Domain.Entities.AuctionTeam", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("AuctionId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTimeOffset>("CreatedAtUtc")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<Guid?>("CreatedByUserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Icon")
+                        .HasMaxLength(512)
+                        .HasColumnType("nvarchar(512)");
+
+                    b.Property<Guid>("RepresentativeUserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<decimal>("StartingBalance")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasMaxLength(16)
+                        .HasColumnType("nvarchar(16)");
+
+                    b.Property<string>("TeamName")
+                        .IsRequired()
+                        .HasMaxLength(120)
+                        .HasColumnType("nvarchar(120)");
+
+                    b.Property<DateTimeOffset?>("UpdatedAtUtc")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<Guid?>("UpdatedByUserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RepresentativeUserId");
+
+                    b.HasIndex("AuctionId", "Status");
+
+                    b.HasIndex("AuctionId", "TeamName")
+                        .IsUnique();
+
+                    b.ToTable("AuctionTeams", null, t =>
+                        {
+                            t.HasCheckConstraint("CK_AuctionTeams_Balance", "[StartingBalance] >= 0");
+                        });
+                });
+
+            modelBuilder.Entity("DraftDatastore.Domain.Entities.AuctionTeamMember", b =>
+                {
+                    b.Property<Guid>("AuctionTeamId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("AuctionTeamId", "UserId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AuctionTeamMembers", (string)null);
+                });
+
             modelBuilder.Entity("DraftDatastore.Domain.Entities.AuditLog", b =>
                 {
                     b.Property<long>("Id")
@@ -438,11 +591,17 @@ namespace DraftDatastore.Persistence.Migrations
                     b.Property<bool>("IsPrimary")
                         .HasColumnType("bit");
 
+                    b.Property<int?>("OverallRank")
+                        .HasColumnType("int");
+
                     b.HasKey("PlayerId", "PositionId");
 
-                    b.HasIndex("PositionId", "PlayerId");
+                    b.HasIndex("PositionId", "OverallRank", "PlayerId");
 
-                    b.ToTable("PlayerPositions", (string)null);
+                    b.ToTable("PlayerPositions", null, t =>
+                        {
+                            t.HasCheckConstraint("CK_PlayerPositions_Rank", "[OverallRank] IS NULL OR [OverallRank] > 0");
+                        });
                 });
 
             modelBuilder.Entity("DraftDatastore.Domain.Entities.PlayingEra", b =>
@@ -630,6 +789,9 @@ namespace DraftDatastore.Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<DateTimeOffset?>("AdminExpiresAtUtc")
+                        .HasColumnType("datetimeoffset");
+
                     b.Property<DateTimeOffset>("CreatedAtUtc")
                         .HasColumnType("datetimeoffset");
 
@@ -655,6 +817,9 @@ namespace DraftDatastore.Persistence.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("IsSystemAdmin")
+                        .HasColumnType("bit");
+
                     b.Property<string>("NormalizedEmail")
                         .IsRequired()
                         .HasMaxLength(320)
@@ -676,6 +841,8 @@ namespace DraftDatastore.Persistence.Migrations
                     b.HasIndex("NormalizedEmail")
                         .IsUnique();
 
+                    b.HasIndex("IsSystemAdmin", "AdminExpiresAtUtc");
+
                     b.ToTable("Users", (string)null);
                 });
 
@@ -692,6 +859,71 @@ namespace DraftDatastore.Persistence.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("UserRoles", (string)null);
+                });
+
+            modelBuilder.Entity("DraftDatastore.Domain.Entities.AuctionAssignment", b =>
+                {
+                    b.HasOne("DraftDatastore.Domain.Entities.Auction", "Auction")
+                        .WithMany("Assignments")
+                        .HasForeignKey("AuctionId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("DraftDatastore.Domain.Entities.AuctionTeam", "AuctionTeam")
+                        .WithMany("Assignments")
+                        .HasForeignKey("AuctionTeamId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DraftDatastore.Domain.Entities.Player", "Player")
+                        .WithMany()
+                        .HasForeignKey("PlayerId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Auction");
+
+                    b.Navigation("AuctionTeam");
+
+                    b.Navigation("Player");
+                });
+
+            modelBuilder.Entity("DraftDatastore.Domain.Entities.AuctionTeam", b =>
+                {
+                    b.HasOne("DraftDatastore.Domain.Entities.Auction", "Auction")
+                        .WithMany("Teams")
+                        .HasForeignKey("AuctionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DraftDatastore.Domain.Entities.User", "RepresentativeUser")
+                        .WithMany()
+                        .HasForeignKey("RepresentativeUserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Auction");
+
+                    b.Navigation("RepresentativeUser");
+                });
+
+            modelBuilder.Entity("DraftDatastore.Domain.Entities.AuctionTeamMember", b =>
+                {
+                    b.HasOne("DraftDatastore.Domain.Entities.AuctionTeam", "AuctionTeam")
+                        .WithMany("Members")
+                        .HasForeignKey("AuctionTeamId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DraftDatastore.Domain.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("AuctionTeam");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("DraftDatastore.Domain.Entities.ChatHistory", b =>
@@ -842,6 +1074,20 @@ namespace DraftDatastore.Persistence.Migrations
                     b.Navigation("Role");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("DraftDatastore.Domain.Entities.Auction", b =>
+                {
+                    b.Navigation("Assignments");
+
+                    b.Navigation("Teams");
+                });
+
+            modelBuilder.Entity("DraftDatastore.Domain.Entities.AuctionTeam", b =>
+                {
+                    b.Navigation("Assignments");
+
+                    b.Navigation("Members");
                 });
 
             modelBuilder.Entity("DraftDatastore.Domain.Entities.ChemistryCombination", b =>

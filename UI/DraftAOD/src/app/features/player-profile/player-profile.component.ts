@@ -21,6 +21,7 @@ export class PlayerProfileComponent {
   readonly missing = signal(false);
   readonly imageSaving = signal(false);
   readonly imageMessage = signal('');
+  readonly auctionTeamId = signal<string | null>(null);
 
   private readonly route = inject(ActivatedRoute);
   private readonly players = inject(PlayerService);
@@ -29,6 +30,7 @@ export class PlayerProfileComponent {
 
   constructor() {
     this.route.paramMap.subscribe((params) => this.loadPlayer(params.get('id')));
+    this.route.queryParamMap.subscribe((params) => this.auctionTeamId.set(params.get('fromAuction')));
   }
 
   private loadPlayer(id: string | null): void {

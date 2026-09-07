@@ -8,6 +8,7 @@ import { MatTableModule } from '@angular/material/table';
 import { RouterLink } from '@angular/router';
 import { AdminService, AdminUser } from '../../../core/admin/admin.service';
 import { ConfirmationService } from '../../../core/confirmation.service';
+import { AuthService } from '../../../core/auth/auth.service';
 
 @Component({
   standalone: true,
@@ -28,21 +29,31 @@ export class AdminUsersComponent {
   readonly updatingId = signal<string | null>(null);
   readonly columns = ['user', 'roles', 'created', 'status', 'actions'];
   private readonly admin = inject(AdminService);
+  private readonly auth = inject(AuthService);
   private readonly confirmation = inject(ConfirmationService);
+  readonly canManageAdmins = computed(() => this.auth.user()?.isSystemAdmin ?? false);
 
   constructor() { this.load(); }
 
   load(): void {
     this.loading.set(true); this.error.set(false);
-    this.admin.getUsers().subscribe({ next: users => this.users.set(users), error: () => this.error.set(true), complete: () => this.loading.set(false) });
+    this.admin.getUsers().subscribe({ next: users => this.users.set(users), error: () => { this.error.set(true); this.loading.set(false); }, complete: () => this.loading.set(false) });
   }
 
-  changeRole(user: AdminUser, roleId: number): void {
-    const role = roleId === 2 ? 'Admin' : 'User';
-    this.confirmation.ask('Change user role', `Assign the ${role} role to ${user.displayName}?`, 'Confirm').subscribe(confirmed => {
+  grantTemporaryAdmin(user: AdminUser): void {
+    const expiresAtUtc = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString();
+    this.confirmation.ask('Add temporary admin', `Grant ${user.displayName} admin access for 30 days? They cannot manage administrator access.`, 'Add admin').subscribe(confirmed => {
       if (!confirmed) return;
       this.updatingId.set(user.id);
-      this.admin.setUserRole(user.id, roleId).subscribe({ next: () => this.users.update(items => items.map(item => item.id === user.id ? { ...item, roles: [role] } : item)), error: () => this.error.set(true), complete: () => this.updatingId.set(null) });
+      this.admin.grantTemporaryAdmin(user.id, expiresAtUtc).subscribe({ next: () => this.users.update(items => items.map(item => item.id === user.id ? { ...item, roles: ['Admin'], adminExpiresAtUtc: expiresAtUtc } : item)), error: () => this.error.set(true), complete: () => this.updatingId.set(null) });
+    });
+  }
+
+  revokeTemporaryAdmin(user: AdminUser): void {
+    this.confirmation.ask('Remove temporary admin', `Remove admin access from ${user.displayName}?`, 'Remove admin').subscribe(confirmed => {
+      if (!confirmed) return;
+      this.updatingId.set(user.id);
+      this.admin.revokeTemporaryAdmin(user.id).subscribe({ next: () => this.users.update(items => items.map(item => item.id === user.id ? { ...item, roles: ['User'], adminExpiresAtUtc: undefined } : item)), error: () => this.error.set(true), complete: () => this.updatingId.set(null) });
     });
   }
 

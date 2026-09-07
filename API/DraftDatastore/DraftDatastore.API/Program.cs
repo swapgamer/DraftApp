@@ -13,6 +13,8 @@ using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
 using Microsoft.OpenApi.Models;
+using Microsoft.EntityFrameworkCore;
+using DraftDatastore.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -47,6 +49,23 @@ builder.Services.AddRateLimiter(options => { options.RejectionStatusCode = Statu
 builder.Services.AddHealthChecks();
 
 var app = builder.Build();
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<DraftDatastoreDbContext>();
+    var emails = builder.Configuration.GetSection("Administration:SystemAdminEmails").Get<string[]>() ?? [];
+    var permanentAdmins = await db.Users.Include(x => x.UserRoles).Where(x => emails.Contains(x.NormalizedEmail)).ToListAsync();
+    foreach (var user in permanentAdmins)
+    {
+        user.IsSystemAdmin = true;
+        user.AdminExpiresAtUtc = null;
+        if (!user.UserRoles.Any(x => x.RoleId == SystemRoleIds.Admin))
+        {
+            user.UserRoles.Clear();
+            user.UserRoles.Add(new UserRole { UserId = user.Id, RoleId = SystemRoleIds.Admin });
+        }
+    }
+    if (permanentAdmins.Count > 0) await db.SaveChangesAsync();
+}
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseSerilogRequestLogging();
 app.UseStaticFiles();

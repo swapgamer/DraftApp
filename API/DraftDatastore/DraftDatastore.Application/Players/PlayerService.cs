@@ -9,7 +9,7 @@ public sealed class PlayerService(IPlayerRepository repository) : IPlayerService
     public async Task<PagedResult<PlayerResponse>> SearchAsync(PlayerSearchRequest request, CancellationToken ct)
     {
         var players = await repository.SearchAsync(request, ct);
-        return new(players.Items.Select(Map).ToArray(), players.PageNumber, players.PageSize, players.TotalCount);
+        return new(players.Items.Select(player => Map(player, request.PositionId)).ToArray(), players.PageNumber, players.PageSize, players.TotalCount);
     }
 
     public async Task<PlayerResponse?> GetAsync(Guid id, CancellationToken ct)
@@ -148,10 +148,10 @@ public sealed class PlayerService(IPlayerRepository repository) : IPlayerService
         }
     }
 
-    private static PlayerResponse Map(Player player) => new(
+    private static PlayerResponse Map(Player player, int? selectedPositionId = null) => new(
         player.Id, player.FullName, player.Nationality.Name, player.PlayingEra.Name,
         player.PlayerPositions.Select(position => position.Position.Name).ToArray(),
-        player.Aliases.Select(alias => alias.Alias).ToArray(), player.ShortDescription, player.OverallRank,
+        player.Aliases.Select(alias => alias.Alias).ToArray(), player.ShortDescription, selectedPositionId is int positionId ? player.PlayerPositions.SingleOrDefault(position => position.PositionId == positionId)?.OverallRank ?? player.OverallRank : player.OverallRank,
         player.GoalCreditPoints, player.AssistCreditPoints, player.DefensiveCreditPoints,
         player.TransfermarktUrl, player.WikipediaUrl,
         player.Images.OrderByDescending(image => image.IsPrimary).Select(image => "/player-images/" + image.BlobPath.Replace("\\", "/")).FirstOrDefault(),

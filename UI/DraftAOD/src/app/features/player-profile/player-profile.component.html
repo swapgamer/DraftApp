@@ -1,5 +1,5 @@
 ﻿<section class="profile-page">
-  <a mat-button class="back-link" routerLink="/hall-of-fame"><mat-icon>arrow_back</mat-icon>Back to Hall of Fame</a>
+  @if (auctionTeamId()) { <a mat-button class="back-link" routerLink="/auction" [queryParams]="{team:auctionTeamId(),tab:'participants'}"><mat-icon>arrow_back</mat-icon>Back to auction team</a> } @else { <a mat-button class="back-link" routerLink="/hall-of-fame"><mat-icon>arrow_back</mat-icon>Back to Hall of Fame</a> }
 
   @if (loading()) {
     <div class="status">Loading player profile…</div>

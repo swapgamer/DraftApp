@@ -1,6 +1,6 @@
 ﻿<section class="auth-page">
   <form class="auth-card" [formGroup]="form" (ngSubmit)="submit()" novalidate>
-    <p class="eyebrow">Draft Datastore</p>
+    <p class="eyebrow">Football Mayhem</p>
     <h1>Welcome back</h1>
     <p class="subtitle">Sign in to explore the complete player database.</p>
 
@@ -21,6 +21,6 @@
     </mat-form-field>
 
     <button mat-flat-button color="primary" type="submit" [disabled]="submitting()">{{ submitting() ? 'Signing in...' : 'Sign in' }}</button>
-    <p class="switch-copy">New to Draft Datastore? <a routerLink="/register">Create an account</a></p>
+    <p class="switch-copy">New to Football Mayhem? <a routerLink="/register">Create an account</a></p>
   </form>
 </section>

@@ -1,0 +1,1082 @@
+﻿[
+    {
+        "blobPath":  "CAM/10a_Carlos_Valderrama.jpg",
+        "bytes":  75613,
+        "sha256":  "A369AE4FC0D06F2703FC0275B3C88F2E65C02E665D75F058BE784E9DC6F17B4B"
+    },
+    {
+        "blobPath":  "CAM/10b_Juan_Román_Riquelme.jpg",
+        "bytes":  50269,
+        "sha256":  "F7D16370A6CB9AE754BB8D5717798888D9FD1AFF0E3DD2F01B56C10EDF05728E"
+    },
+    {
+        "blobPath":  "CAM/1_Diego_Maradona.jpg",
+        "bytes":  73195,
+        "sha256":  "1385A0E28ED077299975C2A354BC17EF4F1B27205BE45F40F0DB3470815A9C03"
+    },
+    {
+        "blobPath":  "CAM/2a_Michel_Platini.jpg",
+        "bytes":  41311,
+        "sha256":  "0D6A2FCEFCBBF60F0908A23D21FA69000672F2D86E71504F3095C3157502120C"
+    },
+    {
+        "blobPath":  "CAM/2b_Zinedine_Zidane.jpg",
+        "bytes":  47384,
+        "sha256":  "9268015E3E7F1188F531BDD23355A8BBBF17DDA34790EF7BB1356A728D3FAB8C"
+    },
+    {
+        "blobPath":  "CAM/3_Alfredo_Di_Stéfano.jpg",
+        "bytes":  32140,
+        "sha256":  "1320393174DF981A775E4AA402056B47EEE8539F0CF1A9D25C3E32366C9308BB"
+    },
+    {
+        "blobPath":  "CAM/4a_Zico.jpg",
+        "bytes":  31252,
+        "sha256":  "A2513CD034FC4AB37D772C27EBB99DF5CDB6C7F391FFE1D16152BCC2ED785230"
+    },
+    {
+        "blobPath":  "CAM/4b_Bobby_Charlton.jpg",
+        "bytes":  129804,
+        "sha256":  "2E00EEAA69810E83895BC6167348EE2D39F69E10E017F5E055445897014648CC"
+    },
+    {
+        "blobPath":  "CAM/5a_Rivaldo.jpg",
+        "bytes":  43391,
+        "sha256":  "B0CFD5C0F6D1486850663800D3763149220304F28730D5239CF78D86D0DEC071"
+    },
+    {
+        "blobPath":  "CAM/5b_Socrates.jpg",
+        "bytes":  135894,
+        "sha256":  "5BAC8B317654921C2D4D763DCFB30620B607568A4335A2E0D49C4C4D609DDFB9"
+    },
+    {
+        "blobPath":  "CAM/5c_Kaká.jpg",
+        "bytes":  32030,
+        "sha256":  "5DCCAADAA9C55C2DCBB9BD975B839E989B0DE8406B6A84622B8DCD7A06B27FD6"
+    },
+    {
+        "blobPath":  "CAM/6a_Ruud_Gullit.jpg",
+        "bytes":  300345,
+        "sha256":  "64A96113AC336FCEBC03A792DF482C1842751BF5663CDCC707210F92F370BEBD"
+    },
+    {
+        "blobPath":  "CAM/6b_Michael_Laudrup.jpg",
+        "bytes":  59790,
+        "sha256":  "0A4BB1DAB8D4BA4AE0718416444367A5ABDD82AEEAFE6269215DE8035FD7E45A"
+    },
+    {
+        "blobPath":  "CAM/7a_Rivelino.jpg",
+        "bytes":  94169,
+        "sha256":  "8762D99CC4FCEF192928FE29B84FCEECBAE9CF1F52F06AD17E3FFABB0A209BE9"
+    },
+    {
+        "blobPath":  "CAM/7b_Gianni_Rivera.jpg",
+        "bytes":  161964,
+        "sha256":  "0F027EF9FB880CE5C058B386FAA2372E62276C3C85D3277D304D2BB645ED72A0"
+    },
+    {
+        "blobPath":  "CAM/7c_Frank_Lampard.jpg",
+        "bytes":  95745,
+        "sha256":  "B25D283209236B2AF1C5BB7DE9FEE23C9C48B0786F25DE2E3E4833848D627636"
+    },
+    {
+        "blobPath":  "CAM/8_Youri_Djorkaeff.jpg",
+        "bytes":  72859,
+        "sha256":  "DC16FB5A69C0671E10521D33099FE45C6AF800B27A25474D5272671676166793"
+    },
+    {
+        "blobPath":  "CAM/9_Sandro_Mazzola.jpg",
+        "bytes":  270006,
+        "sha256":  "3A91D3E7CB8828826CC4078C02695A50635341D1A366E2D822962E5E77484116"
+    },
+    {
+        "blobPath":  "CB_Stopper/10_Oscar_Ruggeri.jpg",
+        "bytes":  111541,
+        "sha256":  "87393B6394B57511922DBABFCA96EB9164596FF6DF69C3EC0C35F63C55DE51B7"
+    },
+    {
+        "blobPath":  "CB_Stopper/1_Fabio_Cannavaro.jpg",
+        "bytes":  246255,
+        "sha256":  "149FA69FDC2EE31E6CB1D16E9B6235D852912926485BABE238E2B4021079ED56"
+    },
+    {
+        "blobPath":  "CB_Stopper/2a_Bobby_Moore.jpg",
+        "bytes":  282986,
+        "sha256":  "B5DF458777042B73F3745A63D72490DCC01998F9FF0E9A1D3C83C53641E5EBCB"
+    },
+    {
+        "blobPath":  "CB_Stopper/2b_Alessandro_Nesta.jpg",
+        "bytes":  112334,
+        "sha256":  "8384994B835EB056E6FB9F967DF57DC6D4F64599168F0E88410A1CBB8DC75451"
+    },
+    {
+        "blobPath":  "CB_Stopper/3a_Jürgen_Kohler.jpg",
+        "bytes":  16488,
+        "sha256":  "E16E02144C0D56EE04B29277F05CEF58CF2D721C4270010BAD2F45838E0B8B15"
+    },
+    {
+        "blobPath":  "CB_Stopper/3b_Hans-Georg_Schwarzenbeck.jpg",
+        "bytes":  62769,
+        "sha256":  "A809057345704881E8FCCC36A40A7374D30822390555D1EF113FCDF1632FB8C2"
+    },
+    {
+        "blobPath":  "CB_Stopper/4_Claudio_Gentile.jpg",
+        "bytes":  27894,
+        "sha256":  "AEAA8F7F740EB0B72D59A2CEBAC537161139116A2E9D6B5CA70C48F5E026F0BD"
+    },
+    {
+        "blobPath":  "CB_Stopper/5_Marcel_Desailly.jpg",
+        "bytes":  262474,
+        "sha256":  "34A07DA7BFE41F9403F2F6FA2F4C3E4ADE0B5529A4F05F7D3ECA9939F7E75FD0"
+    },
+    {
+        "blobPath":  "CB_Stopper/6a_Alessandro_Costacurta.jpg",
+        "bytes":  33745,
+        "sha256":  "3C482BFE1A22B6B6C9FA127F512E18BF1016D73DD237D3BF56AE3A37B1D251E1"
+    },
+    {
+        "blobPath":  "CB_Stopper/6b_Carles_Puyol.jpg",
+        "bytes":  96611,
+        "sha256":  "C474051B98F61ACF5BD40A3BC8510D366E453A682BAA5475AF019A6BEBA00E7D"
+    },
+    {
+        "blobPath":  "CB_Stopper/7a_Jaap_Stam.jpg",
+        "bytes":  130968,
+        "sha256":  "06986F7FF9EE7B083E200C6490335C693E1CE08B69066E3D4867CFB4F82C10F6"
+    },
+    {
+        "blobPath":  "CB_Stopper/7b_John_Terry.jpg",
+        "bytes":  127742,
+        "sha256":  "816427B38252434C12E27C13F506142CBD17E7953B51304DED390ABEE07ECBB6"
+    },
+    {
+        "blobPath":  "CB_Stopper/7c_Nemanja_Vidić.jpg",
+        "bytes":  274285,
+        "sha256":  "BA05F937F4CA634A8EF9459966FDE5FD35BF850C110E6BDA0303765E1E4970F5"
+    },
+    {
+        "blobPath":  "CB_Stopper/8a_Sol_Campbell.jpg",
+        "bytes":  413683,
+        "sha256":  "22E6C9D6694BBBF4F6DB65745586D45EE9B69ABA2A86D5B5B977D769F2B1B0C1"
+    },
+    {
+        "blobPath":  "CB_Stopper/8b_Giorgio_Chiellini.jpg",
+        "bytes":  311279,
+        "sha256":  "488E9B726091A5993965675FCE38DC768D6CB7CD1CB3D95B93CA2ADA19F49413"
+    },
+    {
+        "blobPath":  "CB_Stopper/9a_José_Nasazzi.jpg",
+        "bytes":  13360,
+        "sha256":  "A8D16C99044F49E5BA5F8253DD0A5F0A79AFD36A0F71DA381AB5A2CBE06788FF"
+    },
+    {
+        "blobPath":  "CB_Stopper/9b_Karl_Heinz_Förster.jpg",
+        "bytes":  91711,
+        "sha256":  "400FF0ABC907855346ECFE31212C8A26FFE592F33F214710BE5D70A43D89D894"
+    },
+    {
+        "blobPath":  "CB_Sweeper/10a_Marius_Trésor.jpg",
+        "bytes":  211751,
+        "sha256":  "199CAD570BFA252B6BB0E2AA94B9AB23E7990CA39252E3F0BA642DB6C393334A"
+    },
+    {
+        "blobPath":  "CB_Sweeper/10b_Alan_Hansen.jpg",
+        "bytes":  48783,
+        "sha256":  "BA7993F6780F394A2A7902ADDCA04ACE6B73485CAA93A85E7B1636BAA330D3CA"
+    },
+    {
+        "blobPath":  "CB_Sweeper/1_Franz_Beckenbauer.jpg",
+        "bytes":  224362,
+        "sha256":  "2730DA62EA267776BD74F9192FE3812014C3FF6AA35FE554EC6157B3FEC43996"
+    },
+    {
+        "blobPath":  "CB_Sweeper/2_Franco_Baresi.jpg",
+        "bytes":  68456,
+        "sha256":  "B5423486D1B9673BE04C06D56AEA740591CC60235A22C1B96A66FDBFF4F81BB8"
+    },
+    {
+        "blobPath":  "CB_Sweeper/3_Gaetano_Scirea.jpg",
+        "bytes":  111670,
+        "sha256":  "293082265F2CD66A6DD0DA5DFC5634E56EC639D3E9C0D91D97D6CD9CCB1B69A9"
+    },
+    {
+        "blobPath":  "CB_Sweeper/4_Daniel_Passarella.jpg",
+        "bytes":  19059,
+        "sha256":  "35943149B16C22547008CC523301030A6CB41431A9AAD874A8EA1A8AE4203698"
+    },
+    {
+        "blobPath":  "CB_Sweeper/5a_Matthias_Sammer.jpg",
+        "bytes":  62725,
+        "sha256":  "F9C70A938DF09764791D13635FC1A72248AA30EB0FE052ED2DBA308E077C696B"
+    },
+    {
+        "blobPath":  "CB_Sweeper/5b_Sergio_Ramos.jpg",
+        "bytes":  41493,
+        "sha256":  "8A411EC930BC3F111F1D25597EBB18638721230E511457F8FE5B1AA0BAD1FD8D"
+    },
+    {
+        "blobPath":  "CB_Sweeper/6a_Armando_Picchi.jpg",
+        "bytes":  221644,
+        "sha256":  "EE1C28779F0D86FE109918B0D781E067523768E1639AE10A1459B3C82A2BC51D"
+    },
+    {
+        "blobPath":  "CB_Sweeper/6b_Ronald_Koeman.jpg",
+        "bytes":  36212,
+        "sha256":  "9C245ABCC25B2657F2CBC402FE9A86347BEF2FD54EFC676B130BEEC1B1503D54"
+    },
+    {
+        "blobPath":  "CB_Sweeper/7a_Jose_Santamaria.jpg",
+        "bytes":  64420,
+        "sha256":  "5AA0D6E1CDB3CBD6468D29F7A9B5019F41D61027EA0F2120BBE527CD72A1E97D"
+    },
+    {
+        "blobPath":  "CB_Sweeper/7b_Laurent_Blanc.jpg",
+        "bytes":  161519,
+        "sha256":  "224CCAAB1D50AEEE5FC02A9DD465AC49C6B3CF7BC8571D1A389CA1508E9AB9B1"
+    },
+    {
+        "blobPath":  "CB_Sweeper/7c_Fernando_Hierro.jpg",
+        "bytes":  69264,
+        "sha256":  "2BAACE756820C8078828B4BE9E7EA30E3A870D74582558BD6AD839C0928E35AF"
+    },
+    {
+        "blobPath":  "CB_Sweeper/8a_Rio_Ferdinand.jpg",
+        "bytes":  238776,
+        "sha256":  "A791BEE5CBE761FDC3D484940E20248EE0B673896B50792CAF7D7F8827DC8714"
+    },
+    {
+        "blobPath":  "CB_Sweeper/8b_Klaus_Augenthaler.jpg",
+        "bytes":  57110,
+        "sha256":  "F9920512960D9BF491B1E6744822010F2031944A19438EC0CB09016366F9A30D"
+    },
+    {
+        "blobPath":  "CB_Sweeper/9_Elías_Figueroa.jpg",
+        "bytes":  37708,
+        "sha256":  "33C03DBFE7879D9FEDA6103D8C8804D62AF1166DA1EB03693F555174E1EE56DC"
+    },
+    {
+        "blobPath":  "CDM/10a_Luis_Monti.jpg",
+        "bytes":  384532,
+        "sha256":  "FFFDCA37DB10C72BC6ED5D942FAA4E0D1699C2A978A881CA3197CBFBA245552E"
+    },
+    {
+        "blobPath":  "CDM/10b_Xabi_Alonso.jpg",
+        "bytes":  40458,
+        "sha256":  "9C2374660CC01E63E0D4868DC2BE92DE6B2EF21EBEF87DC943663E9779D057C8"
+    },
+    {
+        "blobPath":  "CDM/1_Frank_Rijkaard.jpg",
+        "bytes":  280727,
+        "sha256":  "7E8B9DC4AC24990A31A6A2D4DB58A814F7D6C7871A67A40DD4F75D7F898D7908"
+    },
+    {
+        "blobPath":  "CDM/2a_Claude_Makélélé.jpg",
+        "bytes":  339343,
+        "sha256":  "6DE85FC71B3C710F9BE46E6AB5B948A61D1BB2AA2655B563EEA91EF8A1F4FABC"
+    },
+    {
+        "blobPath":  "CDM/2b_Lothar_Matthäus.jpg",
+        "bytes":  299328,
+        "sha256":  "5B0532788ED64C5954AB98B02E6CE9637B4892C070C12CB73BDA92DA4F1EFEE9"
+    },
+    {
+        "blobPath":  "CDM/3_Sergio_Busquets.jpg",
+        "bytes":  69008,
+        "sha256":  "1ED0BAEEC111118C5EDD0267CC11477F02052BC8B356D67C2D3D934324E9D35A"
+    },
+    {
+        "blobPath":  "CDM/4_Marco_Tardelli.jpg",
+        "bytes":  57693,
+        "sha256":  "329B49E6CAA6DDA3F1CDEAB90D07DDA036699A64F4CB1FA4A8B1280AFF8B00D3"
+    },
+    {
+        "blobPath":  "CDM/5a_Roy_Keane.jpg",
+        "bytes":  115306,
+        "sha256":  "51EBE1999F269549BF4C708F0B2674494BF6093AA6F2D1D1FB572E56CD027748"
+    },
+    {
+        "blobPath":  "CDM/5b_Fernando_Redondo.jpg",
+        "bytes":  34753,
+        "sha256":  "41AD175756FECED85D5D3417D13F2741633DBC69D2490A975CE803AE08B92D60"
+    },
+    {
+        "blobPath":  "CDM/6a_Patrick_Vieira.jpg",
+        "bytes":  278943,
+        "sha256":  "C1FC2F178E0346F18BA7349CDF1A58AB106F6BCBB55B6B200F9B9B4EBD5CE1C9"
+    },
+    {
+        "blobPath":  "CDM/6b_José_Leandro_Andrade.jpg",
+        "bytes":  32380,
+        "sha256":  "307C30C3E75A2BB18A2D2C511C8E7EC610936555ADE7C5FB284B663D99B7A19A"
+    },
+    {
+        "blobPath":  "CDM/7a_Casemiro.jpg",
+        "bytes":  277092,
+        "sha256":  "748D0E4C730ECFC68B554F9C441C7125ACEBE90BE3B03D42F07CAD6A1774E814"
+    },
+    {
+        "blobPath":  "CDM/7b_Gennaro_Gattuso.jpg",
+        "bytes":  80991,
+        "sha256":  "0AE57B996A23B7DCAA6211B62113C80B29B5254AAACE97CE87CDFF46B3A89E36"
+    },
+    {
+        "blobPath":  "CDM/8a_Graeme_Souness.jpg",
+        "bytes":  154290,
+        "sha256":  "B7821B3B321A446B544D4B8BAD3743112BD2172AC65C4C5E2CCAE4218A46876C"
+    },
+    {
+        "blobPath":  "CDM/8b_Pep_Guardiola.jpg",
+        "bytes":  277168,
+        "sha256":  "7ADAB229DDB5ECCC9D751CDE64D93593AFE3F900BE86091D47E4DA4C0CB8730C"
+    },
+    {
+        "blobPath":  "CDM/9a_Gilberto_Silva.jpg",
+        "bytes":  290815,
+        "sha256":  "6522AA8E87CDCD31F89D648BD978A5F26FA91D015D35C3878D00B38F4D2A1764"
+    },
+    {
+        "blobPath":  "CDM/9b_Didier_Deschamps.jpg",
+        "bytes":  307448,
+        "sha256":  "47B1C0FF3EB95DD58EFF61611ABBA6386F941EC6F69DE3E898A8C8CD9918B3B0"
+    },
+    {
+        "blobPath":  "CF/01_Gerd_Muller.jpg",
+        "bytes":  58534,
+        "sha256":  "F94D7610C6E518748DB6E47E972BD950F9E3C1421307F9EA3CD3F9697007D1FE"
+    },
+    {
+        "blobPath":  "CF/02_Pele.jpg",
+        "bytes":  51734,
+        "sha256":  "0B5E1CFFF663535D359EB3F36E156B237D77EF673987A7ECBA5E4227B213F8B2"
+    },
+    {
+        "blobPath":  "CF/03_Marco_van_Basten.jpg",
+        "bytes":  60268,
+        "sha256":  "515A57705EC528CDB0382B7D2CF13A1876CB881ABAF1BCAAE7CD3296AAD6E4BF"
+    },
+    {
+        "blobPath":  "CF/04_Ronaldo_Nazario.jpg",
+        "bytes":  267299,
+        "sha256":  "F3610E018AB1ADF7987DB4896A4DCC10AE57B030E10D7A350418909E3AA341EE"
+    },
+    {
+        "blobPath":  "CF/05_Ferenc_Puskas.jpg",
+        "bytes":  40354,
+        "sha256":  "C6478BDCEB8FB117FD36974519C09747589A778D18F41C95D6058024503DA0CF"
+    },
+    {
+        "blobPath":  "CF/06_Eusebio.jpg",
+        "bytes":  92220,
+        "sha256":  "780957ED05FDB8BB76201C09575FBD62F78D046F8D967781881C9C1B0B6137F5"
+    },
+    {
+        "blobPath":  "CF/07_Cristiano_Ronaldo.jpg",
+        "bytes":  434981,
+        "sha256":  "4CE73A90F64CDE35898CE2073B54C8BB467F5CC38346FC7DF75B14012330B841"
+    },
+    {
+        "blobPath":  "CF/08_Romario.jpg",
+        "bytes":  373334,
+        "sha256":  "0ACB8BFDA680FEDD86AC858073EEEE70A3AB98B08A71C1FECBC015EA21C92CDA"
+    },
+    {
+        "blobPath":  "CF/09_Josef_Bican.jpg",
+        "bytes":  383136,
+        "sha256":  "F9B4DBB09392BDDC3CBA19A3FE52F93FF6E42A9D6E93153DF0E024B327D28E61"
+    },
+    {
+        "blobPath":  "CF/10_Luis_Suarez.jpg",
+        "bytes":  84454,
+        "sha256":  "487C471201EAE5A8AB3B7CF01E95FE2259DF8D141DD8B8E78907F610DCC673EE"
+    },
+    {
+        "blobPath":  "CF/11_Gabriel_Batistuta.jpg",
+        "bytes":  47397,
+        "sha256":  "68F3ABF63426DCE9D362E395044E5768794C918EE590E9B7A4C3140619AC2E4E"
+    },
+    {
+        "blobPath":  "CF/12_Karim_Benzema.jpg",
+        "bytes":  107364,
+        "sha256":  "06A735E9A0A544513859003CCDEC3827AB57D5F4C063DC417942F8F8E7BAC6B7"
+    },
+    {
+        "blobPath":  "CF/13_Robert_Lewandowski.jpg",
+        "bytes":  333590,
+        "sha256":  "E9D0FF0A415F03B99A1A8240A07DA190D78C7A96E463376F8C7733C1B0EC500A"
+    },
+    {
+        "blobPath":  "CF/14_Paolo_Rossi.jpg",
+        "bytes":  168845,
+        "sha256":  "1D22B1893DD188E1E532943F7C4887CCF501A2583739806300D9FFBF64A5906C"
+    },
+    {
+        "blobPath":  "CF/15_Andriy_Shevchenko.jpg",
+        "bytes":  34745,
+        "sha256":  "E8DD5265B0F51F513770F76529E64160AB1D511CF22D4869632651C8051D09A0"
+    },
+    {
+        "blobPath":  "CF/16_Filippo_Inzaghi.jpg",
+        "bytes":  212220,
+        "sha256":  "F5590E5A081FC0E751A0D0E12FAD74BCF8D139313767C290F4FF5B7947E0CA19"
+    },
+    {
+        "blobPath":  "CF/17_Gary_Lineker.jpg",
+        "bytes":  446228,
+        "sha256":  "132ABD16FD2E3B9566C061B740B0C2DF95B5F1784A58B6474868050FA7EA8C03"
+    },
+    {
+        "blobPath":  "CF/18_Samuel_Etoo.jpg",
+        "bytes":  130994,
+        "sha256":  "0B6E82E720F30168DBEF8CBA2EFBF2ED50EF3410C4A9A2D6EF14408D4609097C"
+    },
+    {
+        "blobPath":  "CF/19_Silvio_Piola.jpg",
+        "bytes":  14483,
+        "sha256":  "64F0614453DD299473B5A4963EB3BE8DD5652B634A9A30105EAE05105EE9FE9E"
+    },
+    {
+        "blobPath":  "CF/20_Hernan_Crespo.jpg",
+        "bytes":  380569,
+        "sha256":  "9500B14948F014F6D852EC5C1E53E65175822453DAF48676FE0BA99816E4FBA0"
+    },
+    {
+        "blobPath":  "CF/21_Sandor_Kocsis.jpg",
+        "bytes":  414397,
+        "sha256":  "9564CB352E6F8E70000AF6EA04E64DDE16B9A22DDAFB071E61072E7B2B919271"
+    },
+    {
+        "blobPath":  "CF/22_David_Villa.jpg",
+        "bytes":  48004,
+        "sha256":  "0A67D4E69BCFEED9FAC8552B0608CFB22EE84F9B9204ACCB0D92FFF646FAAEDA"
+    },
+    {
+        "blobPath":  "CM_B2B/10a_Jean_Tigana.jpg",
+        "bytes":  24681,
+        "sha256":  "7520C1B659FC158976B1440118B7A706BFDB5EA0389A4E0BC87EC96E9C180135"
+    },
+    {
+        "blobPath":  "CM_B2B/10b_Stefan_Effenberg.jpg",
+        "bytes":  163332,
+        "sha256":  "7B15B08F4C3133E941C14FB69D55941BDE888E0EA1DCAB808D89141DA94A7119"
+    },
+    {
+        "blobPath":  "CM_B2B/1_Lothar_Matthäus.jpg",
+        "bytes":  299328,
+        "sha256":  "5B0532788ED64C5954AB98B02E6CE9637B4892C070C12CB73BDA92DA4F1EFEE9"
+    },
+    {
+        "blobPath":  "CM_B2B/2_Johan_Neeskens.jpg",
+        "bytes":  276648,
+        "sha256":  "38E621DCF0B1A4D4C75784C244B9F98EF053A94EB6194DE1A04010A99263C5C4"
+    },
+    {
+        "blobPath":  "CM_B2B/3_Josef_Masopust.jpg",
+        "bytes":  23516,
+        "sha256":  "D37EEAC70E7BA1FB841774FDA8DEC0D66ECD10389FE9C15827738769F3540620"
+    },
+    {
+        "blobPath":  "CM_B2B/4a_József_Bozsik.jpg",
+        "bytes":  331549,
+        "sha256":  "DE2E1CF2D9766B9C9B51274562A746542AFD2584A4FDB6F8C7A49F0D9E8400A1"
+    },
+    {
+        "blobPath":  "CM_B2B/4b_Steven_Gerrard.jpg",
+        "bytes":  62185,
+        "sha256":  "48EC1F7FB6B8259EBDBBFAD7E86CFD1A0BE2EB1F1FD9B7295F75288E4C534436"
+    },
+    {
+        "blobPath":  "CM_B2B/4c_Paul_Scholes.jpg",
+        "bytes":  312520,
+        "sha256":  "F20F7C0C9C5278D70EA7756AE1E10D7B926A3501383DD04D9C1AFB4ECB0C756F"
+    },
+    {
+        "blobPath":  "CM_B2B/5a_Ernst_Ocwirk.jpg",
+        "bytes":  255128,
+        "sha256":  "34F4C33BFE28CF66CA7DB2BE16FED2F6DA5E0E46899FEADC1832141E7683DEBB"
+    },
+    {
+        "blobPath":  "CM_B2B/5b_Clarence_Seedorf.jpg",
+        "bytes":  243903,
+        "sha256":  "9099B8771FF668D4E922D9DC670071452ADFABA9B4CAE0C823062464DECC2B48"
+    },
+    {
+        "blobPath":  "CM_B2B/6_Obdulio_Varela.jpg",
+        "bytes":  42390,
+        "sha256":  "D2AAF9465289F9835E04CC88B7E074AEEB11F06DEE0C271069B0D83E6AE9F13A"
+    },
+    {
+        "blobPath":  "CM_B2B/7a_Edgar_Davids.jpg",
+        "bytes":  70952,
+        "sha256":  "05FC8768AD97D5FC45BC97155EDBCBA20CACF1F2427E9423062BF1FB8AD6FD54"
+    },
+    {
+        "blobPath":  "CM_B2B/7b_Bastian_Schweinsteiger.jpg",
+        "bytes":  260936,
+        "sha256":  "A7A683ADFA89B2C40AA2E384A5CB1C241DF165842AAC5BA86EE8F3368DEA551B"
+    },
+    {
+        "blobPath":  "CM_B2B/8a_Duncan_Edwards.jpg",
+        "bytes":  223769,
+        "sha256":  "F23EA7CE18677D805EA8C5AAF02C5B0BCA6459897C79D861FC6FAB50036CC0F2"
+    },
+    {
+        "blobPath":  "CM_B2B/8b_Juan_Sebastián_Verón.jpg",
+        "bytes":  187382,
+        "sha256":  "A3F041E139C385FE513AB6632047A4174989143E1C377AE25227C4CC14CA9727"
+    },
+    {
+        "blobPath":  "CM_B2B/9a_Michael_Ballack.jpg",
+        "bytes":  368545,
+        "sha256":  "3393BDF297503B21915D62BA1D0CCAB653DBB2EBEFECF9DFAE916FE9106590B7"
+    },
+    {
+        "blobPath":  "CM_B2B/9b_N\u0027Golo_Kanté.jpg",
+        "bytes":  372692,
+        "sha256":  "65B46BD800807A1361415302D92863802CF7F1AA2523A4F37F5D1BD55110F03A"
+    },
+    {
+        "blobPath":  "CM_DLP/10a_Dejan_Savićević.jpg",
+        "bytes":  42274,
+        "sha256":  "DA27246020EA22F0B4DF60D99A7928E64287FED8000A7D3C39237443998064E1"
+    },
+    {
+        "blobPath":  "CM_DLP/10b_Mário_Coluna.jpg",
+        "bytes":  58814,
+        "sha256":  "FD3F081C3EF422D3DEDB9B8C498DA2485407CB259BD2392C25A1029D390358C1"
+    },
+    {
+        "blobPath":  "CM_DLP/1_Xavi.jpg",
+        "bytes":  959679,
+        "sha256":  "8324F07402102EE792C38DE0585761C0F729C0BAE8EAC15FE2C0AB4523EC832B"
+    },
+    {
+        "blobPath":  "CM_DLP/2_Didi.jpg",
+        "bytes":  54277,
+        "sha256":  "FD3198EE63967EB87F185A3B31A048311D0FB9E730C58C1B6348BFA139615D96"
+    },
+    {
+        "blobPath":  "CM_DLP/3a_Andrés_Iniesta.jpg",
+        "bytes":  315865,
+        "sha256":  "E66ABDA75071D30EF81D5E36CA29F0B310440778676D0C6B9EC5B10D59719647"
+    },
+    {
+        "blobPath":  "CM_DLP/3b_Andrea_Pirlo.jpg",
+        "bytes":  54234,
+        "sha256":  "499E6B39ADCBB068D98588FFDE76A4D82C4BDFA74C3FF5A57CD1506B1A50B105"
+    },
+    {
+        "blobPath":  "CM_DLP/4a_Luis_Suárez_Miramontes.jpg",
+        "bytes":  26135,
+        "sha256":  "53B26BBE642CA12171CCBD7FE456BBB7C7585A797E0A0CDC6DA9CC9F95D78493"
+    },
+    {
+        "blobPath":  "CM_DLP/4b_Luka_Modrić.jpg",
+        "bytes":  313721,
+        "sha256":  "3B96AE7AE82EBE025F6C8CA1ECD76BD38B02EB3DA7BF2FD0662D6F27744CFD43"
+    },
+    {
+        "blobPath":  "CM_DLP/5a_Toni_Kroos.jpg",
+        "bytes":  120688,
+        "sha256":  "E223310C68F42BB2D31CCE5868FBAC3CE3C3DAADD346CA4EBEB743F07A95252E"
+    },
+    {
+        "blobPath":  "CM_DLP/5b_Ruud_Gullit.jpg",
+        "bytes":  300345,
+        "sha256":  "64A96113AC336FCEBC03A792DF482C1842751BF5663CDCC707210F92F370BEBD"
+    },
+    {
+        "blobPath":  "CM_DLP/6a_Paulo_Roberto_Falcão.jpg",
+        "bytes":  50126,
+        "sha256":  "BA3FE23617F0D8B91DDFA624AC003C7C15CD459571AFAE773B3C473D0ED55802"
+    },
+    {
+        "blobPath":  "CM_DLP/6b_Gerson.jpg",
+        "bytes":  2079744,
+        "sha256":  "0C85665E87B7D8BAD87B29F648287A303E854715F3BB0497690B00B7EF7250BD"
+    },
+    {
+        "blobPath":  "CM_DLP/7_Günter_Netzer.jpg",
+        "bytes":  12280,
+        "sha256":  "DB6FB3E775ED597A51E6BAB01D4D895934A42DA45E8ABF47DEF46B5700E0645E"
+    },
+    {
+        "blobPath":  "CM_DLP/8a_Willem_van_Hanegem.jpg",
+        "bytes":  250773,
+        "sha256":  "5661C54D955D3061C29BB08A77D66829B93AF4A2D2334361E543D33DC867CE30"
+    },
+    {
+        "blobPath":  "CM_DLP/8b_David_Silva.jpg",
+        "bytes":  30315,
+        "sha256":  "4F563464538472ECC156B50BE92D7E98FBDF4127A5CFEA9711058D0FBB2CBB41"
+    },
+    {
+        "blobPath":  "CM_DLP/9_Nils_Liedholm.jpg",
+        "bytes":  168495,
+        "sha256":  "28FA49DC8C5FC3CB7AF3767FAE54AC38C3C8CE32FC01158CF279C9F21E00A8AE"
+    },
+    {
+        "blobPath":  "LB/10_Andreas_Brehme.jpg",
+        "bytes":  9444,
+        "sha256":  "49D518AE39AC0D2FB6E230C3A2E510B61C340F539B6FC2627614122A0737AD4D"
+    },
+    {
+        "blobPath":  "LB/1_Paolo_Maldini.jpg",
+        "bytes":  65262,
+        "sha256":  "1108E2C9DA6265DC00F5F6A1B161B828E0D3130B8D9204929290A7FA6D18C2BC"
+    },
+    {
+        "blobPath":  "LB/2_Giacinto_Facchetti.jpg",
+        "bytes":  135880,
+        "sha256":  "77E9AE37256B3328996BCB9C72C30D158BD25066D0DF83ACB469BE48005AD8D8"
+    },
+    {
+        "blobPath":  "LB/3_Roberto_Carlos.jpg",
+        "bytes":  34890,
+        "sha256":  "EBAB5E794FB5353954C8B755EC73B60EF21F61763E743996C97CDFAA03E182BF"
+    },
+    {
+        "blobPath":  "LB/4_Ruud_Krol.jpg",
+        "bytes":  40026,
+        "sha256":  "8F92A0E56C25656A8F83F41926BBF008AEC8BF804D56013294C7314122AE92B0"
+    },
+    {
+        "blobPath":  "LB/5a_Nilton_Santos.jpg",
+        "bytes":  155359,
+        "sha256":  "77747DCEB9D5B3942EEE564934CD6BF2D1B7D9388B250EA9F10C066D0B935B02"
+    },
+    {
+        "blobPath":  "LB/5b_Ashley_Cole.jpg",
+        "bytes":  26058,
+        "sha256":  "F53641C46F33ACFF54FAA12CEF154B033B121D3CD386E1078A7A51C30534977A"
+    },
+    {
+        "blobPath":  "LB/6a_Paul_Breitner.jpg",
+        "bytes":  62649,
+        "sha256":  "AA280BF4940B6F45C091B62AA0C16D933E61147563AC6F82593F22038F83C80F"
+    },
+    {
+        "blobPath":  "LB/6b_Marcelo.jpg",
+        "bytes":  268044,
+        "sha256":  "0B692475B55E87B85C4D7E76F5B2578412B9ADFA5CC10284807068FF73EFF7C8"
+    },
+    {
+        "blobPath":  "LB/7_Karl-Heinz_Schnellinger.jpg",
+        "bytes":  243581,
+        "sha256":  "0F93F3B6AC9713C152880BCF41E2FA4C6D5DC5259626EE00457D59EDACB3BC85"
+    },
+    {
+        "blobPath":  "LB/8_Antonio_Cabrini.jpg",
+        "bytes":  22770,
+        "sha256":  "E3B8BBE2A3A8E09268160405C8135C6E446E27A86FFE4F27CE33AB3A15107909"
+    },
+    {
+        "blobPath":  "LB/9_Silvio_Marzolini.jpg",
+        "bytes":  55808,
+        "sha256":  "9648CE65AFDE35C1246F136222841AF7565EDD88D1AA396ED8ADB4469E54C783"
+    },
+    {
+        "blobPath":  "LW/10a_Tom_Finney.jpg",
+        "bytes":  21439,
+        "sha256":  "C517766361BB76D5B36A3453E238C36BC3D0D050EEBE63D258B21F84AA0B1B07"
+    },
+    {
+        "blobPath":  "LW/10b_Raimundo_Orsi.jpg",
+        "bytes":  178476,
+        "sha256":  "D1E82BF3F4CC4546522FC668CEA94A5553E65AEE73C9C1CCB8B90A0B06716FC8"
+    },
+    {
+        "blobPath":  "LW/1_Cristiano_Ronaldo.jpg",
+        "bytes":  377416,
+        "sha256":  "43248CA9751226F80F202F636956E7D70E765F074E42C59F65A1A3187B675772"
+    },
+    {
+        "blobPath":  "LW/2_George_Best.jpg",
+        "bytes":  467487,
+        "sha256":  "9BA19EC373BB55FBC8487EE733816432C3166E8E5072C09DAA74F7753E35694D"
+    },
+    {
+        "blobPath":  "LW/3_Thierry_Henry.jpg",
+        "bytes":  249461,
+        "sha256":  "05EBB8E44AFFEF75A057F6D578593ECD56D1A6F2D6EBC4BA4389B05BF22C4B17"
+    },
+    {
+        "blobPath":  "LW/4a_Dragan_Džajić.jpg",
+        "bytes":  372217,
+        "sha256":  "F4A07E48705DE9C1D1332813570DC450DB3608998D3D3B939F17A9DE7F08706E"
+    },
+    {
+        "blobPath":  "LW/4b_Ronaldinho.jpg",
+        "bytes":  33392,
+        "sha256":  "889A0EF472ADBA41760116AE564E16C24E625EB81430E44E3A4F132AF04A5AB7"
+    },
+    {
+        "blobPath":  "LW/5a_Hristo_Stoichkov.jpg",
+        "bytes":  72311,
+        "sha256":  "B097A4DFB5B2A1C8AB2DDCF12D7B0F11C057E188B297490101414D485120FC19"
+    },
+    {
+        "blobPath":  "LW/5b_Rivelino.jpg",
+        "bytes":  94169,
+        "sha256":  "8762D99CC4FCEF192928FE29B84FCEECBAE9CF1F52F06AD17E3FFABB0A209BE9"
+    },
+    {
+        "blobPath":  "LW/5c_Pavel_Nedvěd.jpg",
+        "bytes":  136639,
+        "sha256":  "576D2B72B93F4E972F080D70E541033E4A429F5B74F0D7E939AC79D103CDF15B"
+    },
+    {
+        "blobPath":  "LW/6a_Paco_Gento.jpg",
+        "bytes":  254627,
+        "sha256":  "F5B07E83F5B8FE3F8763F8001E208D68620FB7B758EF539E2EE4F2DC040C8001"
+    },
+    {
+        "blobPath":  "LW/6b_Ryan_Giggs.jpg",
+        "bytes":  260042,
+        "sha256":  "FA9F2E0B8C233B93EC59869441EE3EBCC49ED6B010DE5DBAAF96D86F9A1351DC"
+    },
+    {
+        "blobPath":  "LW/7a_Robert_Pirès.jpg",
+        "bytes":  103626,
+        "sha256":  "27D9C6137A7E20BB49ABAA04F50D06DC748FC22FBFF2757937DE90FD659A700F"
+    },
+    {
+        "blobPath":  "LW/7b_Franck_Ribéry.jpg",
+        "bytes":  392375,
+        "sha256":  "81DC55B641BD625528040FDBB71A67A7AF32C3ED9D3F159E3D77A7EEEB7B1EAE"
+    },
+    {
+        "blobPath":  "LW/8a_Valentino_Mazzola.jpg",
+        "bytes":  57804,
+        "sha256":  "2BDAF7725D99232E29358B1C20913440BADA6416902F7EBBF05E29530BD99F28"
+    },
+    {
+        "blobPath":  "LW/8b_Zoltán_Czibor.jpg",
+        "bytes":  363437,
+        "sha256":  "D647014CB31A0EFCF54753F45BAF0BF6098B7F882A5F6D74D2B24570449155CA"
+    },
+    {
+        "blobPath":  "LW/9a_Rob_Rensenbrink.jpg",
+        "bytes":  319658,
+        "sha256":  "EAF4C582CBA73C743E6E7519376A33D159F1F69395585578C4AFD0CD40C14229"
+    },
+    {
+        "blobPath":  "LW/9b_Oleg_Blokhin.jpg",
+        "bytes":  29845,
+        "sha256":  "A29D1661284F3096E35A7C8B0E14DDE4F8E8B75496F271776DE00B040379060C"
+    },
+    {
+        "blobPath":  "RB/10_Manuel_Amoros.jpg",
+        "bytes":  41263,
+        "sha256":  "13BC0BAC4ED38132EFBE36C4222238F200C3360A35DFAEF29B33EE10B20575F3"
+    },
+    {
+        "blobPath":  "RB/1_Cafu.jpg",
+        "bytes":  16335,
+        "sha256":  "0A5C7CC1602DEA8594F394EE59608FC7CDE30C3A3580A6F30424752C4B015704"
+    },
+    {
+        "blobPath":  "RB/2a_Carlos_Alberto_Torres.jpg",
+        "bytes":  109472,
+        "sha256":  "54B52154DDC26EF516CB1A7CD8F1C96B5236FE09FF296B205403B97CC111C309"
+    },
+    {
+        "blobPath":  "RB/2b_Djalma_Santos.jpg",
+        "bytes":  293816,
+        "sha256":  "1370233111C801E1CF7E77DB0B8B5345F30569DEA004CD506975A32B6101D128"
+    },
+    {
+        "blobPath":  "RB/3_Lilian_Thuram.jpg",
+        "bytes":  244494,
+        "sha256":  "E34F1D5B8DB50727D22531CDD937153F07962F6E033DF16A0148A29A2806EDD8"
+    },
+    {
+        "blobPath":  "RB/4a_Giuseppe_Bergomi.jpg",
+        "bytes":  43130,
+        "sha256":  "7FA80DE9F1ECC765E3FE30633E9A27EECAE55CF2AEB157EB6945FD6EE6BC4D56"
+    },
+    {
+        "blobPath":  "RB/4b_Javier_Zanetti.jpg",
+        "bytes":  64579,
+        "sha256":  "C11BCBA784595206A845AB98CFC986D9753E4712F27BB37DC7E9D4EF22391D67"
+    },
+    {
+        "blobPath":  "RB/5a_Philipp_Lahm.jpg",
+        "bytes":  278900,
+        "sha256":  "5EC78D999E075978F239172376E5711FC14181F94309906D338E5763B9638242"
+    },
+    {
+        "blobPath":  "RB/5b_Dani_Alves.jpg",
+        "bytes":  32555,
+        "sha256":  "E54EEC7815B77D131810D360B9C8D2EB9C3A12653263C98107ABB46011C1CFE7"
+    },
+    {
+        "blobPath":  "RB/6_Berti_Vogts.jpg",
+        "bytes":  176762,
+        "sha256":  "75D3EE2A2B2A8231CE231256FAC7BA032AC16AB6823DEA6F2D430B854CB47CE9"
+    },
+    {
+        "blobPath":  "RB/7a_Tarcisio_Burgnich.jpg",
+        "bytes":  478054,
+        "sha256":  "5FE92475A00769241E172281B2C9D4F54292D7015647EA9A25E323C8E0E99CC3"
+    },
+    {
+        "blobPath":  "RB/7b_Mauro_Tassotti.jpg",
+        "bytes":  167986,
+        "sha256":  "067D7B3F5B6E708549E8AA93A1CF5C31140F8A67BE23588B5EDFA4610CEBB38E"
+    },
+    {
+        "blobPath":  "RB/8_Gianluca_Zambrotta.jpg",
+        "bytes":  271655,
+        "sha256":  "5B1B4E731D1C114E9AAA7FC73C3168748FE7A50F8ED412CEB8D9FEC8001485B8"
+    },
+    {
+        "blobPath":  "RB/9_Wim_Suurbier.jpg",
+        "bytes":  315396,
+        "sha256":  "2274EF14EEB0F71524B5FDD84704520693D9DCAE98AF33E3CD152E711B5CC0B3"
+    },
+    {
+        "blobPath":  "RW/10_Jimmy_Johnstone.jpg",
+        "bytes":  280394,
+        "sha256":  "EF7E7B94D245F78E10CCE9566BCBA129FE3A8F374C15B466E5B6CC1E3D11BCC4"
+    },
+    {
+        "blobPath":  "RW/1_Lionel_Messi.jpg",
+        "bytes":  375064,
+        "sha256":  "E6CB12F83632F74395B3491E33F575496BC6C7EF7EC55BDB6A6366F5EAE7975E"
+    },
+    {
+        "blobPath":  "RW/2_Garrincha.jpg",
+        "bytes":  110074,
+        "sha256":  "078BBDF5A6BA113EF8FA6F1C8DD086E15AA08E96D333AE31DD1A89A269A94DA3"
+    },
+    {
+        "blobPath":  "RW/3a_Jairzinho.jpg",
+        "bytes":  69352,
+        "sha256":  "0166FB90B77486A4FBA3260BC90FFDC7BF87F7D6403ED63ACC3560A4AFE564E0"
+    },
+    {
+        "blobPath":  "RW/3b_George_Best.jpg",
+        "bytes":  467487,
+        "sha256":  "9BA19EC373BB55FBC8487EE733816432C3166E8E5072C09DAA74F7753E35694D"
+    },
+    {
+        "blobPath":  "RW/4_Luís_Figo.jpg",
+        "bytes":  229399,
+        "sha256":  "3EAE2C271AB3A59C80BC8731869083A2E5A2642EC311E70AB3A0A259709A8BA0"
+    },
+    {
+        "blobPath":  "RW/5a_Arjen_Robben.jpg",
+        "bytes":  52657,
+        "sha256":  "C659276513AC48C424E65EE06EFAC1A72396CE81287CE687A23A8B35D5AABA80"
+    },
+    {
+        "blobPath":  "RW/5b_David_Beckham.jpg",
+        "bytes":  109709,
+        "sha256":  "C7B112CFE4BD75559B8074889B3059E9507946AB7D222E2693EA54AB0F9649CB"
+    },
+    {
+        "blobPath":  "RW/6a_Raymond_Kopa.jpg",
+        "bytes":  91191,
+        "sha256":  "8EC8081946B1597766756222D4511C079E944BB306C73C3FF0A9C5A960D4DB19"
+    },
+    {
+        "blobPath":  "RW/6b_Stanley_Matthews.jpg",
+        "bytes":  335978,
+        "sha256":  "6904598A32AAE9AC1588446214B2161D2EB04531E5CA2507965912F4A24FB276"
+    },
+    {
+        "blobPath":  "RW/7a_Helmut_Rahn.jpg",
+        "bytes":  160622,
+        "sha256":  "4606E6C866B05EF14CF8252CFCD4632EA722F0983CF5504B61CDA7B433096DC8"
+    },
+    {
+        "blobPath":  "RW/7b_Allan_Simonsen.jpg",
+        "bytes":  97506,
+        "sha256":  "2B7607C43A97F818B244F81DC067DBB15C524470DC28B2171252ED12177F2801"
+    },
+    {
+        "blobPath":  "RW/8_Grzegorz_Lato.jpg",
+        "bytes":  233458,
+        "sha256":  "03A7DFE1B45B7A1E603E71B0F1E13C2384A18FF13393C7F63BDF7DC92173F025"
+    },
+    {
+        "blobPath":  "RW/9_Amancio_Amaro.jpg",
+        "bytes":  56224,
+        "sha256":  "F7CE74EBD47B1E9FEEE63672FFD06E0B71D6E4351CDB105A80C4A58283E11A3B"
+    },
+    {
+        "blobPath":  "SS/10_László_Kubala.jpg",
+        "bytes":  232936,
+        "sha256":  "6389B023B08A9F1817DB57C5B24E238B27EFFBD73B248139CA13C1F9D5510EBD"
+    },
+    {
+        "blobPath":  "SS/1_Johan_Cruyff.jpg",
+        "bytes":  270143,
+        "sha256":  "6D3EB23B044CEB7D7C474D73CDB20E554D442513DD57E09EFC1EB26D4D63724C"
+    },
+    {
+        "blobPath":  "SS/2_Karl-Heinz_Rummenigge.jpg",
+        "bytes":  153218,
+        "sha256":  "008A19DE674B81125DB406C8BB4ECC13FD6E809BDEE31CC9FA11A26A03140F33"
+    },
+    {
+        "blobPath":  "SS/3a_Roberto_Baggio.jpg",
+        "bytes":  45742,
+        "sha256":  "013B28717848A8F92B2732EA89B8FC9775B4CB730A2E0EEF11EE15F791F5DAAB"
+    },
+    {
+        "blobPath":  "SS/3b_Lionel_Messi.jpg",
+        "bytes":  375064,
+        "sha256":  "E6CB12F83632F74395B3491E33F575496BC6C7EF7EC55BDB6A6366F5EAE7975E"
+    },
+    {
+        "blobPath":  "SS/4a_Giuseppe_Meazza.jpg",
+        "bytes":  94931,
+        "sha256":  "639BF931830CE61E12B085EEE31ADC888E993D96B5618A8B17615E0277BA25A0"
+    },
+    {
+        "blobPath":  "SS/4b_Ruud_Gullit.jpg",
+        "bytes":  300345,
+        "sha256":  "64A96113AC336FCEBC03A792DF482C1842751BF5663CDCC707210F92F370BEBD"
+    },
+    {
+        "blobPath":  "SS/5a_Alessandro_Del_Piero.jpg",
+        "bytes":  217605,
+        "sha256":  "AF837ACAE4902BC3DB2ED3892F35B7B46824C0F46B1B16E874BAC376ECA2A86A"
+    },
+    {
+        "blobPath":  "SS/5b_Kevin_Keegan.jpg",
+        "bytes":  64036,
+        "sha256":  "F6EEBF0680D7A826F9EB2F26334AF5119C29C66CA10C39F21B00A1AC7B722620"
+    },
+    {
+        "blobPath":  "SS/5c_Dennis_Bergkamp.jpg",
+        "bytes":  29371,
+        "sha256":  "83A1FFC9F25642E43D3EB788A508A8BA9BDE2F5F911A99B4AF3A6F09654634A6"
+    },
+    {
+        "blobPath":  "SS/6a_Eric_Cantona.jpg",
+        "bytes":  62597,
+        "sha256":  "200F11B83FAEA90E28CC9A2683705B0C8A4E4A324B07B7CA807E5B629A7737E9"
+    },
+    {
+        "blobPath":  "SS/6b_Raul.jpg",
+        "bytes":  1814460,
+        "sha256":  "AB2C8E986F64BAFFC70BAE5B12F19564A6EDFF39F3748A9892143F848EF534EE"
+    },
+    {
+        "blobPath":  "SS/6c_Wayne_Rooney.jpg",
+        "bytes":  65036,
+        "sha256":  "3974F716FA1786B803D51489D6435100DCCE5F3C15BA2B653E9B4E7277CB56BF"
+    },
+    {
+        "blobPath":  "SS/7a_Omar_Sívori.jpg",
+        "bytes":  89396,
+        "sha256":  "1FD9BF08D26EF25EF3D2ABBBF29FBE5DA025731DCAD0200DF5A1AA65D55E45D5"
+    },
+    {
+        "blobPath":  "SS/7b_Francesco_Totti.jpg",
+        "bytes":  18757,
+        "sha256":  "83FC4A9A288177758D9913F290007AF299F17D517AD8C88D81393AB034C22637"
+    },
+    {
+        "blobPath":  "SS/7c_Kenny_Dalglish.jpg",
+        "bytes":  36804,
+        "sha256":  "AA801BE0C6882469D9C0485C155AA83F4A9CDA70DA3365C39FC3D75C24D6B3D5"
+    },
+    {
+        "blobPath":  "SS/8a_Jose_Manuel_Moreno.jpeg",
+        "bytes":  233333,
+        "sha256":  "EADD682B16689E0D3EB2E8CA380D556807D8660BABF4A8460D6FECCE5554419D"
+    },
+    {
+        "blobPath":  "SS/8b_Igor_Belanov.jpg",
+        "bytes":  88133,
+        "sha256":  "E113C099BD0E0491056CA59023226F7A28A324D1F6B0A0A7F9282FB39E5BDADB"
+    },
+    {
+        "blobPath":  "SS/8c_Mario_Kempes.jpg",
+        "bytes":  310280,
+        "sha256":  "04C5C63C59BB55FAEDD83138B50D58C9AEBEB1D69A21C8AB14DA5F7BFD0B4A90"
+    },
+    {
+        "blobPath":  "SS/9a_Flórián_Albert.jpg",
+        "bytes":  349237,
+        "sha256":  "CFBC055762E5A76C2F0D187CA06781B8DAAA234D77E998B0AE53816A4119E0CB"
+    },
+    {
+        "blobPath":  "SS/9b_Matthias_Sindelar.jpg",
+        "bytes":  17439,
+        "sha256":  "D28F4763EB2804FA71E7341012147F32B31E42A9821141FDCE83F448D77D9B7C"
+    },
+    {
+        "blobPath":  "uploads/778fc94dca2c4fc3b2ef82d8bf801b66/8713eb02acbc48a5a5b2997f425c67dd.jpg",
+        "bytes":  24670,
+        "sha256":  "C21136903BAF86238E157A04E356B8F1EA1A3587EC1D3CCA8A466F3C5C28D539"
+    },
+    {
+        "blobPath":  "uploads/82e15c2a201f489f8f7defcbe23b05bf/88ca038f113a465cbb700b8646dd75e1.jpg",
+        "bytes":  270143,
+        "sha256":  "6D3EB23B044CEB7D7C474D73CDB20E554D442513DD57E09EFC1EB26D4D63724C"
+    },
+    {
+        "blobPath":  "uploads/8cb58873bd8b4f549f78f19958e238f7/1bf4c484dc8a45578ae0982aa577b451.jpg",
+        "bytes":  153218,
+        "sha256":  "008A19DE674B81125DB406C8BB4ECC13FD6E809BDEE31CC9FA11A26A03140F33"
+    },
+    {
+        "blobPath":  "uploads/8cb58873bd8b4f549f78f19958e238f7/5a16170200494bcba9701de33ba323b2.jpg",
+        "bytes":  94931,
+        "sha256":  "639BF931830CE61E12B085EEE31ADC888E993D96B5618A8B17615E0277BA25A0"
+    },
+    {
+        "blobPath":  "uploads/8cb58873bd8b4f549f78f19958e238f7/7c0eab7f28d245ff9c682f6b79c2c83a.jpg",
+        "bytes":  153218,
+        "sha256":  "008A19DE674B81125DB406C8BB4ECC13FD6E809BDEE31CC9FA11A26A03140F33"
+    },
+    {
+        "blobPath":  "uploads/8cb58873bd8b4f549f78f19958e238f7/8a757fddc69a44d2a5d5479c0adb7675.jpg",
+        "bytes":  83539,
+        "sha256":  "D84A43DD6743B01F10FCF5C93D9691C9461222FAF439DB42F16650DB6E60FD72"
+    },
+    {
+        "blobPath":  "uploads/8cb58873bd8b4f549f78f19958e238f7/938443cb90594ed5b1de956319c79c39.jpg",
+        "bytes":  153218,
+        "sha256":  "008A19DE674B81125DB406C8BB4ECC13FD6E809BDEE31CC9FA11A26A03140F33"
+    },
+    {
+        "blobPath":  "uploads/8cb58873bd8b4f549f78f19958e238f7/acb96bf0882c4f2cb91210215f0257b9.jpg",
+        "bytes":  94931,
+        "sha256":  "639BF931830CE61E12B085EEE31ADC888E993D96B5618A8B17615E0277BA25A0"
+    },
+    {
+        "blobPath":  "uploads/8cb58873bd8b4f549f78f19958e238f7/d49f714decce41cf953076a64baa0446.jpg",
+        "bytes":  270143,
+        "sha256":  "6D3EB23B044CEB7D7C474D73CDB20E554D442513DD57E09EFC1EB26D4D63724C"
+    },
+    {
+        "blobPath":  "uploads/8cb58873bd8b4f549f78f19958e238f7/f9d268e93ff849a489b0d323e3045cec.jpg",
+        "bytes":  45742,
+        "sha256":  "013B28717848A8F92B2732EA89B8FC9775B4CB730A2E0EEF11EE15F791F5DAAB"
+    },
+    {
+        "blobPath":  "uploads/8cb58873bd8b4f549f78f19958e238f7/fab131cad4324b36adbb940f7610f44f.jpg",
+        "bytes":  153218,
+        "sha256":  "008A19DE674B81125DB406C8BB4ECC13FD6E809BDEE31CC9FA11A26A03140F33"
+    },
+    {
+        "blobPath":  "uploads/8cb58873bd8b4f549f78f19958e238f7/fcf2d9ed3eff4de1a9cdf5ba492bf0c9.jpg",
+        "bytes":  153218,
+        "sha256":  "008A19DE674B81125DB406C8BB4ECC13FD6E809BDEE31CC9FA11A26A03140F33"
+    },
+    {
+        "blobPath":  "uploads/aaad87c1a81742cbb3da8f183d453eb7/25d841a2215c49aeb82ec684be87b617.jpg",
+        "bytes":  45742,
+        "sha256":  "013B28717848A8F92B2732EA89B8FC9775B4CB730A2E0EEF11EE15F791F5DAAB"
+    },
+    {
+        "blobPath":  "uploads/b424775a98c04c459e6c116734acdd03/615a9542b20d445ba88558c868d0efa9.jpg",
+        "bytes":  353785,
+        "sha256":  "120915A084DC73A7F0ACBE3DBBB02F99AD12C74790FF5B73E9DFE3022A08D973"
+    }
+]

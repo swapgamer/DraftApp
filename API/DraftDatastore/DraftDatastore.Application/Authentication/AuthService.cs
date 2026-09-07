@@ -32,7 +32,7 @@ public sealed class AuthService(IIdentityStore identityStore, IPasswordService p
             throw new UnauthorizedAccessException("Invalid email or password.");
         }
 
-        var roles = user.UserRoles.Select(x => x.Role.Name).ToArray();
+        var roles = GetEffectiveRoles(user);
         var response = await IssueTokenPairAsync(user, roles, ipAddress, cancellationToken);
         await identityStore.AddLoginHistoryAsync(user.Id, true, ipAddress, cancellationToken);
         await identityStore.SaveChangesAsync(cancellationToken);
@@ -48,7 +48,7 @@ public sealed class AuthService(IIdentityStore identityStore, IPasswordService p
         }
 
         existing.RevokedAtUtc = DateTimeOffset.UtcNow;
-        var roles = existing.User.UserRoles.Select(x => x.Role.Name).ToArray();
+        var roles = GetEffectiveRoles(existing.User);
         var response = await IssueTokenPairAsync(existing.User, roles, ipAddress, cancellationToken);
         existing.ReplacedByTokenHash = tokenService.HashRefreshToken(response.RefreshToken);
         await identityStore.SaveChangesAsync(cancellationToken);
@@ -76,8 +76,11 @@ public sealed class AuthService(IIdentityStore identityStore, IPasswordService p
             ExpiresAtUtc = DateTimeOffset.UtcNow.AddDays(14),
             CreatedByIpAddress = ipAddress
         }, cancellationToken);
-        return new AuthResponse(access.Token, access.ExpiresAtUtc, refreshToken, new AuthenticatedUserResponse(user.Id, user.Email, user.DisplayName, roles));
+        return new AuthResponse(access.Token, access.ExpiresAtUtc, refreshToken, new AuthenticatedUserResponse(user.Id, user.Email, user.DisplayName, roles, user.IsSystemAdmin));
     }
 
     private static string NormalizeEmail(string email) => email.Trim().ToUpperInvariant();
+    private static string[] GetEffectiveRoles(User user) => user.AdminExpiresAtUtc is { } expiry && !user.IsSystemAdmin && expiry <= DateTimeOffset.UtcNow
+        ? user.UserRoles.Where(x => x.Role.Name != SystemRoles.Admin).Select(x => x.Role.Name).ToArray()
+        : user.UserRoles.Select(x => x.Role.Name).ToArray();
 }

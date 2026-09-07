@@ -25,3 +25,7 @@ html,body { min-width:320px; min-height:100dvh; margin:0; font-family:Inter,Robo
 .mat-mdc-option:hover:not(.mdc-list-item--disabled),
 .mat-mdc-option.mdc-list-item--selected { background-color: rgba(130,233,192,.13) !important; }
 .mat-mdc-option .mdc-list-item__primary-text { color: inherit !important; }
+
+.success-snackbar .mdc-snackbar__surface { background:#0d4c3e !important; color:#f0fdf7 !important; }
+.success-snackbar .mat-mdc-button { color:#b7f7dc !important; }
+.error-snackbar .mdc-snackbar__surface { background:#7f1d1d !important; color:#fff1f2 !important; }

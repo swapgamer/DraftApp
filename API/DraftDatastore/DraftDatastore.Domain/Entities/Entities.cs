@@ -9,6 +9,8 @@ public sealed class User : AuditableEntity, ISoftDeletable
     public string DisplayName { get; set; } = string.Empty;
     public string PasswordHash { get; set; } = string.Empty;
     public bool IsActive { get; set; } = true;
+    public bool IsSystemAdmin { get; set; }
+    public DateTimeOffset? AdminExpiresAtUtc { get; set; }
     public bool IsDeleted { get; set; }
     public DateTimeOffset? DeletedAtUtc { get; set; }
     public ICollection<UserRole> UserRoles { get; set; } = new List<UserRole>();
@@ -119,6 +121,7 @@ public sealed class PlayerPosition
     public Guid PlayerId { get; set; }
     public int PositionId { get; set; }
     public bool IsPrimary { get; set; }
+    public int? OverallRank { get; set; }
     public Player Player { get; set; } = null!;
     public Position Position { get; set; } = null!;
 }
@@ -161,6 +164,56 @@ public sealed class ChatHistory : AuditableEntity
     public bool HasMatch { get; set; }
     public long DurationMilliseconds { get; set; }
     public User User { get; set; } = null!;
+}
+
+// Auction data deliberately references the existing player catalogue rather than copying it.
+// A player can therefore keep one canonical profile while being assigned once per auction.
+public sealed class Auction : AuditableEntity
+{
+    public string Name { get; set; } = string.Empty;
+    public bool IsActive { get; set; } = true;
+    public ICollection<AuctionTeam> Teams { get; set; } = new List<AuctionTeam>();
+    public ICollection<AuctionAssignment> Assignments { get; set; } = new List<AuctionAssignment>();
+}
+
+public sealed class AuctionTeam : AuditableEntity
+{
+    public Guid AuctionId { get; set; }
+    public Guid RepresentativeUserId { get; set; }
+    public string TeamName { get; set; } = string.Empty;
+    public string? Icon { get; set; }
+    public decimal StartingBalance { get; set; }
+    public string Status { get; set; } = AuctionTeamStatuses.Pending;
+    public Auction Auction { get; set; } = null!;
+    public User RepresentativeUser { get; set; } = null!;
+    public ICollection<AuctionTeamMember> Members { get; set; } = new List<AuctionTeamMember>();
+    public ICollection<AuctionAssignment> Assignments { get; set; } = new List<AuctionAssignment>();
+}
+
+public sealed class AuctionTeamMember
+{
+    public Guid AuctionTeamId { get; set; }
+    public Guid UserId { get; set; }
+    public AuctionTeam AuctionTeam { get; set; } = null!;
+    public User User { get; set; } = null!;
+}
+
+public sealed class AuctionAssignment : AuditableEntity
+{
+    public Guid AuctionId { get; set; }
+    public Guid AuctionTeamId { get; set; }
+    public Guid PlayerId { get; set; }
+    public decimal SoldPrice { get; set; }
+    public Auction Auction { get; set; } = null!;
+    public AuctionTeam AuctionTeam { get; set; } = null!;
+    public Player Player { get; set; } = null!;
+}
+
+public static class AuctionTeamStatuses
+{
+    public const string Pending = "Pending";
+    public const string Approved = "Approved";
+    public const string Rejected = "Rejected";
 }
 
 public static class SystemRoles

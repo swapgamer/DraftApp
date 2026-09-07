@@ -27,7 +27,12 @@ public static class ServiceCollectionExtensions
         services.AddScoped<IPlayerRepository, EfPlayerRepository>();
         services.AddScoped<IPlayerService, PlayerService>();
         services.AddScoped<IAdminService, AdminService>();
-        services.AddScoped<IChatbotService, ChatbotService>();
+        services.AddOptions<OpenAiOptions>().BindConfiguration(OpenAiOptions.SectionName);
+        services.AddHttpClient<IChatbotService, ChatbotService>(client =>
+        {
+            client.BaseAddress = new Uri("https://api.openai.com/");
+            client.Timeout = TimeSpan.FromSeconds(45);
+        });
         return services;
     }
 }

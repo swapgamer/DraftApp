@@ -23,6 +23,10 @@ public sealed class DraftDatastoreDbContext(DbContextOptions<DraftDatastoreDbCon
     public DbSet<LoginHistory> LoginHistories => Set<LoginHistory>();
     public DbSet<ChemistryCombination> ChemistryCombinations => Set<ChemistryCombination>();
     public DbSet<ChemistryCombinationPlayer> ChemistryCombinationPlayers => Set<ChemistryCombinationPlayer>();
+    public DbSet<Auction> Auctions => Set<Auction>();
+    public DbSet<AuctionTeam> AuctionTeams => Set<AuctionTeam>();
+    public DbSet<AuctionTeamMember> AuctionTeamMembers => Set<AuctionTeamMember>();
+    public DbSet<AuctionAssignment> AuctionAssignments => Set<AuctionAssignment>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -65,6 +69,7 @@ public sealed class DraftDatastoreDbContext(DbContextOptions<DraftDatastoreDbCon
             entity.Property(x => x.NormalizedEmail).HasMaxLength(320).IsRequired();
             entity.Property(x => x.DisplayName).HasMaxLength(120).IsRequired();
             entity.Property(x => x.PasswordHash).HasMaxLength(512).IsRequired();
+            entity.HasIndex(x => new { x.IsSystemAdmin, x.AdminExpiresAtUtc });
             entity.HasIndex(x => x.NormalizedEmail).IsUnique();
             entity.HasQueryFilter(x => !x.IsDeleted);
         });
@@ -89,11 +94,15 @@ public sealed class DraftDatastoreDbContext(DbContextOptions<DraftDatastoreDbCon
             entity.HasOne(x => x.PlayingEra).WithMany(x => x.Players).HasForeignKey(x => x.PlayingEraId).OnDelete(DeleteBehavior.Restrict); entity.HasQueryFilter(x => !x.IsDeleted);
         });
         builder.Entity<PlayerAlias>(entity => { entity.ToTable("PlayerAliases"); entity.HasKey(x => x.Id); entity.Property(x => x.Alias).HasMaxLength(160).IsRequired(); entity.HasIndex(x => new { x.PlayerId, x.Alias }).IsUnique(); entity.HasOne(x => x.Player).WithMany(x => x.Aliases).HasForeignKey(x => x.PlayerId).OnDelete(DeleteBehavior.Cascade); });
-        builder.Entity<PlayerPosition>(entity => { entity.ToTable("PlayerPositions"); entity.HasKey(x => new { x.PlayerId, x.PositionId }); entity.HasIndex(x => new { x.PositionId, x.PlayerId }); entity.HasOne(x => x.Player).WithMany(x => x.PlayerPositions).HasForeignKey(x => x.PlayerId).OnDelete(DeleteBehavior.Cascade); entity.HasOne(x => x.Position).WithMany(x => x.PlayerPositions).HasForeignKey(x => x.PositionId).OnDelete(DeleteBehavior.Restrict); });
+        builder.Entity<PlayerPosition>(entity => { entity.ToTable("PlayerPositions", table => table.HasCheckConstraint("CK_PlayerPositions_Rank", "[OverallRank] IS NULL OR [OverallRank] > 0")); entity.HasKey(x => new { x.PlayerId, x.PositionId }); entity.HasIndex(x => new { x.PositionId, x.OverallRank, x.PlayerId }); entity.HasOne(x => x.Player).WithMany(x => x.PlayerPositions).HasForeignKey(x => x.PlayerId).OnDelete(DeleteBehavior.Cascade); entity.HasOne(x => x.Position).WithMany(x => x.PlayerPositions).HasForeignKey(x => x.PositionId).OnDelete(DeleteBehavior.Restrict); });
         builder.Entity<PlayerImage>(entity => { entity.ToTable("PlayerImages"); entity.HasKey(x => x.Id); entity.Property(x => x.BlobPath).HasMaxLength(1024).IsRequired(); entity.Property(x => x.ContentType).HasMaxLength(100).IsRequired(); entity.HasIndex(x => x.BlobPath).IsUnique(); entity.HasOne(x => x.Player).WithMany(x => x.Images).HasForeignKey(x => x.PlayerId).OnDelete(DeleteBehavior.Cascade); });
         builder.Entity<Favorite>(entity => { entity.ToTable("Favorites"); entity.HasKey(x => x.Id); entity.HasIndex(x => new { x.UserId, x.PlayerId }).IsUnique(); entity.HasOne(x => x.User).WithMany().HasForeignKey(x => x.UserId).OnDelete(DeleteBehavior.Cascade); entity.HasOne(x => x.Player).WithMany().HasForeignKey(x => x.PlayerId).OnDelete(DeleteBehavior.Restrict); });
         builder.Entity<ChemistryCombination>(entity => { entity.ToTable("ChemistryCombinations"); entity.HasKey(x => x.Id); entity.Property(x => x.Type).HasMaxLength(8).IsRequired(); entity.Property(x => x.Title).HasMaxLength(160); entity.HasIndex(x => new { x.IsDeleted, x.Type }); entity.HasQueryFilter(x => !x.IsDeleted); });
         builder.Entity<ChemistryCombinationPlayer>(entity => { entity.ToTable("ChemistryCombinationPlayers"); entity.HasKey(x => new { x.ChemistryCombinationId, x.PlayerId }); entity.HasIndex(x => new { x.PlayerId, x.ChemistryCombinationId }); entity.HasOne(x => x.ChemistryCombination).WithMany(x => x.Players).HasForeignKey(x => x.ChemistryCombinationId).OnDelete(DeleteBehavior.Cascade); entity.HasOne(x => x.Player).WithMany(x => x.ChemistryCombinations).HasForeignKey(x => x.PlayerId).OnDelete(DeleteBehavior.Restrict); });
+        builder.Entity<Auction>(entity => { entity.ToTable("Auctions"); entity.HasKey(x => x.Id); entity.Property(x => x.Name).HasMaxLength(120).IsRequired(); entity.HasIndex(x => x.IsActive).IsUnique().HasFilter("[IsActive] = 1"); });
+        builder.Entity<AuctionTeam>(entity => { entity.ToTable("AuctionTeams", table => table.HasCheckConstraint("CK_AuctionTeams_Balance", "[StartingBalance] >= 0")); entity.HasKey(x => x.Id); entity.Property(x => x.TeamName).HasMaxLength(120).IsRequired(); entity.Property(x => x.Icon).HasMaxLength(512); entity.Property(x => x.Status).HasMaxLength(16).IsRequired(); entity.Property(x => x.StartingBalance).HasPrecision(18, 2); entity.HasIndex(x => new { x.AuctionId, x.TeamName }).IsUnique(); entity.HasIndex(x => new { x.AuctionId, x.Status }); entity.HasOne(x => x.Auction).WithMany(x => x.Teams).HasForeignKey(x => x.AuctionId).OnDelete(DeleteBehavior.Cascade); entity.HasOne(x => x.RepresentativeUser).WithMany().HasForeignKey(x => x.RepresentativeUserId).OnDelete(DeleteBehavior.Restrict); });
+        builder.Entity<AuctionTeamMember>(entity => { entity.ToTable("AuctionTeamMembers"); entity.HasKey(x => new { x.AuctionTeamId, x.UserId }); entity.HasIndex(x => x.UserId); entity.HasOne(x => x.AuctionTeam).WithMany(x => x.Members).HasForeignKey(x => x.AuctionTeamId).OnDelete(DeleteBehavior.Cascade); entity.HasOne(x => x.User).WithMany().HasForeignKey(x => x.UserId).OnDelete(DeleteBehavior.Restrict); });
+        builder.Entity<AuctionAssignment>(entity => { entity.ToTable("AuctionAssignments", table => table.HasCheckConstraint("CK_AuctionAssignments_SoldPrice", "[SoldPrice] > 0")); entity.HasKey(x => x.Id); entity.Property(x => x.SoldPrice).HasPrecision(18, 2); entity.HasIndex(x => new { x.AuctionId, x.PlayerId }).IsUnique(); entity.HasIndex(x => new { x.AuctionTeamId, x.CreatedAtUtc }); entity.HasOne(x => x.Auction).WithMany(x => x.Assignments).HasForeignKey(x => x.AuctionId).OnDelete(DeleteBehavior.Restrict); entity.HasOne(x => x.AuctionTeam).WithMany(x => x.Assignments).HasForeignKey(x => x.AuctionTeamId).OnDelete(DeleteBehavior.Cascade); entity.HasOne(x => x.Player).WithMany().HasForeignKey(x => x.PlayerId).OnDelete(DeleteBehavior.Restrict); });
     }
 
     private static void ConfigureOperationalData(ModelBuilder builder)

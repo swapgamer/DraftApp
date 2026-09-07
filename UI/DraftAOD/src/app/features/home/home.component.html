@@ -1,15 +1,47 @@
 <section class="home-page">
+  <div class="hero-orbit orbit-one"></div>
+  <div class="hero-orbit orbit-two"></div>
+
   <div class="hero">
-    <p class="eyebrow">Draft Datastore</p>
-    <h1>Football history,<br /><span>ready for the draft.</span></h1>
-    <p class="intro">A curated football intelligence platform for discovering elite players, comparing career impact, and exploring the numbers behind the game.</p>
-    <div class="hero-actions">
-      @if (auth.isAuthenticated()) { <a mat-flat-button color="primary" routerLink="/hall-of-fame">Explore Hall of Fame <mat-icon>arrow_forward</mat-icon></a> <a mat-button routerLink="/assistant">Ask the assistant</a> } @else { <a mat-flat-button color="primary" routerLink="/register">Create account <mat-icon>arrow_forward</mat-icon></a> <a mat-button routerLink="/login">Sign in</a> }
+    <div class="hero-copy">
+      <p class="eyebrow"><span></span> Football Mayhem</p>
+      <h1>Football history,<br /><span>ready for the mayhem.</span></h1>
+      <p class="intro">A curated football intelligence platform for discovering elite players, comparing career impact, and exploring the numbers behind the game.</p>
+      <div class="hero-actions">
+        @if (auth.isAuthenticated()) {
+          <a mat-flat-button color="primary" routerLink="/hall-of-fame">Explore Hall of Fame <mat-icon>arrow_forward</mat-icon></a>
+          <a mat-stroked-button routerLink="/assistant"><mat-icon>forum</mat-icon> Ask the assistant</a>
+        } @else {
+          <a mat-flat-button color="primary" routerLink="/register">Create account <mat-icon>arrow_forward</mat-icon></a>
+          <a mat-stroked-button routerLink="/login">Sign in</a>
+        }
+      </div>
+      <div class="hero-stats" aria-label="Football Mayhem highlights">
+        <div><strong>240</strong><span>players tracked</span></div>
+        <div><strong>13 roles</strong><span>curated by position</span></div>
+        <div><strong>1 assistant</strong><span>that speaks football</span></div>
+      </div>
     </div>
+
+    <aside class="player-preview" aria-label="Illustrative player data preview">
+      <div class="impact-chip"><span>Impact credits</span><strong>+14.6</strong></div>
+      <div class="preview-topline">
+        <div class="preview-avatar"><mat-icon>person</mat-icon></div>
+        <div><strong>Lionel Messi</strong><span>Forward · Argentina</span></div>
+        <div class="rating">91</div>
+      </div>
+      <div class="metrics">
+        <div><span>Pace <b>88</b></span><i><em style="width:88%"></em></i></div>
+        <div><span>Shooting <b>92</b></span><i><em style="width:92%"></em></i></div>
+        <div><span>Passing <b>84</b></span><i><em style="width:84%"></em></i></div>
+        <div><span>Dribbling <b>90</b></span><i><em style="width:90%"></em></i></div>
+      </div>
+      <p class="preview-note"><mat-icon>check</mat-icon> Illustrative sample — not a real player record</p>
+    </aside>
   </div>
   <section class="value-grid" aria-label="Platform features">
-    <article><mat-icon>emoji_events</mat-icon><h2>Ranked legacy</h2><p>Explore a structured Hall of Fame with career rankings and position context.</p></article>
-    <article><mat-icon>query_stats</mat-icon><h2>Impact credits</h2><p>Compare goal, assist, and defensive credit points in a consistent view.</p></article>
-    <article><mat-icon>forum</mat-icon><h2>Ask naturally</h2><p>Use the football assistant to find answers without learning database filters.</p></article>
+    <article><span class="feature-icon"><mat-icon>emoji_events</mat-icon></span><h2>Ranked legacy</h2><p>Explore a structured Hall of Fame with career rankings and position context.</p></article>
+    <article><span class="feature-icon"><mat-icon>query_stats</mat-icon></span><h2>Impact credits</h2><p>Compare goal, assist, and defensive credit points in a consistent view.</p></article>
+    <article><span class="feature-icon"><mat-icon>forum</mat-icon></span><h2>Ask naturally</h2><p>Use the football assistant to find answers without learning database filters.</p></article>
   </section>
 </section>
