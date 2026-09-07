@@ -14,7 +14,7 @@ permissions:
 env:
   AZURE_WEBAPP_NAME: football-mayhem-api-16122000
   PROJECT_PATH: API/DraftDatastore/DraftDatastore.API/DraftDatastore.API.csproj
-  PUBLISH_DIRECTORY: ${{ runner.temp }}/football-mayhem-api
+  PUBLISH_DIRECTORY: ./football-mayhem-api-publish
 
 jobs:
   build-and-deploy:
