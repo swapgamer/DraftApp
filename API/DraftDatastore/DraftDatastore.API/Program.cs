@@ -15,6 +15,8 @@ using Serilog;
 using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore;
 using DraftDatastore.Persistence;
+using DraftDatastore.API.Storage;
+using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -47,6 +49,8 @@ builder.Services.AddAuthorization(options => options.AddPolicy(SystemRoles.Admin
 builder.Services.AddCors(options => options.AddPolicy("Frontend", policy => policy.WithOrigins(builder.Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>() ?? []).AllowAnyHeader().AllowAnyMethod()));
 builder.Services.AddRateLimiter(options => { options.RejectionStatusCode = StatusCodes.Status429TooManyRequests; options.AddFixedWindowLimiter("auth", limiter => { limiter.PermitLimit = 10; limiter.Window = TimeSpan.FromMinutes(1); limiter.QueueLimit = 0; }); options.AddFixedWindowLimiter("chat", limiter => { limiter.PermitLimit = 30; limiter.Window = TimeSpan.FromMinutes(1); limiter.QueueLimit = 0; }); });
 builder.Services.AddHealthChecks();
+builder.Services.Configure<BlobStorageOptions>(builder.Configuration.GetSection(BlobStorageOptions.SectionName));
+builder.Services.AddScoped<IPlayerImageStorage, PlayerImageStorage>();
 
 var app = builder.Build();
 using (var scope = app.Services.CreateScope())
@@ -77,6 +81,16 @@ app.UseRateLimiter();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapHealthChecks("/health");
+app.MapGet("/player-images/{**blobPath}", (string blobPath, IOptions<BlobStorageOptions> options) =>
+{
+    var settings = options.Value;
+    if (!settings.IsConfigured) return Results.NotFound();
+
+    var escapedPath = string.Join('/', blobPath.Split('/', StringSplitOptions.RemoveEmptyEntries).Select(Uri.EscapeDataString));
+    var container = Uri.EscapeDataString(settings.PlayerImagesContainer);
+    var account = new Azure.Storage.Blobs.BlobContainerClient(settings.ConnectionString, settings.PlayerImagesContainer).Uri.GetLeftPart(UriPartial.Authority);
+    return Results.Redirect($"{account}/{container}/{escapedPath}");
+});
 app.MapControllers();
 app.Run();
 
