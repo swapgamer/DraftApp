@@ -74,7 +74,7 @@ app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseSerilogRequestLogging();
 app.UseStaticFiles();
 app.UseMiddleware<AuditLoggingMiddleware>();
-if (app.Environment.IsDevelopment()) { app.UseSwagger(); app.UseSwaggerUI(); }
+if (app.Environment.IsDevelopment() || app.Configuration.GetValue<bool>("Swagger:Enabled")) { app.UseSwagger(); app.UseSwaggerUI(); }
 if (!app.Environment.IsDevelopment()) app.UseHttpsRedirection();
 app.UseCors("Frontend");
 app.UseRateLimiter();
