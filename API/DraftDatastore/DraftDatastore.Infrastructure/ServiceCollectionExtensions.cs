@@ -18,7 +18,11 @@ public static class ServiceCollectionExtensions
     public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
     {
         var connectionString = configuration.GetConnectionString("DraftDatastore") ?? throw new InvalidOperationException("ConnectionStrings:DraftDatastore is required.");
-        services.AddDbContext<DraftDatastoreDbContext>(options => options.UseSqlServer(connectionString));
+        services.AddDbContext<DraftDatastoreDbContext>(options => options.UseSqlServer(connectionString, sql =>
+            sql.EnableRetryOnFailure(
+                maxRetryCount: 5,
+                maxRetryDelay: TimeSpan.FromSeconds(10),
+                errorNumbersToAdd: null)));
         services.AddOptions<JwtOptions>().BindConfiguration(JwtOptions.SectionName).Validate(x => !string.IsNullOrWhiteSpace(x.Issuer) && !string.IsNullOrWhiteSpace(x.Audience) && x.SigningKey.Length >= 32 && x.AccessTokenLifetimeMinutes is > 0 and <= 60, "Jwt configuration is invalid.").ValidateOnStart();
         services.AddScoped<IIdentityStore, EfIdentityStore>();
         services.AddScoped<IPasswordService, AspNetPasswordService>();
