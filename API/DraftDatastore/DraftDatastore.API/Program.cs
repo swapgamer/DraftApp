@@ -26,7 +26,14 @@ builder.Services.AddScoped<RequestValidationFilter>();
 builder.Services.AddTransient<ExceptionHandlingMiddleware>();
 builder.Services.AddControllers(options => options.Filters.AddService<RequestValidationFilter>());
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(options => { options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme { Name="Authorization", Type=SecuritySchemeType.Http, Scheme="bearer", BearerFormat="JWT", In=ParameterLocation.Header, Description="Enter a valid JWT bearer token." }); options.AddSecurityRequirement(new OpenApiSecurityRequirement { { new OpenApiSecurityScheme { Reference=new OpenApiReference { Type=ReferenceType.SecurityScheme, Id="Bearer" } }, Array.Empty<string>() } }); });
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SwaggerDoc("v1", new OpenApiInfo { Title = "Football Mayhem API", Version = "v1" });
+    options.CustomSchemaIds(type => type.FullName?.Replace('+', '.') ?? type.Name);
+    options.ResolveConflictingActions(descriptions => descriptions.First());
+    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme { Name="Authorization", Type=SecuritySchemeType.Http, Scheme="bearer", BearerFormat="JWT", In=ParameterLocation.Header, Description="Enter a valid JWT bearer token." });
+    options.AddSecurityRequirement(new OpenApiSecurityRequirement { { new OpenApiSecurityScheme { Reference=new OpenApiReference { Type=ReferenceType.SecurityScheme, Id="Bearer" } }, Array.Empty<string>() } });
+});
 builder.Services.AddValidatorsFromAssemblyContaining<RegisterRequestValidator>();
 builder.Services.AddInfrastructure(builder.Configuration);
 
