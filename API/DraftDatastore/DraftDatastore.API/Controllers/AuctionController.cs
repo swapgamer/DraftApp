@@ -98,7 +98,6 @@ public sealed class AuctionController(DraftDatastoreDbContext db) : ControllerBa
     {
         if (request.SoldPrice <= 0) return BadRequest("Sold price must be greater than zero.");
         var auction = await ActiveAuction(ct);
-        await using var transaction = await db.Database.BeginTransactionAsync(ct);
         var team = await db.AuctionTeams.Include(x => x.Assignments).SingleOrDefaultAsync(x => x.Id == request.TeamId && x.AuctionId == auction.Id && x.Status == AuctionTeamStatuses.Approved, ct);
         if (team is null) return NotFound("Approved auction team not found.");
         if (!await db.Players.AnyAsync(x => x.Id == request.PlayerId, ct)) return NotFound("Player not found.");
@@ -106,7 +105,17 @@ public sealed class AuctionController(DraftDatastoreDbContext db) : ControllerBa
         var remaining = team.StartingBalance - team.Assignments.Sum(x => x.SoldPrice);
         if (remaining < request.SoldPrice) return BadRequest("This team does not have sufficient remaining balance.");
         var assignment = new AuctionAssignment { AuctionId = auction.Id, AuctionTeamId = team.Id, PlayerId = request.PlayerId, SoldPrice = request.SoldPrice };
-        db.AuctionAssignments.Add(assignment); await db.SaveChangesAsync(ct); await transaction.CommitAsync(ct);
+        // SaveChanges is already atomic for this one insert. Do not open a manual transaction here:
+        // Azure's configured retry execution strategy cannot run user-created transactions.
+        db.AuctionAssignments.Add(assignment);
+        try
+        {
+            await db.SaveChangesAsync(ct);
+        }
+        catch (DbUpdateException)
+        {
+            return Conflict("This player has already been assigned.");
+        }
         var saved = await db.AuctionAssignments.AsNoTracking().Include(x => x.Player).ThenInclude(x => x.Nationality).Include(x => x.Player).ThenInclude(x => x.PlayerPositions).ThenInclude(x => x.Position).Include(x => x.Player).ThenInclude(x => x.Images).SingleAsync(x => x.Id == assignment.Id, ct);
         return Ok(ToResponse(saved));
     }
