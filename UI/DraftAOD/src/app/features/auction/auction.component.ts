@@ -39,7 +39,13 @@ export class AuctionComponent {
   setPrice(playerId:string,value:string):void {const price=Number(value);this.prices.update(prices=>({...prices,[playerId]:Number.isFinite(price)?price:0}));}
   setApprovalBalance(teamId:string,value:string):void {const amount=Number(value);this.approvalBalance.update(values=>({...values,[teamId]:Number.isFinite(amount)?amount:0}));}
   toggleMember(id:string,checked:boolean):void {this.selectedMembers.update(ids=>checked?[...ids,id]:ids.filter(item=>item!==id));}
-  category(player:AuctionPlayer):string {const code=player.primaryPositionCode.toUpperCase();if(code==='GK')return 'GK';if(['RB','LB','CB','DEF'].includes(code))return 'DEF';if(['CM','CDM','CAM','MID'].includes(code))return 'MID';return 'FWD';}
+  category(player:AuctionPlayer):'GK'|'DEF'|'MID'|'FWD' {
+    const code=player.primaryPositionCode.toUpperCase();
+    if(code==='GK')return 'GK';
+    if(['RB','LB','CB','CBST','CBSW','DEF'].includes(code))return 'DEF';
+    if(['DM','CMDLP','CMB2B','CAM','CM','CDM','MID'].includes(code))return 'MID';
+    return 'FWD';
+  }
   positions(team:AuctionTeam,category:string):number{return team.assignments.filter(item=>this.category(item.player)===category).length;}
   memberNames(team:AuctionTeam):string{return team.members.map(member=>member.displayName).join(', ');}
   private errorText(error:any,fallback:string):string {const payload=error?.error;if(typeof payload==='string'&&payload.trim())return payload;if(typeof payload?.detail==='string'&&payload.detail.trim())return payload.detail;if(typeof payload?.title==='string'&&payload.title.trim())return payload.title;return fallback;}
