@@ -2,15 +2,61 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @include mat.core();
 
+// Material needs an actual theme as well as the application's custom CSS variables.
+// Without this, MDC's primary and error tokens remain unset and filled buttons can
+// render transparent while validation errors inherit the regular body colour.
+$football-primary: mat.m2-define-palette(mat.$m2-teal-palette, 500, 100, 700);
+$football-accent: mat.m2-define-palette(mat.$m2-green-palette, A400, A200, A700);
+$football-warn: mat.m2-define-palette(mat.$m2-red-palette, 600);
+$football-dark-theme: mat.m2-define-dark-theme((color: (primary: $football-primary, accent: $football-accent, warn: $football-warn)));
+$football-light-theme: mat.m2-define-light-theme((color: (primary: $football-primary, accent: $football-accent, warn: $football-warn)));
+
+@include mat.all-component-themes($football-dark-theme);
+
+:root.light-theme {
+  @include mat.all-component-colors($football-light-theme);
+}
+
 :root {
   --page:#07111f; --surface:#0e1d30; --surface-alt:#10233a; --surface-deep:#0d1a2b; --shell:#07111f; --footer:#050c16;
-  --text:#e7edf4; --text-strong:#f8fafc; --text-soft:#dbeafe; --muted:#aab9cc; --accent:#82e9c0; --border:rgba(148,163,184,.16); color-scheme:dark;
+  --text:#e7edf4; --text-strong:#f8fafc; --text-soft:#dbeafe; --muted:#aab9cc; --accent:#82e9c0; --danger:#f87171; --danger-surface:#7f1d1d; --border:rgba(148,163,184,.16); color-scheme:dark;
 }
 :root.light-theme {
   --page:#edf3f8; --surface:#ffffff; --surface-alt:#f8fafc; --surface-deep:#e6edf5; --shell:#f7fafc; --footer:#e2e8f0;
-  --text:#10233a; --text-strong:#10233a; --text-soft:#1e3a5f; --muted:#475569; --accent:#087a56; --border:rgba(51,65,85,.18); color-scheme:light;
+  --text:#10233a; --text-strong:#10233a; --text-soft:#1e3a5f; --muted:#475569; --accent:#087a56; --danger:#b91c1c; --danger-surface:#fee2e2; --border:rgba(51,65,85,.18); color-scheme:light;
 }
 html,body { min-width:320px; min-height:100dvh; margin:0; font-family:Inter,Roboto,'Helvetica Neue',Arial,sans-serif; background:var(--page); }* { box-sizing:border-box; }button,a,input { font:inherit; }
+
+/* Explicit MDC token fallbacks retain the Football Mayhem palette across Material updates. */
+.mat-mdc-unelevated-button.mat-primary,
+.mat-mdc-raised-button.mat-primary,
+.mat-mdc-fab.mat-primary,
+.mat-mdc-mini-fab.mat-primary {
+  --mdc-filled-button-container-color: var(--accent);
+  --mdc-protected-button-container-color: var(--accent);
+  --mdc-fab-container-color: var(--accent);
+  --mdc-filled-button-label-text-color: #06251d;
+  --mdc-protected-button-label-text-color: #06251d;
+  color: #06251d !important;
+}
+.mat-mdc-form-field.mat-form-field-invalid {
+  --mdc-outlined-text-field-error-outline-color: var(--danger);
+  --mdc-outlined-text-field-error-focus-outline-color: var(--danger);
+  --mdc-outlined-text-field-error-label-text-color: var(--danger);
+  --mat-form-field-error-text-color: var(--danger);
+}
+.mat-mdc-form-field-error,
+mat-error { color: var(--danger) !important; }
+
+main.page-content a:not(.brand):not([mat-button]):not([mat-flat-button]):not([mat-raised-button]):not([mat-stroked-button]):not([mat-icon-button]) {
+  color: var(--accent);
+  font-weight: 650;
+  text-decoration: underline;
+  text-decoration-thickness: .1em;
+  text-underline-offset: .16em;
+}
+main.page-content a:not(.brand):not([mat-button]):not([mat-flat-button]):not([mat-raised-button]):not([mat-stroked-button]):not([mat-icon-button]):hover { filter: brightness(1.15); }
+main.page-content a:not(.brand):not([mat-button]):not([mat-flat-button]):not([mat-raised-button]):not([mat-stroked-button]):not([mat-icon-button]):focus-visible { outline: 2px solid var(--accent); outline-offset: .2rem; border-radius: .15rem; }
 
 /* Keep Material form controls and their overlay panels readable in the dark theme. */
 .mat-mdc-form-field .mat-mdc-text-field-wrapper { background-color: var(--surface-deep); }

@@ -20,7 +20,10 @@
       @if (form.controls.password.touched && form.controls.password.hasError('required')) { <mat-error>Password is required.</mat-error> }
     </mat-form-field>
 
-    <button mat-flat-button color="primary" type="submit" [disabled]="submitting()">{{ submitting() ? 'Signing in...' : 'Sign in' }}</button>
+    <button mat-flat-button color="primary" type="submit" [disabled]="submitting()" [attr.aria-busy]="submitting()">
+      @if (submitting()) { <mat-spinner diameter="18" /> <span>Signing in…</span> } @else { <span>Sign in</span> }
+    </button>
+    @if (submitting()) { <p class="signin-progress" role="status">This can take a few seconds when the service is waking up.</p> }
     <p class="switch-copy">New to Football Mayhem? <a routerLink="/register">Create an account</a></p>
   </form>
 </section>

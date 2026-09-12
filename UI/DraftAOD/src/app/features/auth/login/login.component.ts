@@ -5,12 +5,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { AuthService } from '../../../core/auth/auth.service';
+import { NotificationService } from '../../../core/notification.service';
 
 @Component({
   standalone: true,
-  imports: [ReactiveFormsModule, RouterLink, MatButtonModule, MatFormFieldModule, MatIconModule, MatInputModule],
+  imports: [ReactiveFormsModule, RouterLink, MatButtonModule, MatFormFieldModule, MatIconModule, MatInputModule, MatProgressSpinnerModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -27,10 +29,16 @@ export class LoginComponent {
   private readonly auth = inject(AuthService);
   private readonly router = inject(Router);
   private readonly route = inject(ActivatedRoute);
+  private readonly notifications = inject(NotificationService);
 
   submit(): void {
     if (this.form.invalid || this.submitting()) {
       this.form.markAllAsTouched();
+      if (!this.submitting()) {
+        const message = this.validationMessage();
+        this.error.set(message);
+        this.notifications.showError(message);
+      }
       return;
     }
     this.error.set('');
@@ -42,5 +50,12 @@ export class LoginComponent {
         this.submitting.set(false);
       },
     });
+  }
+
+  private validationMessage(): string {
+    if (this.form.controls.email.hasError('required')) return 'Email is required.';
+    if (this.form.controls.email.hasError('email')) return 'Enter a valid email address.';
+    if (this.form.controls.password.hasError('required')) return 'Password is required.';
+    return 'Please correct the highlighted fields.';
   }
 }
