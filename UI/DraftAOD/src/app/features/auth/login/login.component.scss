@@ -1,6 +1,8 @@
 :host { display: block; }
 
 .auth-page {
+  position: relative;
+  overflow: hidden;
   display: grid;
   min-height: calc(100dvh - 8.5rem);
   place-items: center;
@@ -10,7 +12,23 @@
     url('/brand/football-stadium-login-background.png') center / cover no-repeat;
 }
 
-.auth-card { display: grid; width: min(100%, 27rem); gap: .85rem; padding: clamp(1.5rem, 5vw, 2.5rem); background: rgba(8, 22, 39, .91); border: 1px solid rgba(148,163,184,.24); border-radius: 1rem; box-shadow: 0 1.25rem 3.5rem rgba(0,0,0,.38); backdrop-filter: blur(5px); }
+.stadium-message {
+  position: absolute;
+  z-index: 0;
+  margin: 0;
+  color: rgba(89, 230, 191, .58);
+  font-size: clamp(1.25rem, 2.35vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: .02em;
+  line-height: 1.08;
+  text-transform: uppercase;
+  text-shadow: 0 .2rem .9rem rgba(0, 0, 0, .44);
+}
+
+.stadium-message--left { left: clamp(1.5rem, 7vw, 7rem); transform: rotate(-7deg); }
+.stadium-message--right { right: clamp(1.5rem, 7vw, 7rem); text-align: center; transform: rotate(-8deg); }
+
+.auth-card { position: relative; z-index: 1; display: grid; width: min(100%, 27rem); gap: .85rem; padding: clamp(1.5rem, 5vw, 2.5rem); background: rgba(8, 22, 39, .91); border: 1px solid rgba(148,163,184,.24); border-radius: 1rem; box-shadow: 0 1.25rem 3.5rem rgba(0,0,0,.38); backdrop-filter: blur(5px); }
 .eyebrow { margin: 0; color: var(--accent); font-size: .75rem; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
 h1 { margin: 0; color:var(--text-strong); font-size:2rem; letter-spacing:-.045em; }
 .subtitle { margin: 0 0 .6rem; color:var(--muted); line-height:1.5; }
@@ -20,8 +38,13 @@ h1 { margin: 0; color:var(--text-strong); font-size:2rem; letter-spacing:-.045em
 button[type=submit] { min-height: 2.8rem; margin-top:.35rem; display:inline-flex; align-items:center; justify-content:center; gap:.55rem; }
 button[type=submit] mat-spinner { --mdc-circular-progress-active-indicator-color:currentColor; }
 :host-context(.light-theme) .auth-page { background: linear-gradient(rgba(241, 247, 250, .77), rgba(241, 247, 250, .88)), url('/brand/football-stadium-login-background.png') center / cover no-repeat; }
+:host-context(.light-theme) .stadium-message { color: rgba(5, 102, 77, .72); text-shadow: 0 .15rem .65rem rgba(255, 255, 255, .65); }
 :host-context(.light-theme) .auth-card { background:rgba(255,255,255,.91); border-color:rgba(23,75,76,.18); box-shadow:0 1.25rem 3.5rem rgba(24,66,72,.18); }
 :host-context(.light-theme) button[type=submit] { color:#fff!important; background:#087a56!important; }
 :host-context(.light-theme) .form-error { color:#991b1b; background:#fee2e2; }
 .signin-progress { margin:-.2rem 0 0; color:var(--muted); font-size:.8rem; text-align:center; }
+
+@media (max-width: 54rem) {
+  .stadium-message { display: none; }
+}
 
