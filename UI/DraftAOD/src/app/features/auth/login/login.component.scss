@@ -16,17 +16,19 @@
   position: absolute;
   z-index: 0;
   margin: 0;
-  color: rgba(89, 230, 191, .58);
-  font-size: clamp(1.25rem, 2.35vw, 2.5rem);
+  color: rgba(42, 205, 172, .34);
+  font-family: "Segoe Print", "Bradley Hand", cursive;
+  font-size: clamp(1rem, 1.7vw, 1.75rem);
   font-weight: 800;
-  letter-spacing: .02em;
+  letter-spacing: .035em;
   line-height: 1.08;
   text-transform: uppercase;
-  text-shadow: 0 .2rem .9rem rgba(0, 0, 0, .44);
+  text-shadow: 0 .12rem .65rem rgba(0, 0, 0, .5);
+  opacity: .78;
 }
 
-.stadium-message--left { left: clamp(1.5rem, 7vw, 7rem); transform: rotate(-7deg); }
-.stadium-message--right { right: clamp(1.5rem, 7vw, 7rem); text-align: center; transform: rotate(-8deg); }
+.stadium-message--left { left: clamp(1.75rem, 5.75vw, 5.5rem); transform: rotate(-8deg); }
+.stadium-message--right { right: clamp(1.75rem, 5.75vw, 5.5rem); text-align: center; transform: rotate(-10deg); }
 
 .auth-card { position: relative; z-index: 1; display: grid; width: min(100%, 27rem); gap: .85rem; padding: clamp(1.5rem, 5vw, 2.5rem); background: rgba(8, 22, 39, .91); border: 1px solid rgba(148,163,184,.24); border-radius: 1rem; box-shadow: 0 1.25rem 3.5rem rgba(0,0,0,.38); backdrop-filter: blur(5px); }
 .eyebrow { margin: 0; color: var(--accent); font-size: .75rem; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
