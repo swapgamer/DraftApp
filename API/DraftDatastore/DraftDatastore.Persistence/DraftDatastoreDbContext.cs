@@ -27,6 +27,9 @@ public sealed class DraftDatastoreDbContext(DbContextOptions<DraftDatastoreDbCon
     public DbSet<AuctionTeam> AuctionTeams => Set<AuctionTeam>();
     public DbSet<AuctionTeamMember> AuctionTeamMembers => Set<AuctionTeamMember>();
     public DbSet<AuctionAssignment> AuctionAssignments => Set<AuctionAssignment>();
+    public DbSet<AuctionLot> AuctionLots => Set<AuctionLot>();
+    public DbSet<AuctionBid> AuctionBids => Set<AuctionBid>();
+    public DbSet<AuctionLiveSeat> AuctionLiveSeats => Set<AuctionLiveSeat>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -100,9 +103,43 @@ public sealed class DraftDatastoreDbContext(DbContextOptions<DraftDatastoreDbCon
         builder.Entity<ChemistryCombination>(entity => { entity.ToTable("ChemistryCombinations"); entity.HasKey(x => x.Id); entity.Property(x => x.Type).HasMaxLength(8).IsRequired(); entity.Property(x => x.Title).HasMaxLength(160); entity.HasIndex(x => new { x.IsDeleted, x.Type }); entity.HasQueryFilter(x => !x.IsDeleted); });
         builder.Entity<ChemistryCombinationPlayer>(entity => { entity.ToTable("ChemistryCombinationPlayers"); entity.HasKey(x => new { x.ChemistryCombinationId, x.PlayerId }); entity.HasIndex(x => new { x.PlayerId, x.ChemistryCombinationId }); entity.HasOne(x => x.ChemistryCombination).WithMany(x => x.Players).HasForeignKey(x => x.ChemistryCombinationId).OnDelete(DeleteBehavior.Cascade); entity.HasOne(x => x.Player).WithMany(x => x.ChemistryCombinations).HasForeignKey(x => x.PlayerId).OnDelete(DeleteBehavior.Restrict); });
         builder.Entity<Auction>(entity => { entity.ToTable("Auctions"); entity.HasKey(x => x.Id); entity.Property(x => x.Name).HasMaxLength(120).IsRequired(); entity.HasIndex(x => x.IsActive).IsUnique().HasFilter("[IsActive] = 1"); });
-        builder.Entity<AuctionTeam>(entity => { entity.ToTable("AuctionTeams", table => table.HasCheckConstraint("CK_AuctionTeams_Balance", "[StartingBalance] >= 0")); entity.HasKey(x => x.Id); entity.Property(x => x.TeamName).HasMaxLength(120).IsRequired(); entity.Property(x => x.Icon).HasMaxLength(512); entity.Property(x => x.Status).HasMaxLength(16).IsRequired(); entity.Property(x => x.StartingBalance).HasPrecision(18, 2); entity.HasIndex(x => new { x.AuctionId, x.TeamName }).IsUnique(); entity.HasIndex(x => new { x.AuctionId, x.Status }); entity.HasOne(x => x.Auction).WithMany(x => x.Teams).HasForeignKey(x => x.AuctionId).OnDelete(DeleteBehavior.Cascade); entity.HasOne(x => x.RepresentativeUser).WithMany().HasForeignKey(x => x.RepresentativeUserId).OnDelete(DeleteBehavior.Restrict); });
+        builder.Entity<AuctionTeam>(entity => { entity.ToTable("AuctionTeams", table => table.HasCheckConstraint("CK_AuctionTeams_Balance", "[StartingBalance] >= 0")); entity.HasKey(x => x.Id); entity.Property(x => x.TeamName).HasMaxLength(120).IsRequired(); entity.Property(x => x.Icon).HasMaxLength(512); entity.Property(x => x.Status).HasMaxLength(16).IsRequired(); entity.Property(x => x.StartingBalance).HasPrecision(18, 2); entity.HasIndex(x => new { x.AuctionId, x.TeamName }).IsUnique(); entity.HasIndex(x => new { x.AuctionId, x.Status }); entity.HasOne(x => x.Auction).WithMany(x => x.Teams).HasForeignKey(x => x.AuctionId).OnDelete(DeleteBehavior.Cascade); entity.HasOne(x => x.RepresentativeUser).WithMany().HasForeignKey(x => x.RepresentativeUserId).OnDelete(DeleteBehavior.Restrict); entity.HasOne(x => x.LiveBidderUser).WithMany().HasForeignKey(x => x.LiveBidderUserId).OnDelete(DeleteBehavior.Restrict); });
         builder.Entity<AuctionTeamMember>(entity => { entity.ToTable("AuctionTeamMembers"); entity.HasKey(x => new { x.AuctionTeamId, x.UserId }); entity.HasIndex(x => x.UserId); entity.HasOne(x => x.AuctionTeam).WithMany(x => x.Members).HasForeignKey(x => x.AuctionTeamId).OnDelete(DeleteBehavior.Cascade); entity.HasOne(x => x.User).WithMany().HasForeignKey(x => x.UserId).OnDelete(DeleteBehavior.Restrict); });
         builder.Entity<AuctionAssignment>(entity => { entity.ToTable("AuctionAssignments", table => table.HasCheckConstraint("CK_AuctionAssignments_SoldPrice", "[SoldPrice] > 0")); entity.HasKey(x => x.Id); entity.Property(x => x.SoldPrice).HasPrecision(18, 2); entity.HasIndex(x => new { x.AuctionId, x.PlayerId }).IsUnique(); entity.HasIndex(x => new { x.AuctionTeamId, x.CreatedAtUtc }); entity.HasOne(x => x.Auction).WithMany(x => x.Assignments).HasForeignKey(x => x.AuctionId).OnDelete(DeleteBehavior.Restrict); entity.HasOne(x => x.AuctionTeam).WithMany(x => x.Assignments).HasForeignKey(x => x.AuctionTeamId).OnDelete(DeleteBehavior.Cascade); entity.HasOne(x => x.Player).WithMany().HasForeignKey(x => x.PlayerId).OnDelete(DeleteBehavior.Restrict); });
+        builder.Entity<AuctionLot>(entity =>
+        {
+            entity.ToTable("AuctionLots", table =>
+            {
+                table.HasCheckConstraint("CK_AuctionLots_StartingPrice", "[StartingPrice] > 0");
+                table.HasCheckConstraint("CK_AuctionLots_CurrentBid", "[CurrentBidAmount] IS NULL OR [CurrentBidAmount] > 0");
+                table.HasCheckConstraint("CK_AuctionLots_ExtensionCount", "[ExtensionCount] >= 0");
+            });
+            entity.HasKey(x => x.Id); entity.Property(x => x.StartingPrice).HasPrecision(18, 2); entity.Property(x => x.CurrentBidAmount).HasPrecision(18, 2);
+            entity.Property(x => x.State).HasMaxLength(16).IsRequired(); entity.Property(x => x.RowVersion).IsRowVersion();
+            entity.HasIndex(x => new { x.AuctionId, x.PlayerId }).IsUnique(); entity.HasIndex(x => new { x.AuctionId, x.State, x.EndsAtUtc });
+            entity.HasOne(x => x.Auction).WithMany(x => x.Lots).HasForeignKey(x => x.AuctionId).OnDelete(DeleteBehavior.Cascade);
+            entity.HasOne(x => x.Player).WithMany().HasForeignKey(x => x.PlayerId).OnDelete(DeleteBehavior.Restrict);
+            entity.HasOne(x => x.HighestBidAuctionTeam).WithMany().HasForeignKey(x => x.HighestBidAuctionTeamId).OnDelete(DeleteBehavior.Restrict);
+        });
+        builder.Entity<AuctionBid>(entity =>
+        {
+            entity.ToTable("AuctionBids", table => table.HasCheckConstraint("CK_AuctionBids_Amount", "[Amount] > 0"));
+            entity.HasKey(x => x.Id); entity.Property(x => x.Amount).HasPrecision(18, 2); entity.HasIndex(x => new { x.AuctionLotId, x.CreatedAtUtc }); entity.HasIndex(x => new { x.AuctionTeamId, x.CreatedAtUtc });
+            entity.HasOne(x => x.AuctionLot).WithMany(x => x.Bids).HasForeignKey(x => x.AuctionLotId).OnDelete(DeleteBehavior.Cascade);
+            entity.HasOne(x => x.AuctionTeam).WithMany(x => x.Bids).HasForeignKey(x => x.AuctionTeamId).OnDelete(DeleteBehavior.Restrict);
+            entity.HasOne(x => x.BidderUser).WithMany().HasForeignKey(x => x.BidderUserId).OnDelete(DeleteBehavior.Restrict);
+        });
+        builder.Entity<AuctionLiveSeat>(entity =>
+        {
+            entity.ToTable("AuctionLiveSeats"); entity.HasKey(x => x.Id); entity.Property(x => x.ConnectionId).HasMaxLength(128).IsRequired(); entity.Property(x => x.SeatKind).HasMaxLength(16).IsRequired();
+            entity.HasIndex(x => new { x.AuctionId, x.ConnectionId }).IsUnique(); entity.HasIndex(x => new { x.AuctionId, x.SeatKind, x.LastSeenAtUtc }); entity.HasIndex(x => new { x.AuctionId, x.UserId }).IsUnique();
+            entity.HasOne(x => x.Auction).WithMany(x => x.LiveSeats).HasForeignKey(x => x.AuctionId).OnDelete(DeleteBehavior.Cascade);
+            entity.HasOne(x => x.User).WithMany().HasForeignKey(x => x.UserId).OnDelete(DeleteBehavior.Restrict);
+            // SQL Server rejects SET NULL here because Auction -> Team and Auction -> LiveSeat
+            // would otherwise form two cascading paths. Seats are explicitly removed with their
+            // auction, while deleting a team must be handled deliberately by the application.
+            entity.HasOne(x => x.AuctionTeam).WithMany(x => x.LiveSeats).HasForeignKey(x => x.AuctionTeamId).OnDelete(DeleteBehavior.NoAction);
+        });
     }
 
     private static void ConfigureOperationalData(ModelBuilder builder)

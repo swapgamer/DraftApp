@@ -174,20 +174,28 @@ public sealed class Auction : AuditableEntity
     public bool IsActive { get; set; } = true;
     public ICollection<AuctionTeam> Teams { get; set; } = new List<AuctionTeam>();
     public ICollection<AuctionAssignment> Assignments { get; set; } = new List<AuctionAssignment>();
+    public ICollection<AuctionLot> Lots { get; set; } = new List<AuctionLot>();
+    public ICollection<AuctionLiveSeat> LiveSeats { get; set; } = new List<AuctionLiveSeat>();
 }
 
 public sealed class AuctionTeam : AuditableEntity
 {
     public Guid AuctionId { get; set; }
     public Guid RepresentativeUserId { get; set; }
+    // The original representative owns the team request. A live bidder is selected
+    // separately so an approved team can nominate any one of its members per session.
+    public Guid? LiveBidderUserId { get; set; }
     public string TeamName { get; set; } = string.Empty;
     public string? Icon { get; set; }
     public decimal StartingBalance { get; set; }
     public string Status { get; set; } = AuctionTeamStatuses.Pending;
     public Auction Auction { get; set; } = null!;
     public User RepresentativeUser { get; set; } = null!;
+    public User? LiveBidderUser { get; set; }
     public ICollection<AuctionTeamMember> Members { get; set; } = new List<AuctionTeamMember>();
     public ICollection<AuctionAssignment> Assignments { get; set; } = new List<AuctionAssignment>();
+    public ICollection<AuctionBid> Bids { get; set; } = new List<AuctionBid>();
+    public ICollection<AuctionLiveSeat> LiveSeats { get; set; } = new List<AuctionLiveSeat>();
 }
 
 public sealed class AuctionTeamMember
@@ -209,11 +217,73 @@ public sealed class AuctionAssignment : AuditableEntity
     public Player Player { get; set; } = null!;
 }
 
+// Live auction lots are separate from manual AuctionAssignments. This lets the
+// existing board remain operational while a bid is being collected and settled.
+public sealed class AuctionLot : AuditableEntity
+{
+    public Guid AuctionId { get; set; }
+    public Guid PlayerId { get; set; }
+    public decimal StartingPrice { get; set; }
+    public decimal? CurrentBidAmount { get; set; }
+    public Guid? HighestBidAuctionTeamId { get; set; }
+    public string State { get; set; } = AuctionLotStates.Draft;
+    public DateTimeOffset? EndsAtUtc { get; set; }
+    public DateTimeOffset? ClosedAtUtc { get; set; }
+    public int ExtensionCount { get; set; }
+    public byte[] RowVersion { get; set; } = Array.Empty<byte>();
+    public Auction Auction { get; set; } = null!;
+    public Player Player { get; set; } = null!;
+    public AuctionTeam? HighestBidAuctionTeam { get; set; }
+    public ICollection<AuctionBid> Bids { get; set; } = new List<AuctionBid>();
+}
+
+public sealed class AuctionBid : AuditableEntity
+{
+    public Guid AuctionLotId { get; set; }
+    public Guid AuctionTeamId { get; set; }
+    public Guid BidderUserId { get; set; }
+    public decimal Amount { get; set; }
+    public AuctionLot AuctionLot { get; set; } = null!;
+    public AuctionTeam AuctionTeam { get; set; } = null!;
+    public User BidderUser { get; set; } = null!;
+}
+
+// A short-lived persisted seat makes the free-tier connection limits explicit
+// and allows the Live Hub to recover after an App Service restart.
+public sealed class AuctionLiveSeat : AuditableEntity
+{
+    public Guid AuctionId { get; set; }
+    public Guid UserId { get; set; }
+    public Guid? AuctionTeamId { get; set; }
+    public string ConnectionId { get; set; } = string.Empty;
+    public string SeatKind { get; set; } = AuctionSeatKinds.Viewer;
+    public DateTimeOffset LastSeenAtUtc { get; set; }
+    public Auction Auction { get; set; } = null!;
+    public User User { get; set; } = null!;
+    public AuctionTeam? AuctionTeam { get; set; }
+}
+
 public static class AuctionTeamStatuses
 {
     public const string Pending = "Pending";
     public const string Approved = "Approved";
     public const string Rejected = "Rejected";
+}
+
+public static class AuctionLotStates
+{
+    public const string Draft = "Draft";
+    public const string Open = "Open";
+    public const string Paused = "Paused";
+    public const string Closed = "Closed";
+    public const string Cancelled = "Cancelled";
+}
+
+public static class AuctionSeatKinds
+{
+    public const string Admin = "Admin";
+    public const string Bidder = "Bidder";
+    public const string Viewer = "Viewer";
 }
 
 public static class SystemRoles

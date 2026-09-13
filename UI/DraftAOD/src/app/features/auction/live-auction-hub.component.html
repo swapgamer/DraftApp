@@ -1,0 +1,98 @@
+<section class="live-hub">
+  <header>
+    <div>
+      <p class="eyebrow"><span></span> Live session</p>
+      <h2>Live Auction Hub</h2>
+      <p class="intro">A saved, recoverable bidding room for the active Football Mayhem auction.</p>
+    </div>
+    @if (state(); as live) {
+      <div class="capacity" aria-label="Live room capacity">
+        <span><b>{{ live.capacity.activeBidders }}</b>/{{ live.capacity.maxBidders }} bidders</span>
+        <span><b>{{ live.capacity.activeViewers }}</b>/{{ live.capacity.maxViewers }} viewers</span>
+        <span><b>{{ live.capacity.activeAdmins }}</b>/{{ live.capacity.maxAdmins }} admin</span>
+      </div>
+    }
+  </header>
+
+  @if (error()) { <p class="error">{{ error() }}</p> }
+  @if (loading()) { <p class="status">Joining the live room...</p> }
+  @else {
+    @if (auth.isAdmin()) {
+      <section class="representative-panel">
+        <div><h3>Live representatives</h3><p>Select one registered member for each team. Only selected members can enter as bidders.</p></div>
+        <div class="representative-list">
+          @for (team of liveTeams(); track team.id) {
+            <div class="representative-row">
+              <span class="team-icon">{{ team.icon || '⚽' }}</span>
+              <div><strong>{{ team.teamName }}</strong><small>Current: {{ team.liveBidderName || 'No bidder selected' }}</small></div>
+              <mat-form-field appearance="outline"><mat-label>Live bidder</mat-label><mat-select [ngModel]="bidderChoice(team)" (ngModelChange)="chooseBidder(team.id, $event)"><mat-option value="">No live bidder</mat-option>@for (member of team.members; track member.id) { <mat-option [value]="member.id">{{ member.displayName }}</mat-option> }</mat-select></mat-form-field>
+              <button mat-stroked-button (click)="saveBidder(team)">Save</button>
+            </div>
+          } @empty { <p class="status">Approve a team before assigning a live representative.</p> }
+        </div>
+      </section>
+    }
+    @if (currentLot(); as lot) {
+      <section class="lot">
+        <div class="player">
+          <img [src]="lot.player.primaryImageUrl" alt="" onerror="this.style.display='none'">
+          <div>
+            <span class="badge" [attr.data-position]="position(lot.player.primaryPositionCode)">{{ position(lot.player.primaryPositionCode) }}</span>
+            <h3><a [routerLink]="['/players', lot.player.id]">{{ lot.player.fullName }}</a></h3>
+            <p>{{ lot.player.positions.join(' · ') }} · {{ lot.player.nationality }}</p>
+          </div>
+        </div>
+        <div class="bid-state">
+          <span>{{ lot.state }}</span>
+          <strong>{{ (lot.currentBidAmount ?? lot.startingPrice) | currency:'USD':'symbol':'1.0-0' }}</strong>
+          <small>{{ lot.currentBidAmount === null ? 'Opening price' : 'Current highest bid' }}</small>
+        </div>
+        <div class="timer">
+          <mat-icon>timer</mat-icon><strong>{{ secondsRemaining() }}s</strong>
+          <small>@if (lot.extensionCount) { +{{ lot.extensionCount }} extension(s) }</small>
+        </div>
+        <div class="leader"><span>Leading team</span><b>{{ lot.highestBidTeamName || 'No bid yet' }}</b></div>
+      </section>
+
+      @if (myTeam(); as team) {
+        @if (seatKind() === 'Bidder' && lot.state === 'Open') {
+          <section class="bid-box">
+            <div><span>Representing {{ team.teamName }}</span><strong>Next valid bid {{ requiredBid(lot) | currency:'USD':'symbol':'1.0-0' }}</strong></div>
+            <input type="number" [value]="requiredBid(lot)" readonly aria-label="Next valid bid amount">
+            <button mat-flat-button color="primary" [disabled]="secondsRemaining() === 0" (click)="bid()">Place {{ requiredBid(lot) | currency:'USD':'symbol':'1.0-0' }} bid</button>
+          </section>
+        } @else if (!auth.isAdmin()) {
+          <p class="viewer-note">You have been selected for {{ team.teamName }}. Your bidder seat will activate when one is available and the lot is open.</p>
+        }
+      } @else if (!auth.isAdmin()) {
+        <p class="viewer-note">You are watching as a viewer. Ask an administrator to select you as your team’s live representative to place bids.</p>
+      }
+
+      @if (auth.isAdmin()) {
+        <section class="admin-controls"><span>Admin controls</span>
+          @if (lot.state === 'Draft') { <button mat-flat-button color="primary" (click)="open()">Open {{ duration() }}s lot</button> }
+          @if (lot.state === 'Open') { <button mat-stroked-button (click)="pause()">Pause</button> }
+          @if (lot.state === 'Paused') { <button mat-flat-button color="primary" (click)="resume()">Resume</button> }
+          @if (lot.state === 'Open' || lot.state === 'Paused') { <button mat-stroked-button (click)="close()">Close & settle</button> }
+          @if (lot.state === 'Draft' || lot.state === 'Paused') { <button mat-button (click)="cancel()">Cancel</button> }
+        </section>
+      }
+
+      <section class="bids"><h3>Recent bids</h3>
+        @for (bid of lot.recentBids; track bid.id) { <div><strong>{{ bid.teamName }}</strong><span>{{ bid.amount | currency:'USD':'symbol':'1.0-0' }}</span><small>{{ bid.placedAtUtc | date:'shortTime' }}</small></div> }
+        @empty { <p>No bids yet. The first bid matches the opening price.</p> }
+      </section>
+    } @else {
+      <section class="waiting"><mat-icon>gavel</mat-icon><h3>Waiting for the next live lot</h3><p>An administrator can publish a player and choose that player’s opening price.</p></section>
+    }
+
+    @if (auth.isAdmin() && (!currentLot() || currentLot()?.state === 'Closed' || currentLot()?.state === 'Cancelled')) {
+      <section class="create-lot"><h3>Publish next player</h3>
+        <mat-form-field appearance="outline"><mat-label>Player</mat-label><mat-select [ngModel]="chosenPlayerId()" (ngModelChange)="chosenPlayerId.set($event)">@for (player of availablePlayers(); track player.id) { <mat-option [value]="player.id">{{ player.fullName }} · #{{ player.overallRank }}</mat-option> }</mat-select></mat-form-field>
+        <mat-form-field appearance="outline"><mat-label>Opening price</mat-label><input matInput type="number" min="1" [ngModel]="startingPrice()" (ngModelChange)="startingPrice.set(+$event)"></mat-form-field>
+        <mat-form-field appearance="outline"><mat-label>Duration seconds</mat-label><input matInput type="number" min="10" max="300" [ngModel]="duration()" (ngModelChange)="duration.set(+$event)"></mat-form-field>
+        <button mat-flat-button color="primary" (click)="createLot()">Create live lot</button>
+      </section>
+    }
+  }
+</section>

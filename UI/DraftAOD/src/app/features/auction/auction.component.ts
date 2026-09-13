@@ -10,18 +10,19 @@ import { AuctionPlayer, AuctionService, AuctionState, AuctionTeam, AuctionUser }
 import { AuthService } from '../../core/auth/auth.service';
 import { ConfirmationService } from '../../core/confirmation.service';
 import { NotificationService } from '../../core/notification.service';
+import { LiveAuctionHubComponent } from './live-auction-hub.component';
 
-@Component({standalone:true,imports:[FormsModule,RouterLink,MatButtonModule,MatIconModule,MatInputModule,MatSelectModule,CurrencyPipe],templateUrl:'./auction.component.html',styleUrl:'./auction.component.scss',changeDetection:ChangeDetectionStrategy.OnPush})
+@Component({standalone:true,imports:[FormsModule,RouterLink,MatButtonModule,MatIconModule,MatInputModule,MatSelectModule,CurrencyPipe,LiveAuctionHubComponent],templateUrl:'./auction.component.html',styleUrl:'./auction.component.scss',changeDetection:ChangeDetectionStrategy.OnPush})
 export class AuctionComponent {
   private readonly auction=inject(AuctionService); private readonly confirmation=inject(ConfirmationService); private readonly notifications=inject(NotificationService); private readonly route=inject(ActivatedRoute); readonly auth=inject(AuthService);
-  readonly state=signal<AuctionState|null>(null); readonly loading=signal(true); readonly error=signal(''); readonly tab=signal<'participants'|'sheet'>('participants'); readonly selectedTeamId=signal<string|null>(null); readonly teamFormOpen=signal(false); readonly users=signal<AuctionUser[]>([]); readonly pending=signal<AuctionTeam[]>([]); readonly dragging=signal<AuctionPlayer|null>(null);
+  readonly state=signal<AuctionState|null>(null); readonly loading=signal(true); readonly error=signal(''); readonly tab=signal<'participants'|'sheet'|'hub'>('participants'); readonly selectedTeamId=signal<string|null>(null); readonly teamFormOpen=signal(false); readonly users=signal<AuctionUser[]>([]); readonly pending=signal<AuctionTeam[]>([]); readonly dragging=signal<AuctionPlayer|null>(null);
   readonly teamName=signal(''); readonly icon=signal('⚽'); readonly selectedMembers=signal<string[]>([]); readonly playerSearch=signal(''); readonly positionFilter=signal('ALL'); readonly prices=signal<Record<string,number>>({}); readonly approvalBalance=signal<Record<string,number>>({});
   readonly teamIcons=['⚽','🏆','🦁','🦅','🐯','🐺','🛡️','🔥','⭐','👑'];
   readonly assignmentTargets=signal<Record<string,string>>({});
   readonly selectedTeam=computed(()=>this.state()?.teams.find(team=>team.id===this.selectedTeamId())??this.state()?.teams[0]??null);
   readonly filteredPool=computed(()=>{const term=this.playerSearch().trim().toLowerCase();const position=this.positionFilter();return (this.state()?.availablePlayers??[]).filter(player=>(!term||player.fullName.toLowerCase().includes(term)||player.nationality.toLowerCase().includes(term))&&(position==='ALL'||this.category(player)===position));});
   readonly totalRemaining=computed(()=>this.state()?.teams.reduce((sum,team)=>sum+team.remainingBalance,0)??0);
-  constructor(){this.route.queryParamMap.subscribe(params=>{if(params.get('tab')==='participants'||params.get('tab')==='sheet')this.tab.set(params.get('tab') as 'participants'|'sheet');if(params.get('team'))this.selectedTeamId.set(params.get('team'));});this.load();}
+  constructor(){this.route.queryParamMap.subscribe(params=>{if(['participants','sheet','hub'].includes(params.get('tab')||''))this.tab.set(params.get('tab') as 'participants'|'sheet'|'hub');if(params.get('team'))this.selectedTeamId.set(params.get('team'));});this.load();}
   load():void { this.loading.set(true);this.error.set('');this.auction.state().subscribe({next:state=>{this.state.set(state);if(!this.selectedTeamId()&&state.teams[0])this.selectedTeamId.set(state.teams[0].id);const prices:Record<string,number>={};state.availablePlayers.forEach(player=>prices[player.id]=prices[player.id]??1_000_000);this.prices.set(prices);if(this.auth.isAdmin())this.loadPending();},error:()=>this.error.set('We could not load the live auction.'),complete:()=>this.loading.set(false)}); }
   loadPending():void { this.auction.pendingRequests().subscribe({next:items=>this.pending.set(items)}); }
   openRequest():void { this.teamFormOpen.set(true); if(!this.users().length)this.auction.users().subscribe({next:users=>this.users.set(users.filter(user=>user.id!==this.auth.user()?.userId))}); }
