@@ -113,6 +113,7 @@ public sealed class DraftDatastoreDbContext(DbContextOptions<DraftDatastoreDbCon
                 table.HasCheckConstraint("CK_AuctionLots_StartingPrice", "[StartingPrice] > 0");
                 table.HasCheckConstraint("CK_AuctionLots_CurrentBid", "[CurrentBidAmount] IS NULL OR [CurrentBidAmount] > 0");
                 table.HasCheckConstraint("CK_AuctionLots_ExtensionCount", "[ExtensionCount] >= 0");
+                table.HasCheckConstraint("CK_AuctionLots_PausedRemainingSeconds", "[PausedRemainingSeconds] IS NULL OR [PausedRemainingSeconds] >= 0");
             });
             entity.HasKey(x => x.Id); entity.Property(x => x.StartingPrice).HasPrecision(18, 2); entity.Property(x => x.CurrentBidAmount).HasPrecision(18, 2);
             entity.Property(x => x.State).HasMaxLength(16).IsRequired(); entity.Property(x => x.RowVersion).IsRowVersion();

@@ -228,6 +228,9 @@ public sealed class AuctionLot : AuditableEntity
     public Guid? HighestBidAuctionTeamId { get; set; }
     public string State { get; set; } = AuctionLotStates.Draft;
     public DateTimeOffset? EndsAtUtc { get; set; }
+    // Captured when a live lot is paused so resuming uses the exact time left,
+    // rather than starting a new countdown.
+    public int? PausedRemainingSeconds { get; set; }
     public DateTimeOffset? ClosedAtUtc { get; set; }
     public int ExtensionCount { get; set; }
     public byte[] RowVersion { get; set; } = Array.Empty<byte>();
