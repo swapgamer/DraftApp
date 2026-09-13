@@ -63,6 +63,9 @@ var app = builder.Build();
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<DraftDatastoreDbContext>();
+    Log.Information("Applying pending database migrations.");
+    await db.Database.MigrateAsync();
+
     var emails = builder.Configuration.GetSection("Administration:SystemAdminEmails").Get<string[]>() ?? [];
     var permanentAdmins = await db.Users.Include(x => x.UserRoles).Where(x => emails.Contains(x.NormalizedEmail)).ToListAsync();
     foreach (var user in permanentAdmins)
