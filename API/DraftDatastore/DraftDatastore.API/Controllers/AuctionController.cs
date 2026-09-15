@@ -131,7 +131,53 @@ public sealed class AuctionController(DraftDatastoreDbContext db) : ControllerBa
     [Authorize(Roles = SystemRoles.Admin)]
     public async Task<IActionResult> Reset(CancellationToken ct)
     {
-        var auction = await ActiveAuction(ct); db.AuctionTeams.RemoveRange(db.AuctionTeams.Where(x => x.AuctionId == auction.Id)); await db.SaveChangesAsync(ct); return NoContent();
+        var auction = await ActiveAuction(ct);
+        var strategy = db.Database.CreateExecutionStrategy();
+
+        await strategy.ExecuteAsync(async () =>
+        {
+            await using var transaction = await db.Database.BeginTransactionAsync(ct);
+
+            var teamIds = await db.AuctionTeams
+                .Where(x => x.AuctionId == auction.Id)
+                .Select(x => x.Id)
+                .ToArrayAsync(ct);
+            var lotIds = await db.AuctionLots
+                .Where(x => x.AuctionId == auction.Id)
+                .Select(x => x.Id)
+                .ToArrayAsync(ct);
+
+            // Remove dependent live-auction state before teams. Several of these
+            // relationships intentionally use Restrict/NoAction to prevent an
+            // accidental team deletion from silently losing auction history.
+            db.AuctionBids.RemoveRange(await db.AuctionBids
+                .Where(x => lotIds.Contains(x.AuctionLotId))
+                .ToArrayAsync(ct));
+            db.AuctionLiveSeats.RemoveRange(await db.AuctionLiveSeats
+                .Where(x => x.AuctionId == auction.Id)
+                .ToArrayAsync(ct));
+            db.AuctionAssignments.RemoveRange(await db.AuctionAssignments
+                .Where(x => x.AuctionId == auction.Id)
+                .ToArrayAsync(ct));
+            db.AuctionTeamMembers.RemoveRange(await db.AuctionTeamMembers
+                .Where(x => teamIds.Contains(x.AuctionTeamId))
+                .ToArrayAsync(ct));
+            await db.SaveChangesAsync(ct);
+
+            db.AuctionLots.RemoveRange(await db.AuctionLots
+                .Where(x => x.AuctionId == auction.Id)
+                .ToArrayAsync(ct));
+            await db.SaveChangesAsync(ct);
+
+            db.AuctionTeams.RemoveRange(await db.AuctionTeams
+                .Where(x => x.AuctionId == auction.Id)
+                .ToArrayAsync(ct));
+            await db.SaveChangesAsync(ct);
+
+            await transaction.CommitAsync(ct);
+        });
+
+        return NoContent();
     }
 
     private async Task<Auction> ActiveAuction(CancellationToken ct)
