@@ -202,7 +202,14 @@ public sealed class LiveAuctionController(DraftDatastoreDbContext db) : Controll
             // A reconnect replaces the same user's existing seat rather than consuming
             // another one of the deliberately small live-room capacity slots.
             var seat = await db.AuctionLiveSeats.OrderByDescending(x => x.LastSeenAtUtc).FirstOrDefaultAsync(x => x.AuctionId == auction.Id && x.UserId == userId, ct);
-            var occupied = await db.AuctionLiveSeats.Where(x => x.AuctionId == auction.Id && (seat == null || x.Id != seat.Id)).ToListAsync(ct);
+        var occupiedQuery = db.AuctionLiveSeats.Where(x => x.AuctionId == auction.Id);
+        if (seat is not null)
+        {
+            var seatId = seat.Id;
+            occupiedQuery = occupiedQuery.Where(x => x.Id != seatId);
+        }
+
+        var occupied = await occupiedQuery.ToListAsync(ct);
             if (occupied.Count >= MaxConnections || occupied.Count(x => x.SeatKind == kind) >= CapacityFor(kind)) return Conflict(RoomFullMessage(kind));
             if (seat is null) { seat = new AuctionLiveSeat { AuctionId = auction.Id, UserId = userId, ConnectionId = request.ConnectionId.Trim() }; db.AuctionLiveSeats.Add(seat); }
             seat.ConnectionId = request.ConnectionId.Trim(); seat.AuctionTeamId = kind == AuctionSeatKinds.Bidder ? request.AuctionTeamId : null; seat.SeatKind = kind; seat.LastSeenAtUtc = DateTimeOffset.UtcNow;

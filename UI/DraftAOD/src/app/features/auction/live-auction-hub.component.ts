@@ -9,7 +9,12 @@ import { MatSelectModule } from '@angular/material/select';
 import { AuctionService, AuctionState } from '../../core/auction.service';
 import { LiveAuctionLot, LiveAuctionService, LiveAuctionState, LiveAuctionTeam } from '../../core/live-auction.service';
 import { AuthService } from '../../core/auth/auth.service';
-import { forkJoin } from 'rxjs';
+import { catchError, forkJoin, map, Observable, of } from 'rxjs';
+
+interface LoadResult<T> {
+  value: T | null;
+  error: unknown | null;
+}
 
 @Component({selector:'app-live-auction-hub',standalone:true,imports:[FormsModule,RouterLink,MatButtonModule,MatIconModule,MatInputModule,MatSelectModule,CurrencyPipe,DatePipe],templateUrl:'./live-auction-hub.component.html',styleUrl:'./live-auction-hub.component.scss',changeDetection:ChangeDetectionStrategy.OnPush})
 export class LiveAuctionHubComponent implements OnInit, OnDestroy {
@@ -24,11 +29,27 @@ export class LiveAuctionHubComponent implements OnInit, OnDestroy {
   readonly secondsRemaining=computed(()=>{const lot=this.currentLot();if(!lot)return 0;if(lot.state==='Paused')return lot.pausedRemainingSeconds??0;const ends=lot.endsAtUtc;if(!ends)return 0;return Math.max(0,Math.ceil((new Date(ends).getTime()-this.now())/1000));});
   ngOnInit():void { this.connectionId=this.getConnectionId(); this.load(); this.refreshTimer=setInterval(()=>this.load(false),3000); this.teamRefreshTimer=setInterval(()=>this.loadTeams(),10000); this.clockTimer=setInterval(()=>this.now.set(Date.now()),1000); this.heartbeatTimer=setInterval(()=>this.heartbeat(),45000); }
   ngOnDestroy():void { [this.refreshTimer,this.teamRefreshTimer,this.clockTimer,this.heartbeatTimer].forEach(timer=>timer&&clearInterval(timer)); if(this.joined())this.live.leave(this.connectionId).subscribe({error:()=>undefined}); }
+  private safeLoad<T>(source: Observable<T>): Observable<LoadResult<T>> {
+    return source.pipe(
+      map(value => ({ value, error: null })),
+      catchError(error => of({ value: null, error }))
+    );
+  }
+
   load(showLoading=true):void {
     if(showLoading)this.loading.set(true);
-    forkJoin({live:this.live.state(),auction:this.auction.state(),teams:this.live.teams()}).subscribe({
-      next:result=>{this.state.set(result.live);this.auctionState.set(result.auction);this.setTeams(result.teams);this.joinSeat(result.live);this.error.set('');if(showLoading)this.loading.set(false);},
-      error:error=>{this.error.set(this.errorText(error,'Live Auction Hub is temporarily unavailable.'));if(showLoading)this.loading.set(false);}
+    forkJoin({
+      live:this.safeLoad(this.live.state()),
+      auction:this.safeLoad(this.auction.state()),
+      teams:this.safeLoad(this.live.teams())
+    }).subscribe(result=>{
+      if(result.live.value){this.state.set(result.live.value);this.joinSeat(result.live.value);}
+      if(result.auction.value)this.auctionState.set(result.auction.value);
+      if(result.teams.value)this.setTeams(result.teams.value);
+
+      const firstError=result.live.error??result.auction.error??result.teams.error;
+      this.error.set(firstError?this.errorText(firstError,'Some live auction data could not be loaded. Please retry.'):'');
+      if(showLoading)this.loading.set(false);
     });
   }
   loadTeams():void {this.live.teams().subscribe({next:teams=>{this.setTeams(teams);const state=this.state();if(state)this.joinSeat(state);},error:()=>undefined});}
