@@ -16,8 +16,8 @@ namespace DraftDatastore.API.Controllers;
 [ApiController, Authorize, Route("api/v1/auction/live")]
 public sealed class LiveAuctionController(DraftDatastoreDbContext db, LiveAuctionSettlement settlement) : ControllerBase
 {
-    private const int MaxBidders = 8;
-    private const int MaxViewers = 5;
+    private const int MaxBidders = 12;
+    private const int MaxViewers = 10;
     private const int MaxAdmins = 3;
     private const int MaxConnections = MaxBidders + MaxViewers + MaxAdmins;
     private static readonly TimeSpan SeatTtl = TimeSpan.FromMinutes(2);
@@ -279,7 +279,7 @@ public sealed class LiveAuctionController(DraftDatastoreDbContext db, LiveAuctio
     }
     private static decimal NextBid(decimal current) => current < 50 ? current + 5 : current < 100 ? current + 10 : current < 200 ? current + 15 : current < 300 ? current + 20 : current < 500 ? current + 30 : current + 50;
     private static int CapacityFor(string kind) => kind == AuctionSeatKinds.Bidder ? MaxBidders : kind == AuctionSeatKinds.Admin ? MaxAdmins : MaxViewers;
-    private static string RoomFullMessage(string kind) => kind == AuctionSeatKinds.Bidder ? "All 8 live bidding seats are occupied. Please try again when a representative leaves." : kind == AuctionSeatKinds.Admin ? "All 3 admin live seats are occupied. Please try again when an admin leaves." : "All 5 viewer seats are occupied. Please try again when a viewer leaves.";
+    private static string RoomFullMessage(string kind) => kind == AuctionSeatKinds.Bidder ? "All 12 live bidding seats are occupied. Please try again when a representative leaves." : kind == AuctionSeatKinds.Admin ? "All 3 admin live seats are occupied. Please try again when an admin leaves." : "All 10 viewer seats are occupied. Please try again when a viewer leaves.";
     private Guid CurrentUserId() => Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
 }
 
