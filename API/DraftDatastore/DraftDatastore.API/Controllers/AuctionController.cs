@@ -28,7 +28,7 @@ public sealed class AuctionController(DraftDatastoreDbContext db) : ControllerBa
         var term = search?.Trim();
         var query = db.Users.AsNoTracking().Where(x => x.IsActive);
         if (!string.IsNullOrWhiteSpace(term)) query = query.Where(x => x.DisplayName.Contains(term) || x.Email.Contains(term));
-        return Ok(await query.OrderBy(x => x.DisplayName).Take(20).Select(x => new AuctionUserResponse(x.Id, x.DisplayName, x.Email)).ToArrayAsync(ct));
+        return Ok(await query.OrderBy(x => x.DisplayName).Take(500).Select(x => new AuctionUserResponse(x.Id, x.DisplayName, x.Email)).ToArrayAsync(ct));
     }
 
     [HttpPost("team-requests")]
