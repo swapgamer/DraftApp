@@ -117,7 +117,7 @@ public sealed class DraftDatastoreDbContext(DbContextOptions<DraftDatastoreDbCon
             });
             entity.HasKey(x => x.Id); entity.Property(x => x.StartingPrice).HasPrecision(18, 2); entity.Property(x => x.CurrentBidAmount).HasPrecision(18, 2);
             entity.Property(x => x.State).HasMaxLength(16).IsRequired(); entity.Property(x => x.RowVersion).IsRowVersion();
-            entity.HasIndex(x => new { x.AuctionId, x.PlayerId }).IsUnique(); entity.HasIndex(x => new { x.AuctionId, x.State, x.EndsAtUtc });
+            entity.HasIndex(x => new { x.AuctionId, x.PlayerId }).IsUnique().HasFilter("[State] <> 'Closed' AND [State] <> 'Cancelled'"); entity.HasIndex(x => new { x.AuctionId, x.State, x.EndsAtUtc });
             entity.HasOne(x => x.Auction).WithMany(x => x.Lots).HasForeignKey(x => x.AuctionId).OnDelete(DeleteBehavior.Cascade);
             entity.HasOne(x => x.Player).WithMany().HasForeignKey(x => x.PlayerId).OnDelete(DeleteBehavior.Restrict);
             entity.HasOne(x => x.HighestBidAuctionTeam).WithMany().HasForeignKey(x => x.HighestBidAuctionTeamId).OnDelete(DeleteBehavior.Restrict);

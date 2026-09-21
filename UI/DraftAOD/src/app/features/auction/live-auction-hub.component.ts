@@ -19,15 +19,16 @@ interface LoadResult<T> {
 @Component({selector:'app-live-auction-hub',standalone:true,imports:[FormsModule,RouterLink,MatButtonModule,MatIconModule,MatInputModule,MatSelectModule,CurrencyPipe,DatePipe],templateUrl:'./live-auction-hub.component.html',styleUrl:'./live-auction-hub.component.scss',changeDetection:ChangeDetectionStrategy.OnPush})
 export class LiveAuctionHubComponent implements OnInit, OnDestroy {
   private readonly live=inject(LiveAuctionService); private readonly auction=inject(AuctionService); readonly auth=inject(AuthService);
-  readonly state=signal<LiveAuctionState|null>(null); readonly auctionState=signal<AuctionState|null>(null); readonly liveTeams=signal<LiveAuctionTeam[]>([]); readonly bidderChoices=signal<Record<string,string>>({}); readonly loading=signal(true); readonly error=signal(''); readonly seatKind=signal<'Admin'|'Bidder'|'Viewer'|null>(null); readonly joined=signal(false); readonly now=signal(Date.now());
+  readonly state=signal<LiveAuctionState|null>(null); readonly auctionState=signal<AuctionState|null>(null); readonly liveTeams=signal<LiveAuctionTeam[]>([]); readonly bidderChoices=signal<Record<string,string>>({}); readonly loading=signal(true); readonly error=signal(''); readonly seatKind=signal<'Admin'|'Bidder'|'Viewer'|null>(null); readonly joined=signal(false); readonly now=signal(Date.now()); readonly clockOffsetMs=signal(0); private expiryRefreshKey="";
   readonly chosenPlayerId=signal(''); readonly startingPrice=signal(1000); readonly duration=signal(60);
   private connectionId=''; private refreshTimer?:ReturnType<typeof setInterval>; private teamRefreshTimer?:ReturnType<typeof setInterval>; private clockTimer?:ReturnType<typeof setInterval>; private heartbeatTimer?:ReturnType<typeof setInterval>; private joinedAuctionId=''; private joinedTeamId?:string; private joining=false;
   readonly currentLot=computed(()=>this.state()?.currentLot??null);
   readonly myLiveTeam=computed(()=>this.liveTeams().find(team=>team.liveBidderUserId===this.auth.user()?.userId)??null);
   readonly myTeam=computed(()=>{const liveTeam=this.myLiveTeam();return liveTeam?this.auctionState()?.teams.find(team=>team.id===liveTeam.id)??null:null;});
   readonly availablePlayers=computed(()=>{const lot=this.currentLot();return (this.auctionState()?.availablePlayers??[]).filter(p=>p.id!==lot?.player.id);});
-  readonly secondsRemaining=computed(()=>{const lot=this.currentLot();if(!lot)return 0;if(lot.state==='Paused')return lot.pausedRemainingSeconds??0;const ends=lot.endsAtUtc;if(!ends)return 0;return Math.max(0,Math.ceil((new Date(ends).getTime()-this.now())/1000));});
-  ngOnInit():void { this.connectionId=this.getConnectionId(); this.load(); this.refreshTimer=setInterval(()=>this.load(false),3000); this.teamRefreshTimer=setInterval(()=>this.loadTeams(),10000); this.clockTimer=setInterval(()=>this.now.set(Date.now()),1000); this.heartbeatTimer=setInterval(()=>this.heartbeat(),45000); }
+  readonly iAmLeading=computed(()=>{const lot=this.currentLot(),team=this.myTeam();return !!lot&&!!team&&lot.highestBidAuctionTeamId===team.id;});
+  readonly secondsRemaining=computed(()=>{const lot=this.currentLot();if(!lot)return 0;if(lot.state==='Paused')return lot.pausedRemainingSeconds??0;const ends=lot.endsAtUtc;if(!ends)return 0;return Math.max(0,Math.ceil((new Date(ends).getTime()-(this.now()+this.clockOffsetMs()))/1000));});
+  ngOnInit():void { this.connectionId=this.getConnectionId(); this.load(); this.refreshTimer=setInterval(()=>this.load(false),3000); this.teamRefreshTimer=setInterval(()=>this.loadTeams(),10000); this.clockTimer=setInterval(()=>{this.now.set(Date.now());this.refreshWhenExpired();},1000); this.heartbeatTimer=setInterval(()=>this.heartbeat(),45000); }
   ngOnDestroy():void { [this.refreshTimer,this.teamRefreshTimer,this.clockTimer,this.heartbeatTimer].forEach(timer=>timer&&clearInterval(timer)); if(this.joined())this.live.leave(this.connectionId).subscribe({error:()=>undefined}); }
   private safeLoad<T>(source: Observable<T>): Observable<LoadResult<T>> {
     return source.pipe(
@@ -38,12 +39,13 @@ export class LiveAuctionHubComponent implements OnInit, OnDestroy {
 
   load(showLoading=true):void {
     if(showLoading)this.loading.set(true);
+    const sentAt=Date.now();
     forkJoin({
       live:this.safeLoad(this.live.state()),
       auction:this.safeLoad(this.auction.state()),
       teams:this.safeLoad(this.live.teams())
     }).subscribe(result=>{
-      if(result.live.value){this.state.set(result.live.value);this.joinSeat(result.live.value);}
+      if(result.live.value){this.syncClock(result.live.value.serverNowUtc,sentAt);this.state.set(result.live.value);this.joinSeat(result.live.value);}
       if(result.auction.value)this.auctionState.set(result.auction.value);
       if(result.teams.value)this.setTeams(result.teams.value);
 
@@ -52,6 +54,8 @@ export class LiveAuctionHubComponent implements OnInit, OnDestroy {
       if(showLoading)this.loading.set(false);
     });
   }
+  private syncClock(serverNowUtc:string|undefined,sentAt:number):void {if(!serverNowUtc)return;const serverNow=new Date(serverNowUtc).getTime();if(!Number.isFinite(serverNow))return;const receivedAt=Date.now();this.clockOffsetMs.set(serverNow-(sentAt+receivedAt)/2);}
+  private refreshWhenExpired():void {const lot=this.currentLot();if(!lot||lot.state!=='Open'||this.secondsRemaining()>0)return;const key=`${lot.id}:${lot.endsAtUtc}`;if(key===this.expiryRefreshKey)return;this.expiryRefreshKey=key;setTimeout(()=>this.load(false),800);}
   loadTeams():void {this.live.teams().subscribe({next:teams=>{this.setTeams(teams);const state=this.state();if(state)this.joinSeat(state);},error:()=>undefined});}
   createLot():void {const playerId=this.chosenPlayerId();if(!playerId||this.startingPrice()<=0){this.error.set('Choose a player and enter a positive opening price.');return;}this.live.createLot(playerId,this.startingPrice()).subscribe({next:lot=>{this.state.update(s=>s?{...s,currentLot:lot}:s);this.error.set('');},error:e=>this.error.set(this.errorText(e,'The live lot could not be created.'))});}
   open():void {const lot=this.currentLot();if(lot)this.live.open(lot.id,this.duration()).subscribe({next:()=>this.load(false),error:e=>this.error.set(this.errorText(e,'The lot could not be opened.'))});}

@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnDestroy, computed, inject, signal } from '@angular/core';
 import { CurrencyPipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, RouterLink } from '@angular/router';
@@ -14,7 +14,8 @@ import { LiveAuctionHubComponent } from './live-auction-hub.component';
 import { finalize } from 'rxjs';
 
 @Component({standalone:true,imports:[FormsModule,RouterLink,MatButtonModule,MatIconModule,MatInputModule,MatSelectModule,CurrencyPipe,LiveAuctionHubComponent],templateUrl:'./auction.component.html',styleUrl:'./auction.component.scss',changeDetection:ChangeDetectionStrategy.OnPush})
-export class AuctionComponent {
+export class AuctionComponent implements OnDestroy {
+  private pollTimer?:ReturnType<typeof setInterval>; private refreshing=false;
   private readonly auction=inject(AuctionService); private readonly confirmation=inject(ConfirmationService); private readonly notifications=inject(NotificationService); private readonly route=inject(ActivatedRoute); readonly auth=inject(AuthService);
   readonly state=signal<AuctionState|null>(null); readonly loading=signal(true); readonly resetting=signal(false); readonly error=signal(''); readonly tab=signal<'participants'|'sheet'|'hub'>('participants'); readonly selectedTeamId=signal<string|null>(null); readonly teamFormOpen=signal(false); readonly users=signal<AuctionUser[]>([]); readonly pending=signal<AuctionTeam[]>([]); readonly dragging=signal<AuctionPlayer|null>(null);
   readonly teamName=signal(''); readonly icon=signal('⚽'); readonly selectedMembers=signal<string[]>([]); readonly playerSearch=signal(''); readonly positionFilter=signal('ALL'); readonly prices=signal<Record<string,number>>({}); readonly approvalBalance=signal<Record<string,number>>({});
@@ -23,7 +24,10 @@ export class AuctionComponent {
   readonly selectedTeam=computed(()=>this.state()?.teams.find(team=>team.id===this.selectedTeamId())??this.state()?.teams[0]??null);
   readonly filteredPool=computed(()=>{const term=this.playerSearch().trim().toLowerCase();const position=this.positionFilter();return (this.state()?.availablePlayers??[]).filter(player=>(!term||player.fullName.toLowerCase().includes(term)||player.nationality.toLowerCase().includes(term))&&(position==='ALL'||this.category(player)===position));});
   readonly totalRemaining=computed(()=>this.state()?.teams.reduce((sum,team)=>sum+team.remainingBalance,0)??0);
-  constructor(){this.route.queryParamMap.subscribe(params=>{if(['participants','sheet','hub'].includes(params.get('tab')||''))this.tab.set(params.get('tab') as 'participants'|'sheet'|'hub');if(params.get('team'))this.selectedTeamId.set(params.get('team'));});this.load();}
+  constructor(){this.route.queryParamMap.subscribe(params=>{if(['participants','sheet','hub'].includes(params.get('tab')||''))this.tab.set(params.get('tab') as 'participants'|'sheet'|'hub');if(params.get('team'))this.selectedTeamId.set(params.get('team'));});this.load();this.pollTimer=setInterval(()=>this.refreshQuietly(),3000);}
+  ngOnDestroy():void { if(this.pollTimer)clearInterval(this.pollTimer); }
+  // Keeps Participants and Auction Sheet current without a spinner or a page refresh. The Hub tab polls for itself.
+  private refreshQuietly():void { if(document.visibilityState==='hidden'||this.tab()==='hub'||this.loading()||this.refreshing||this.dragging())return;this.refreshing=true;this.auction.state().pipe(finalize(()=>this.refreshing=false)).subscribe({next:state=>{this.state.set(state);const prices={...this.prices()};state.availablePlayers.forEach(player=>prices[player.id]=prices[player.id]??1_000_000);this.prices.set(prices);if(this.auth.isAdmin())this.loadPending();},error:()=>undefined}); }
   load():void { this.loading.set(true);this.error.set('');this.auction.state().pipe(finalize(()=>this.loading.set(false))).subscribe({next:state=>{this.state.set(state);if(!this.selectedTeamId()&&state.teams[0])this.selectedTeamId.set(state.teams[0].id);const prices:Record<string,number>={};state.availablePlayers.forEach(player=>prices[player.id]=prices[player.id]??1_000_000);this.prices.set(prices);if(this.auth.isAdmin())this.loadPending();},error:error=>this.error.set(this.errorText(error,'We could not load the live auction.'))}); }
   loadPending():void { this.auction.pendingRequests().subscribe({next:items=>this.pending.set(items)}); }
   openRequest():void { this.teamFormOpen.set(true); if(!this.users().length)this.auction.users().subscribe({next:users=>this.users.set(users.filter(user=>user.id!==this.auth.user()?.userId))}); }

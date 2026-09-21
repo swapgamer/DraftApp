@@ -7,7 +7,7 @@ export interface LiveAuctionPlayer { id:string; fullName:string; nationality:str
 export interface LiveAuctionBid { id:string; auctionTeamId:string; teamName:string; amount:number; placedAtUtc:string; }
 export interface LiveAuctionLot { id:string; player:LiveAuctionPlayer; startingPrice:number; currentBidAmount:number|null; state:'Draft'|'Open'|'Paused'|'Closed'|'Cancelled'; endsAtUtc:string|null; pausedRemainingSeconds:number|null; closedAtUtc:string|null; extensionCount:number; highestBidAuctionTeamId:string|null; highestBidTeamName:string|null; recentBids:LiveAuctionBid[]; }
 export interface LiveAuctionCapacity { maxBidders:number; maxViewers:number; maxAdmins:number; maxConnections:number; activeBidders:number; activeViewers:number; activeAdmins:number; activeConnections:number; }
-export interface LiveAuctionState { auctionId:string; currentLot:LiveAuctionLot|null; capacity:LiveAuctionCapacity; }
+export interface LiveAuctionState { auctionId:string; currentLot:LiveAuctionLot|null; capacity:LiveAuctionCapacity; serverNowUtc:string; }
 export interface LiveAuctionSeat { id:string; seatKind:'Bidder'|'Viewer'|'Admin'; auctionTeamId:string|null; lastSeenAtUtc:string; }
 export interface LiveAuctionTeamMember { id:string; displayName:string; email:string; }
 export interface LiveAuctionTeam { id:string; teamName:string; icon?:string|null; representativeUserId:string; representativeName:string; liveBidderUserId?:string|null; liveBidderName?:string|null; members:LiveAuctionTeamMember[]; }

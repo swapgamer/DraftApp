@@ -45,13 +45,13 @@
         <div class="bid-state">
           <span>{{ lot.state }}</span>
           <strong>{{ (lot.currentBidAmount ?? lot.startingPrice) | currency:'USD':'symbol':'1.0-0' }}</strong>
-          <small>{{ lot.currentBidAmount === null ? 'Opening price' : 'Current highest bid' }}</small>
+          <small>{{ lot.state === 'Closed' ? (lot.currentBidAmount === null ? 'Unsold' : 'Sold price') : (lot.currentBidAmount === null ? 'Opening price' : 'Current highest bid') }}</small>
         </div>
         <div class="timer">
           <mat-icon>timer</mat-icon><strong>{{ secondsRemaining() }}s</strong>
   <small>@if (lot.state === 'Paused') { Paused — timer frozen } @else if (lot.extensionCount) { +{{ lot.extensionCount }} extension(s) }</small>
         </div>
-        <div class="leader"><span>Leading team</span><b>{{ lot.highestBidTeamName || 'No bid yet' }}</b></div>
+        <div class="leader"><span>Leading team</span><b>{{ lot.highestBidTeamName || (lot.state === 'Closed' ? 'Unsold' : 'No bid yet') }}</b></div>
       </section>
 
       @if (myTeam(); as team) {
@@ -59,7 +59,7 @@
           <section class="bid-box">
             <div><span>Representing {{ team.teamName }}</span><strong>Next valid bid {{ requiredBid(lot) | currency:'USD':'symbol':'1.0-0' }}</strong></div>
             <input type="number" [value]="requiredBid(lot)" readonly aria-label="Next valid bid amount">
-            <button mat-flat-button color="primary" [disabled]="secondsRemaining() === 0" (click)="bid()">Place {{ requiredBid(lot) | currency:'USD':'symbol':'1.0-0' }} bid</button>
+            <button mat-flat-button color="primary" [disabled]="secondsRemaining() === 0 || iAmLeading()" (click)="bid()">@if (iAmLeading()) { You have the highest bid } @else { Place {{ requiredBid(lot) | currency:'USD':'symbol':'1.0-0' }} bid }</button>
           </section>
         } @else if (!auth.isAdmin()) {
           <p class="viewer-note">You have been selected for {{ team.teamName }}. Your bidder seat will activate when one is available and the lot is open.</p>

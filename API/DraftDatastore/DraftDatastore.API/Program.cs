@@ -58,6 +58,8 @@ builder.Services.AddRateLimiter(options => { options.RejectionStatusCode = Statu
 builder.Services.AddHealthChecks();
 builder.Services.Configure<BlobStorageOptions>(builder.Configuration.GetSection(BlobStorageOptions.SectionName));
 builder.Services.AddScoped<IPlayerImageStorage, PlayerImageStorage>();
+builder.Services.AddScoped<DraftDatastore.API.LiveAuction.LiveAuctionSettlement>();
+builder.Services.AddHostedService<DraftDatastore.API.LiveAuction.LiveAuctionExpiryWorker>();
 
 var app = builder.Build();
 using (var scope = app.Services.CreateScope())

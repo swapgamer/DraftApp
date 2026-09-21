@@ -1,4 +1,5 @@
 using System.Security.Claims;
+using DraftDatastore.API.LiveAuction;
 using DraftDatastore.Domain.Entities;
 using DraftDatastore.Persistence;
 using Microsoft.AspNetCore.Authorization;
@@ -13,7 +14,7 @@ namespace DraftDatastore.API.Controllers;
 /// from the stored deadline, bid history, and room seats.
 /// </summary>
 [ApiController, Authorize, Route("api/v1/auction/live")]
-public sealed class LiveAuctionController(DraftDatastoreDbContext db) : ControllerBase
+public sealed class LiveAuctionController(DraftDatastoreDbContext db, LiveAuctionSettlement settlement) : ControllerBase
 {
     private const int MaxBidders = 8;
     private const int MaxViewers = 5;
@@ -27,6 +28,8 @@ public sealed class LiveAuctionController(DraftDatastoreDbContext db) : Controll
     [HttpGet]
     public async Task<ActionResult<LiveAuctionStateResponse>> Get(CancellationToken ct)
     {
+        // Every poll also settles any lot whose timer has run out, so results never wait on a click.
+        await settlement.SettleExpiredAsync(ct);
         var auction = await ActiveAuction(ct);
         var lot = await LotForAuction(auction.Id, ct);
         var activeSeatCutoff = DateTimeOffset.UtcNow - SeatTtl;
@@ -44,7 +47,8 @@ public sealed class LiveAuctionController(DraftDatastoreDbContext db) : Controll
         var auction = await ActiveAuction(ct);
         if (!await db.Players.AnyAsync(x => x.Id == request.PlayerId, ct)) return NotFound("Player not found.");
         if (await db.AuctionAssignments.AnyAsync(x => x.AuctionId == auction.Id && x.PlayerId == request.PlayerId, ct)) return Conflict("This player has already been assigned.");
-        if (await db.AuctionLots.AnyAsync(x => x.AuctionId == auction.Id && x.PlayerId == request.PlayerId, ct)) return Conflict("This player already has a live-auction lot.");
+        // Unsold and cancelled lots are finished, so those players may be put up again.
+        if (await db.AuctionLots.AnyAsync(x => x.AuctionId == auction.Id && x.PlayerId == request.PlayerId && x.State != AuctionLotStates.Closed && x.State != AuctionLotStates.Cancelled, ct)) return Conflict("This player already has an active live-auction lot.");
         var lot = new AuctionLot { AuctionId = auction.Id, PlayerId = request.PlayerId, StartingPrice = request.StartingPrice };
         db.AuctionLots.Add(lot); await db.SaveChangesAsync(ct);
         return CreatedAtAction(nameof(Get), new { }, await ToLotResponse(lot.Id, ct));
@@ -99,6 +103,8 @@ public sealed class LiveAuctionController(DraftDatastoreDbContext db) : Controll
         var team = await db.AuctionTeams.Include(x => x.Assignments).SingleOrDefaultAsync(x => x.Id == request.AuctionTeamId && x.AuctionId == lot.AuctionId && x.Status == AuctionTeamStatuses.Approved, ct);
         if (team is null) return NotFound("Approved auction team not found.");
         if (team.LiveBidderUserId != userId) return Forbid();
+        // The leading team cannot outbid itself; another team must bid first.
+        if (lot.HighestBidAuctionTeamId == team.Id) return Conflict("You already hold the highest bid. Wait for another team to bid before bidding again.");
         var activeSeatCutoff = DateTimeOffset.UtcNow - SeatTtl;
         var hasLiveBidderSeat = await db.AuctionLiveSeats.AnyAsync(x =>
             x.AuctionId == lot.AuctionId &&
@@ -128,18 +134,13 @@ public sealed class LiveAuctionController(DraftDatastoreDbContext db) : Controll
     [Authorize(Roles = SystemRoles.Admin)]
     public async Task<ActionResult<LiveAuctionLotResponse>> Close(Guid lotId, CancellationToken ct)
     {
-        var lot = await db.AuctionLots.SingleOrDefaultAsync(x => x.Id == lotId, ct); if (lot is null) return NotFound();
+        var lot = await db.AuctionLots.AsNoTracking().SingleOrDefaultAsync(x => x.Id == lotId, ct); if (lot is null) return NotFound();
         if (lot.State is AuctionLotStates.Closed or AuctionLotStates.Cancelled) return BadRequest("This lot is already finalised.");
-        if (lot.HighestBidAuctionTeamId is Guid teamId && lot.CurrentBidAmount is decimal price)
-        {
-            if (await db.AuctionAssignments.AnyAsync(x => x.AuctionId == lot.AuctionId && x.PlayerId == lot.PlayerId, ct)) return Conflict("This player was assigned outside the Live Hub.");
-            var team = await db.AuctionTeams.Include(x => x.Assignments).SingleAsync(x => x.Id == teamId, ct);
-            if (team.StartingBalance - team.Assignments.Sum(x => x.SoldPrice) < price)
-                return Conflict("The highest-bidding team no longer has enough remaining balance to settle this lot.");
-            db.AuctionAssignments.Add(new AuctionAssignment { AuctionId = lot.AuctionId, AuctionTeamId = teamId, PlayerId = lot.PlayerId, SoldPrice = price });
-        }
-        lot.State = AuctionLotStates.Closed; lot.PausedRemainingSeconds = null; lot.ClosedAtUtc = DateTimeOffset.UtcNow; await db.SaveChangesAsync(ct);
-        return Ok(await ToLotResponse(lot.Id, ct));
+        // The shared settlement picks the winner, falling back to the next bidder who can still pay.
+        await settlement.SettleAsync(lotId, requireExpired: false, ct);
+        var settled = await ToLotResponse(lotId, ct);
+        if (settled.State is not (AuctionLotStates.Closed or AuctionLotStates.Cancelled)) return Conflict("The lot changed while closing. Refresh and try again.");
+        return Ok(settled);
     }
 
     [HttpPost("admin/lots/{lotId:guid}/cancel")]
@@ -248,7 +249,7 @@ public sealed class LiveAuctionController(DraftDatastoreDbContext db) : Controll
         .OrderBy(x => x.TeamName);
     private async Task<AuctionLot?> LotForAuction(Guid auctionId, CancellationToken ct) => await db.AuctionLots.AsNoTracking().Where(x => x.AuctionId == auctionId).Include(x => x.Player).ThenInclude(x => x.Nationality).Include(x => x.Player).ThenInclude(x => x.PlayerPositions).ThenInclude(x => x.Position).Include(x => x.Player).ThenInclude(x => x.Images).Include(x => x.HighestBidAuctionTeam).Include(x => x.Bids.OrderByDescending(b => b.CreatedAtUtc).Take(20)).ThenInclude(x => x.AuctionTeam).OrderBy(x => x.State == AuctionLotStates.Open ? 0 : x.State == AuctionLotStates.Paused ? 1 : x.State == AuctionLotStates.Draft ? 2 : 3).ThenByDescending(x => x.CreatedAtUtc).FirstOrDefaultAsync(ct);
     private async Task<LiveAuctionLotResponse> ToLotResponse(Guid lotId, CancellationToken ct) => ToLotResponse(await db.AuctionLots.AsNoTracking().Where(x => x.Id == lotId).Include(x => x.Player).ThenInclude(x => x.Nationality).Include(x => x.Player).ThenInclude(x => x.PlayerPositions).ThenInclude(x => x.Position).Include(x => x.Player).ThenInclude(x => x.Images).Include(x => x.HighestBidAuctionTeam).Include(x => x.Bids.OrderByDescending(b => b.CreatedAtUtc).Take(20)).ThenInclude(x => x.AuctionTeam).SingleAsync(ct));
-    private static LiveAuctionStateResponse ToState(Auction auction, AuctionLot? lot, AuctionLiveSeat[] seats) => new(auction.Id, lot is null ? null : ToLotResponse(lot), new LiveAuctionCapacityResponse(MaxBidders, MaxViewers, MaxAdmins, MaxConnections, seats.Count(x => x.SeatKind == AuctionSeatKinds.Bidder), seats.Count(x => x.SeatKind == AuctionSeatKinds.Viewer), seats.Count(x => x.SeatKind == AuctionSeatKinds.Admin), seats.Length));
+    private static LiveAuctionStateResponse ToState(Auction auction, AuctionLot? lot, AuctionLiveSeat[] seats) => new(auction.Id, lot is null ? null : ToLotResponse(lot), new LiveAuctionCapacityResponse(MaxBidders, MaxViewers, MaxAdmins, MaxConnections, seats.Count(x => x.SeatKind == AuctionSeatKinds.Bidder), seats.Count(x => x.SeatKind == AuctionSeatKinds.Viewer), seats.Count(x => x.SeatKind == AuctionSeatKinds.Admin), seats.Length), DateTimeOffset.UtcNow);
     private static LiveAuctionLotResponse ToLotResponse(AuctionLot lot) => new(lot.Id, ToPlayer(lot.Player), lot.StartingPrice, lot.CurrentBidAmount, lot.State, lot.EndsAtUtc, lot.PausedRemainingSeconds, lot.ClosedAtUtc, lot.ExtensionCount, lot.HighestBidAuctionTeamId, lot.HighestBidAuctionTeam?.TeamName, lot.Bids.OrderByDescending(x => x.CreatedAtUtc).Select(x => new LiveAuctionBidResponse(x.Id, x.AuctionTeamId, x.AuctionTeam.TeamName, x.Amount, x.CreatedAtUtc)).ToArray());
     private static LiveAuctionPlayerResponse ToPlayer(Player player) => new(player.Id, player.FullName, player.Nationality.Name, player.PlayerPositions.OrderByDescending(x => x.IsPrimary).Select(x => x.Position.Name).ToArray(), player.PlayerPositions.OrderByDescending(x => x.IsPrimary).Select(x => x.Position.Code).FirstOrDefault() ?? "", player.OverallRank, player.Images.Where(x => x.IsPrimary).Select(x => "/player-images/" + x.BlobPath.Replace("\\", "/")).FirstOrDefault());
     private static LiveAuctionSeatResponse ToSeatResponse(AuctionLiveSeat seat) => new(seat.Id, seat.SeatKind, seat.AuctionTeamId, seat.LastSeenAtUtc);
@@ -295,4 +296,4 @@ public sealed record LiveAuctionSeatResponse(Guid Id, string SeatKind, Guid? Auc
 public sealed record LiveAuctionCapacityResponse(int MaxBidders, int MaxViewers, int MaxAdmins, int MaxConnections, int ActiveBidders, int ActiveViewers, int ActiveAdmins, int ActiveConnections);
 public sealed record LiveAuctionTeamMemberResponse(Guid Id, string DisplayName, string Email);
 public sealed record LiveAuctionTeamResponse(Guid Id, string TeamName, string? Icon, Guid RepresentativeUserId, string RepresentativeName, Guid? LiveBidderUserId, string? LiveBidderName, LiveAuctionTeamMemberResponse[] Members);
-public sealed record LiveAuctionStateResponse(Guid AuctionId, LiveAuctionLotResponse? CurrentLot, LiveAuctionCapacityResponse Capacity);
+public sealed record LiveAuctionStateResponse(Guid AuctionId, LiveAuctionLotResponse? CurrentLot, LiveAuctionCapacityResponse Capacity, DateTimeOffset ServerNowUtc);
